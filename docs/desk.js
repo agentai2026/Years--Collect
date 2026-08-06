@@ -21,10 +21,14 @@ function stBadge(s) { return `<span class="st ${s.st}"><i></i>${s.label}</span>`
 function catSummary(a) {
   const cats = ((a.tags && a.tags.length) ? a.tags : (a.categories || []))
     .filter(t => t && t !== '受限内容');
-  if (!cats.length) return '—';
-  const show = cats.slice(0, 3);
-  const extra = cats.length > 3 ? ` +${cats.length - 3}` : '';
-  return `${show.join(' · ')}${extra}`;
+  if (cats.length) {
+    const show = cats.slice(0, 3);
+    const extra = cats.length > 3 ? ` +${cats.length - 3}` : '';
+    return `${show.join(' · ')}${extra}`;
+  }
+  if (/未公开 class/i.test(a.note || '') || /json\.php/i.test(a.api || '')) return '未公开';
+  if (/防爬|返回网页/i.test(a.note || '')) return '暂不可用';
+  return '—';
 }
 function copyText(t, btn) {
   navigator.clipboard.writeText(t).then(() => {
