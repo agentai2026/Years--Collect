@@ -1,0 +1,64 @@
+name: Collect maintenance
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: Which maintenance task to run
+        required: true
+        type: choice
+        options:
+          - yszzq
+          - ziyuanzu
+          - github
+          - classify
+          - health
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-maintenance-${{ github.event.inputs.task || 'schedule' }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      ARCHIVE_KEEP: "120"
+      GITHUB_SYNC_LIMIT: "100"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync yszzq.com
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'yszzq' }}
+        run: node scripts/sync-yszzq.mjs
+
+      - name: Sync ziyuanzu.com
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'ziyuanzu' }}
+        run: node scripts/sync-ziyuanzu.mjs
+
+      - name: Sync GitHub sources
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'github' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_SEARCH_TOKEN || github.token }}
+        run: node scripts/sync-github.mjs
+
+      - name: Classify categories
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'classify' }}
+        run: node scripts/classify.mjs
+
+      - name: Health probe
+        if: ${{ inputs.task == 'health' }}
+        run: node scripts/monitor.mjs
+
+      - name: Commit results if changed
+        run: |
+          DAY=$(node -e "console.log(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()))")
+          bash scripts/git-push-catalog.sh "data: collect maintenance ${DAY}" docs/catalog.json data/

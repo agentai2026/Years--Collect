@@ -12,11 +12,8 @@ on:
   workflow_dispatch: {}
   workflow_run:
     workflows:
-      - "Sync yszzq.com"
-      - "Sync ziyuanzu.com"
-      - "Sync GitHub sources"
+      - "Collect maintenance"
       - "Health probe"
-      - "Classify categories"
     types: [completed]
 
 permissions:
