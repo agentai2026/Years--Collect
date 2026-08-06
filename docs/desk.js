@@ -475,43 +475,124 @@ function pageCategory(DATA, apis) {
   });
 }
 /* ---------------- 一键配置下载页 ---------------- */
+/** 内容桶：safe=确认常规 / adult=明确18+ / unknown=不确定（常规不要） */
+function contentBucket(a) {
+  const HARD =
+    /无码|有码|中文字幕|麻豆|里番|情色|色情|成人|禁片|口交|强奸|乱伦|人妻|骑兵|步兵|换脸|女同|男同|制服诱惑|三级|黄网|R18|18\+|AV专|AV片|日本AV|欧美AV|SM调教|伦理|港台三级|日韩无码|日本无码|日本有码|亚洲情色/;
+  const ADULT_NAME =
+    /AV|色情|成人|里番|伦理|色站|美少女|X色|搜A|色仓库|黑料|番号|福利站|水乐园|JKUN|老牌X|精品X|杏系|桃花|辣椒|模特资源|彩猫|大地|155|奶香/;
+  const SAFE_TOP = new Set([
+    '电影', '连续剧', '电视剧', '综艺', '动漫', '纪录片', '短剧', '国产剧', '韩剧', '港剧', '日剧', '台剧',
+    '欧美剧', '港澳剧', '泰剧', '动作片', '喜剧片', '爱情片', '科幻片', '恐怖片', '战争片', '剧情片',
+    '动画片', '体育', '体育赛事', '资讯', '爽文短剧', '电影解说', '短剧大全', '电影片',
+  ]);
+  const cats = (a.categories || []).filter((c) => c && c !== '受限内容');
+  const tags = (a.tags || []).filter((c) => c !== '受限内容');
+  if (a.restricted || tags.includes('受限内容') || ADULT_NAME.test(a.name || '')) return 'adult';
+  const hard = cats.filter((c) => HARD.test(c));
+  if (hard.length >= 2) return 'adult';
+  if (hard.length === 1 && /^伦理片$/.test(hard[0])) return 'unknown'; // 仅伦理片：不确定，常规不要
+  if (hard.length) return 'adult';
+  if (!cats.length) return 'unknown';
+  const safeN = cats.filter((c) => SAFE_TOP.has(c)).length;
+  if (safeN >= 2) return 'safe';
+  return 'unknown';
+}
+
 function pageDownload(DATA, apis) {
-  /* 仅收录在线且可用率 >= 95% 的非受限接口 */
-  const good = apis.filter(a => !a.restricted && a.s.st === 'ok' && a.s.up >= 0.95);
-  const avgUp = good.length ? good.reduce((p, a) => p + a.s.up, 0) / good.length * 100 : 0;
-  const totalRes = good.reduce((p, a) => p + (a.total || 0), 0);
-  const fmtWan = n => n >= 1e4 ? (n / 1e4).toFixed(0) + '万' : n.toLocaleString();
+  const quality = apis.filter((a) => a.s.st === 'ok' && a.s.up >= 0.95);
+  const buckets = { all: quality, safe: [], adult: [], unknown: [] };
+  for (const a of quality) {
+    const b = contentBucket(a);
+    buckets[b].push(a);
+  }
+  const packOf = (key) => (key === 'all' ? buckets.all : key === 'safe' ? buckets.safe : buckets.adult);
+  const fmtWan = (n) => (n >= 1e4 ? (n / 1e4).toFixed(0) + '万' : n.toLocaleString());
+  const totalRes = buckets.all.reduce((p, a) => p + (a.total || 0), 0);
 
-  $('#dlCount').innerHTML = `${good.length}<small> 采集站数量</small>`;
-  $('#dlRate').innerHTML = `${avgUp.toFixed(1)}%<small> 平均可用率</small>`;
-  $('#dlRes').innerHTML = `${fmtWan(totalRes)}<small> 总资源量</small>`;
-  $('#dlMeta').textContent = `更新时间: ${DATA.updated} · 包含 ${good.length} 个采集站接口`;
-  $('#lead').textContent = `${new Date(DATA.updated).getFullYear()} 最新苹果CMS V10 一键采集全接口配置，收录 ${good.length} 个高可用采集站，平均可用率 ${avgUp.toFixed(1)}%，涵盖 ${totalRes.toLocaleString()} 部影视资源。支持苹果CMS、海洋CMS等主流影视CMS系统一键导入。`;
+  $('#dlCount').innerHTML = `${buckets.all.length}<small> 高可用全部</small>`;
+  $('#dlSafe').innerHTML = `${buckets.safe.length}<small> 确认常规</small>`;
+  $('#dlAdult').innerHTML = `${buckets.adult.length}<small> 明确 18+</small>`;
+  $('#dlMeta').textContent = `更新时间: ${DATA.updated} · 不确定已排除出常规：${buckets.unknown.length} 个`;
+  $('#lead').textContent = `${new Date(DATA.updated).getFullYear()} 苹果CMS 一键采集配置。高可用 ${buckets.all.length} 站（可用率≥95%）；常规 ${buckets.safe.length} 站（确认无 18+）；18+ ${buckets.adult.length} 站。分类不明或仅含伦理片的 ${buckets.unknown.length} 站不进常规包。总资源约 ${fmtWan(totalRes)}。`;
 
-  /* 预览前10 */
-  $('#dlPreview').innerHTML = good.slice(0, 10).map(a => `
+  const preview = buckets.safe.length ? buckets.safe : buckets.all;
+  $('#dlPreview').innerHTML = preview.slice(0, 10).map((a) => {
+    const b = contentBucket(a);
+    return `
     <tr>
       <td class="name"><a href="detail.html?id=${a.id}">${a.name}</a></td>
-      <td><span class="fmt">JSON</span></td>
+      <td><span class="fmt">${b === 'adult' ? '18+' : b === 'safe' ? '常规' : '待定'}</span></td>
       <td class="mono" style="color:var(--green);font-weight:700">${(a.s.up * 100).toFixed(0)}%</td>
       <td>${a.s.avg && a.s.avg < 800 ? '<span style="color:var(--green);font-weight:600">快速</span>' : '一般'}</td>
       <td class="mono">${(a.total || 0).toLocaleString()}</td>
-    </tr>`).join('');
-  $('#dlMore').textContent = `仅展示前 ${Math.min(10, good.length)} 个采集站，完整列表请下载配置文件`;
+    </tr>`;
+  }).join('');
+  $('#dlMore').textContent = buckets.safe.length
+    ? `预览为确认常规站（前 ${Math.min(10, preview.length)} 个）。点上方按钮选择范围后下载。`
+    : `当前确认常规站为 0（多数含伦理片或分类不明已排除）。可用「全部」或「18+」下载。`;
 
-  /* 生成下载 */
-  const buildJSON = () => JSON.stringify({
-    name: DATA.brand + ' 一键采集配置', updated: DATA.updated, count: good.length,
-    sites: good.map(a => ({ name: a.name, api: a.api, type: 'json', cms: a.cms, uptime: +(a.s.up * 100).toFixed(1), speed_ms: a.s.avg, total: a.total, categories: a.categories }))
+  const modal = $('#dlModal');
+  const openModal = () => {
+    $('#dlOptAll').textContent = `${buckets.all.length} 个高可用`;
+    $('#dlOptSafe').textContent = `${buckets.safe.length} 个 · 无 18+，不确定已排除`;
+    $('#dlOptAdult').textContent = `${buckets.adult.length} 个 · 明确成人/受限`;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  };
+  const closeModal = () => {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  };
+  $('#btnOpenDl').addEventListener('click', openModal);
+  modal.querySelectorAll('[data-close]').forEach((el) => el.addEventListener('click', closeModal));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.hidden) closeModal();
+  });
+
+  const selectedPack = () => {
+    const el = document.querySelector('input[name="dlPack"]:checked');
+    return el ? el.value : 'safe';
+  };
+  const packLabel = { all: '全部', safe: '常规', adult: '18+' };
+  const buildJSON = (list, key) => JSON.stringify({
+    name: `${DATA.brand} 一键采集配置·${packLabel[key]}`,
+    pack: key,
+    updated: DATA.updated,
+    count: list.length,
+    sites: list.map((a) => ({
+      name: a.name,
+      api: a.api,
+      type: 'json',
+      cms: a.cms,
+      uptime: +(a.s.up * 100).toFixed(1),
+      speed_ms: a.s.avg,
+      total: a.total,
+      categories: a.categories,
+      content: contentBucket(a),
+    })),
   }, null, 2);
-  const buildTXT = () => good.map(a => `${a.name}|${a.api}at/json/|json|${(a.s.up * 100).toFixed(1)}%`).join('\n');
+  const buildTXT = (list) => list.map((a) => `${a.name}|${a.api}at/json/|json|${(a.s.up * 100).toFixed(1)}%`).join('\n');
   const dl = (content, fname, mime) => {
     const url = URL.createObjectURL(new Blob([content], { type: mime }));
     const el = Object.assign(document.createElement('a'), { href: url, download: fname });
-    el.click(); URL.revokeObjectURL(url);
+    el.click();
+    URL.revokeObjectURL(url);
   };
-  $('#btnJson').addEventListener('click', () => dl(buildJSON(), `maccms-collect-${DATA.updated}.json`, 'application/json'));
-  $('#btnTxt').addEventListener('click', () => dl(buildTXT(), `maccms-collect-${DATA.updated}.txt`, 'text/plain'));
+  const doDownload = (fmt) => {
+    const key = selectedPack();
+    const list = packOf(key);
+    if (!list.length) {
+      alert(`当前「${packLabel[key]}」包没有可下载的接口。`);
+      return;
+    }
+    const stamp = DATA.updated;
+    if (fmt === 'json') dl(buildJSON(list, key), `maccms-${key}-${stamp}.json`, 'application/json');
+    else dl(buildTXT(list), `maccms-${key}-${stamp}.txt`, 'text/plain');
+    closeModal();
+  };
+  $('#btnJson').addEventListener('click', () => doDownload('json'));
+  $('#btnTxt').addEventListener('click', () => doDownload('txt'));
 }
 
 function pageDetail(DATA) {

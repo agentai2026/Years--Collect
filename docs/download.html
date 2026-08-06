@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>一键采集配置下载 · 采集站信号台</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20260806s">
+<link rel="stylesheet" href="style.css?v=20260806t">
 </head>
 <body data-page="download">
 <header class="mast" id="hdr"></header>
@@ -16,7 +16,7 @@
 
   <div class="spec">
     <h3 style="font-family:var(--serif);font-size:20px;font-weight:900;margin-bottom:6px">配置文件说明</h3>
-    <div class="spec-row"><div class="no">01</div><div class="t">筛选标准</div><p>仅收录状态正常（status=ok）且可用率 ≥ 95% 的采集站，确保每个接口都稳定可用。</p></div>
+    <div class="spec-row"><div class="no">01</div><div class="t">筛选标准</div><p>先筛在线且可用率 ≥ 95%。下载时可再选：全部 / 常规（确认无 18+，不确定不要）/ 18+（明确成人）。</p></div>
     <div class="spec-row"><div class="no">02</div><div class="t">JSON 格式</div><p>结构化数据，包含采集站名称、API地址、接口类型、可用率、资源总量和分类列表，适合程序化批量导入。</p></div>
     <div class="spec-row"><div class="no">03</div><div class="t">TXT 格式</div><p>简洁的管道符分隔格式，每行一个采集站（名称|API地址|接口类型|可用率），适合手动复制粘贴到CMS后台。</p></div>
     <div class="spec-row"><div class="no">04</div><div class="t">兼容系统</div><p>苹果CMS V10、海洋CMS、飞飞CMS、赞片CMS 等主流影视CMS系统均可使用。</p></div>
@@ -24,15 +24,30 @@
 
   <div class="dl-stats">
     <div class="sum"><div class="v" id="dlCount">—</div></div>
-    <div class="sum"><div class="v" id="dlRate">—</div></div>
-    <div class="sum"><div class="v" id="dlRes">—</div></div>
+    <div class="sum"><div class="v" id="dlSafe">—</div></div>
+    <div class="sum"><div class="v" id="dlAdult">—</div></div>
   </div>
 
   <div class="dl-btns">
-    <button class="dl-btn" id="btnJson">⇩ 下载 JSON 格式</button>
-    <button class="dl-btn alt" id="btnTxt">⇩ 下载 TXT 格式</button>
+    <button type="button" class="dl-btn" id="btnOpenDl">⇩ 选择并下载配置</button>
   </div>
   <div class="dl-meta" id="dlMeta"></div>
+
+  <div class="dl-modal" id="dlModal" hidden>
+    <div class="dl-modal-backdrop" data-close></div>
+    <div class="dl-modal-card" role="dialog" aria-modal="true" aria-labelledby="dlModalTitle">
+      <h3 id="dlModalTitle">选择下载范围</h3>
+      <p class="dl-modal-tip">常规包严格排除 18+；分类不明、仅含伦理片等无法确认的接口一律不进常规包。</p>
+      <label class="dl-opt"><input type="radio" name="dlPack" value="all"><span><b>下载全部</b><small id="dlOptAll">—</small></span></label>
+      <label class="dl-opt"><input type="radio" name="dlPack" value="safe" checked><span><b>下载常规采集站</b><small id="dlOptSafe">— · 无 18+，不确定已排除</small></span></label>
+      <label class="dl-opt"><input type="radio" name="dlPack" value="adult"><span><b>下载 18+ 采集站</b><small id="dlOptAdult">— · 明确成人/受限</small></span></label>
+      <div class="dl-modal-actions">
+        <button type="button" class="dl-btn" id="btnJson">⇩ JSON</button>
+        <button type="button" class="dl-btn alt" id="btnTxt">⇩ TXT</button>
+      </div>
+      <button type="button" class="dl-modal-cancel" data-close>取消</button>
+    </div>
+  </div>
 
   <h2>接口预览（前10个采集站）</h2>
   <table class="t">
@@ -68,6 +83,6 @@
 </div>
 
 <footer class="site-foot" id="ftr"></footer>
-<script src="desk.js?v=20260806s"></script>
+<script src="desk.js?v=20260806t"></script>
 </body>
 </html>
