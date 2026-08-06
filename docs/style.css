@@ -15,7 +15,7 @@ body{
 }
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--red);color:#fff}
-.container{max-width:1120px;margin:0 auto;padding:0 22px}
+.container{max-width:1280px;margin:0 auto;padding:0 22px}
 .serif{font-family:var(--serif)}
 .mono{font-family:var(--mono)}
 
@@ -77,7 +77,7 @@ nav.main-nav a.on{background:var(--red);color:#fff;font-weight:700}
 .switch input{accent-color:var(--red)}
 
 /* ---------- split ---------- */
-.split{display:grid;grid-template-columns:1fr 310px;gap:30px;align-items:start;padding:8px 0 70px}
+.split{display:grid;grid-template-columns:1fr 300px;gap:30px;align-items:start;padding:8px 0 70px}
 @media(max-width:920px){.split{grid-template-columns:1fr}}
 
 /* ---------- table ---------- */
@@ -290,19 +290,19 @@ table.t{width:100%;border-collapse:collapse;background:transparent}
 @media(max-width:640px){.sc-grid{grid-template-columns:repeat(2,1fr)}.sc-cell{border-left:0;border-top:1px solid rgba(251,251,248,.12)}.sc-cell:nth-child(-n+2){border-top:0}}
 
 /* ---------- 筛选栏 ---------- */
-.filter-bar{display:flex;gap:0;align-items:stretch;margin:26px 0 18px;border:1px solid var(--rule);background:#fff;box-shadow:4px 4px 0 var(--rule);flex-wrap:wrap}
-.fb-field{flex:1;min-width:150px;padding:10px 16px;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.filter-bar{display:flex;gap:0;align-items:stretch;margin:26px 0 18px;border:1px solid var(--rule);background:#fff;box-shadow:4px 4px 0 var(--rule);flex-wrap:nowrap;width:100%}
+.fb-field{flex:1;min-width:0;padding:12px 20px;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
 .fb-field:first-child{border-left:0}
-.fb-field.fb-grow{flex:2.2;min-width:220px}
+.fb-field.fb-grow{flex:2.6;min-width:0}
 .fb-field label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--red);text-transform:uppercase;margin-bottom:2px}
 .fb-field input,.fb-field select{width:100%;border:0;background:transparent;padding:4px 0;font-size:14px;font-family:var(--sans);outline:none;color:var(--ink)}
 .fb-field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23181510'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 2px center;cursor:pointer;padding-right:20px}
-.fb-toggle{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink2);cursor:pointer;padding:10px 18px;border-left:1px solid var(--line);user-select:none;white-space:nowrap;background:var(--paper2)}
+.fb-toggle{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink2);cursor:pointer;padding:12px 20px;border-left:1px solid var(--line);user-select:none;white-space:nowrap;background:var(--paper2);flex:none}
 .fb-toggle input{appearance:none;width:34px;height:20px;border-radius:99px;background:var(--line);position:relative;cursor:pointer;transition:background .2s;flex:none}
 .fb-toggle input::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
 .fb-toggle input:checked{background:var(--red)}
 .fb-toggle input:checked::after{left:17px}
-@media(max-width:920px){.fb-field{min-width:45%;border-top:1px solid var(--line)}.fb-field:nth-child(-n+2){border-top:0}.fb-field:nth-child(odd){border-left:0}.fb-toggle{width:100%;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:920px){.filter-bar{flex-wrap:wrap}.fb-field{min-width:45%;border-top:1px solid var(--line)}.fb-field:nth-child(-n+2){border-top:0}.fb-field:nth-child(odd){border-left:0}.fb-toggle{width:100%;border-left:0;border-top:1px solid var(--line)}}
 
 /* 信号卡计数滚动入场 */
 .signal-card .sc-head,.signal-card .sc-wave,.signal-card .sc-legend{animation:scIn .7s ease both}
@@ -351,7 +351,7 @@ nav.main-nav a:not(.on):hover{background:var(--mutebg)}
 .foot-base{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:16px;font-family:var(--mono);font-size:11px;color:var(--ink2)}
 
 /* Top10 榜下移，与接口目录区对齐 */
-@media(min-width:921px){.split aside{padding-top:118px;position:sticky;top:120px}}
+@media(min-width:921px){.split aside{padding-top:8px;position:sticky;top:24px}}
 
 /* 筛选栏回归纸面质感 */
 .filter-bar{background:var(--paper2)}
