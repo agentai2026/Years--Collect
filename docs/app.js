@@ -140,8 +140,8 @@ function pageIndex(DATA, apis) {
       <span class="nm"><a href="detail.html?id=${a.id}">${a.name}</a></span>
       <span class="ms">${a.s.avg}ms</span></li>`).join('');
 
-  /* 首页目录只展示最好用的 15 个：在线优先 → 可用率高 → 均速快 */
-  const BEST_N = 15;
+  /* 首页目录只展示最好用的 13 个：在线优先 → 可用率高 → 均速快 */
+  const BEST_N = 13;
   const best = [...visible]
     .filter(a => a.s.st === 'ok')
     .sort((a, b) => (b.s.up - a.s.up) || ((a.s.avg ?? 9e9) - (b.s.avg ?? 9e9)))
