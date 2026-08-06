@@ -10,7 +10,7 @@ import readline from 'node:readline';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LATEST = join(ROOT, 'data', 'latest.json');
-const DATA = join(ROOT, 'docs', 'data.json');
+const DATA = join(ROOT, 'docs', 'catalog.json');
 
 function loadLatest() {
   if (existsSync(LATEST)) {

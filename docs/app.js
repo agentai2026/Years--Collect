@@ -1,4 +1,4 @@
-/* 采集站信号台 —— 纯静态，无后端，数据来自 data.json */
+/* 采集站信号台 —— 纯静态，无后端，数据来自 catalog.json */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
@@ -29,15 +29,15 @@ function spark(h) {
 const issueNo = d => { const s = new Date('2026-01-01'); return Math.floor((new Date(d) - s) / 864e5) + 1; };
 
 async function boot() {
-  const res = await fetch(`data.json?t=${Date.now()}`, { cache: 'no-store' }); const DATA = await res.json();
+  const res = await fetch(`catalog.json?t=${Date.now()}`, { cache: 'no-store' }); const DATA = await res.json();
   const withStat = DATA.apis.map(a => ({ ...a, s: statOf(a) }));
 
   /* 报头 */
   $('#hdr').innerHTML = `
     <div class="container mast-top">
       <span class="live"><i></i>LIVE</span>
-      <span>SIGNAL DESK · 第 ${issueNo(DATA.updated)} 期</span>
-      <span style="margin-left:auto">巡检日期 ${DATA.updated} · 数据：data.json</span>
+      <span>SIGNAL DESK · 第 ${issueNo(DATA.updated)} 期 · ${DATA.apis.length} 站</span>
+      <span style="margin-left:auto">巡检日期 ${DATA.updated} · 数据：catalog.json</span>
     </div>
     <div class="container mast-brand">
       <div>
@@ -66,7 +66,7 @@ async function boot() {
   <div class="container foot-grid">
     <div class="foot-brand">
       <a class="foot-name serif" href="index.html">${DATA.brand}</a>
-      <p>每日巡检网友投稿的采集接口，如实刊出谁在岗、谁告病、谁失联。本站无后端，数据全部存于 <code>data.json</code>。</p>
+      <p>每日巡检网友投稿的采集接口，如实刊出谁在岗、谁告病、谁失联。本站无后端，数据全部存于 <code>catalog.json</code>。</p>
       <p class="foot-fine">接口均来自网友投稿，请自行甄别合规性与授权范围。</p>
     </div>
     <div class="foot-col">

@@ -6,7 +6,7 @@ Guidance for coding agents working on Years--Collect.
 
 | Path | Role |
 |------|------|
-| `docs/` | **Pages** — static site + `docs/data.json` (GitHub Pages `/docs`) |
+| `docs/` | **Pages** — static site + `docs/catalog.json` (GitHub Pages `/docs`) |
 | `scripts/` | **Automation** — `sync.mjs`, `monitor.mjs`, shared `lib.mjs` |
 | `.github/workflows/` | **Automation** — scheduled probe / commit |
 | `data/` | **Probe snapshots** — `latest.json`, `archives/` |
@@ -14,7 +14,7 @@ Guidance for coding agents working on Years--Collect.
 
 ## Do
 
-- Keep the frontend driven by `docs/data.json` (`apis[].history` daily samples).
+- Keep the frontend driven by `docs/catalog.json` (`apis[].history` daily samples).
 - Write run archives only under `data/`.
 - Prefer Node built-ins for monitor/sync; keep `SYNC_LIMIT` modest.
 

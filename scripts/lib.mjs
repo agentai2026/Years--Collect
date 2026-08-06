@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 /** Site catalog consumed by docs/*.html */
-export const DATA_PATH = join(ROOT, 'docs', 'data.json');
+export const DATA_PATH = join(ROOT, 'docs', 'catalog.json');
 /** Timed probe snapshots (latest + archives) */
 export const DATA_DIR = join(ROOT, 'data');
 export const LATEST_PATH = join(DATA_DIR, 'latest.json');

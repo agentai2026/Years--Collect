@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>投稿接口 · 采集站信号台</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20260806c">
 </head>
 <body data-page="submit">
 <header class="mast" id="hdr"></header>
@@ -42,7 +42,7 @@
 </div>
 
 <footer class="site-foot" id="ftr"></footer>
-<script src="app.js"></script>
-<script>fetch(`data.json?t=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{document.getElementById('issueBtn').href=d.repo+'/issues/new?template=submit.md'})</script>
+<script src="app.js?v=20260806c"></script>
+<script>fetch(`catalog.json?t=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{document.getElementById('issueBtn').href=d.repo+'/issues/new?template=submit.md'})</script>
 </body>
 </html>

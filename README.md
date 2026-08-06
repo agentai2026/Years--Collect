@@ -6,7 +6,7 @@
 
 | 目录 / 文件 | 分类 | 说明 |
 |-------------|------|------|
-| [`docs/`](docs/) | **页面** | 站点 HTML / CSS / JS，以及页面读取的 `data.json`（GitHub Pages 发布目录） |
+| [`docs/`](docs/) | **页面** | 站点 HTML / CSS / JS，以及页面读取的 `catalog.json`（GitHub Pages 发布目录） |
 | [`scripts/`](scripts/) | **自动化** | 同步源、探测接口脚本 |
 | [`.github/workflows/`](.github/workflows/) | **自动化** | 每 2 小时定时跑同步 + 探测并提交 |
 | [`data/`](data/) | **巡检数据** | 每次探测的 `latest.json` 与 `archives/monitor_*.json` 快照 |
@@ -20,7 +20,7 @@ https://agentai2026.github.io/Years--Collect/
 ## 功能
 
 - **定时监测**：每 2 小时自动同步 + 探测（可手动触发）
-- **外部同步**：从 [ziyuanzu.com](https://www.ziyuanzu.com/) sitemap 拉取采集接口写入 `docs/data.json`
+- **外部同步**：从 [ziyuanzu.com](https://www.ziyuanzu.com/) sitemap 拉取采集接口写入 `docs/catalog.json`
 - **实时数据**：HTTP 状态、响应时间、在线/离线、资源量
 - **历史存档**：`data/latest.json` + `data/archives/monitor_*.json`
 - **静态页面**：`docs/` 信号台 UI + GitHub Pages（`/docs`）
