@@ -1,5 +1,8 @@
 ﻿name: Deploy Pages
 
+# Always publish docs/ via Actions (not legacy Jekyll).
+# workflow_run covers catalog updates committed by other Actions
+# (GITHUB_TOKEN pushes do not retrigger push workflows).
 on:
   push:
     branches: [main]
@@ -7,6 +10,14 @@ on:
       - "docs/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "1 · Sync yszzq.com"
+      - "2 · Sync ziyuanzu.com"
+      - "3 · Sync GitHub sources"
+      - "4 · Health probe"
+      - "5 · Classify categories"
+    types: [completed]
 
 permissions:
   contents: read
@@ -19,18 +30,34 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout site
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Verify docs payload
+        run: |
+          test -f docs/.nojekyll
+          test -f docs/index.html
+          test -f docs/desk.js
+          test -f docs/catalog.json
+          node -e "const d=require('./docs/catalog.json'); if(!Array.isArray(d.apis)||!d.apis.length) process.exit(1); console.log('catalog apis', d.apis.length, 'updated', d.updated);"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload docs
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

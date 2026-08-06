@@ -10,7 +10,7 @@ permissions:
 
 concurrency:
   group: sync-yszzq
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
@@ -24,10 +24,4 @@ jobs:
       - name: Sync from yszzq.com
         run: node scripts/sync-yszzq.mjs
       - name: Commit catalog if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json
-          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
-          git commit -m "data: sync catalog from yszzq.com"
-          git push
+        run: bash scripts/git-push-catalog.sh "data: sync catalog from yszzq.com" docs/catalog.json

@@ -22,6 +22,9 @@
 
 https://agentai2026.github.io/Years--Collect/
 
+站点由 [Deploy Pages](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) 发布（GitHub Actions，不是旧版 Jekyll）。  
+同步 / 巡检 / 分类工作流成功后会自动再部署；部署前会校验 `docs/catalog.json` 可读。
+
 ## 目录说明
 
 | 路径 | 分类 |

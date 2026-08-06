@@ -10,12 +10,12 @@ permissions:
 
 concurrency:
   group: classify-categories
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   classify:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,10 +24,4 @@ jobs:
       - name: Detect types and categories
         run: node scripts/classify.mjs
       - name: Commit catalog if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json
-          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
-          git commit -m "data: refresh API categories and types"
-          git push
+        run: bash scripts/git-push-catalog.sh "data: refresh API categories and types" docs/catalog.json
