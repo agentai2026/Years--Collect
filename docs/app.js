@@ -140,19 +140,20 @@ function pageIndex(DATA, apis) {
       <span class="nm"><a href="detail.html?id=${a.id}">${a.name}</a></span>
       <span class="ms">${a.s.avg}ms</span></li>`).join('');
 
-  /* 首页目录只展示最好用的 10 个：在线优先 → 可用率高 → 均速快 */
+  /* 首页目录只展示最好用的 15 个：在线优先 → 可用率高 → 均速快 */
+  const BEST_N = 15;
   const best = [...visible]
     .filter(a => a.s.st === 'ok')
     .sort((a, b) => (b.s.up - a.s.up) || ((a.s.avg ?? 9e9) - (b.s.avg ?? 9e9)))
-    .slice(0, 10);
+    .slice(0, BEST_N);
   const bestIds = new Set(best.map(a => a.id));
-  // 在线不足 10 个时，用高可用率接口补齐
-  if (best.length < 10) {
+  // 在线不足时，用高可用率接口补齐
+  if (best.length < BEST_N) {
     for (const a of [...visible].sort((a, b) => (b.s.up - a.s.up) || ((a.s.avg ?? 9e9) - (b.s.avg ?? 9e9)))) {
       if (bestIds.has(a.id)) continue;
       best.push(a);
       bestIds.add(a.id);
-      if (best.length >= 10) break;
+      if (best.length >= BEST_N) break;
     }
   }
 
@@ -166,7 +167,7 @@ function pageIndex(DATA, apis) {
     if (fCms !== 'all') list = list.filter(a => (DATA.cms.find(c => c.code === a.cms)?.type || a.cms) === fCms);
     if (fCat !== 'all') list = list.filter(a => (a.tags || []).includes(fCat));
     if (q) list = list.filter(a => (a.name + a.api + a.domain + a.cms + (a.tags || []).join('') + (a.categories || []).join('')).toLowerCase().includes(q));
-    $('#cnt').textContent = `最好用 ${list.length} / 10`;
+    $('#cnt').textContent = `最好用 ${list.length} / ${BEST_N}`;
     $('#tbody').innerHTML = list.length ? list.map(a => `
       <tr>
         <td class="name"><a href="detail.html?id=${a.id}">${a.name}</a>${a.restricted ? ' <span class="st mute"><i></i>受限</span>' : ''}</td>
