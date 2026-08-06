@@ -43,6 +43,6 @@
 
 <footer class="site-foot" id="ftr"></footer>
 <script src="app.js"></script>
-<script>fetch('data.json').then(r=>r.json()).then(d=>{document.getElementById('issueBtn').href=d.repo+'/issues/new?template=submit.md'})</script>
+<script>fetch(`data.json?t=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{document.getElementById('issueBtn').href=d.repo+'/issues/new?template=submit.md'})</script>
 </body>
 </html>

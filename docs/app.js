@@ -29,7 +29,7 @@ function spark(h) {
 const issueNo = d => { const s = new Date('2026-01-01'); return Math.floor((new Date(d) - s) / 864e5) + 1; };
 
 async function boot() {
-  const res = await fetch('data.json'); const DATA = await res.json();
+  const res = await fetch(`data.json?t=${Date.now()}`, { cache: 'no-store' }); const DATA = await res.json();
   const withStat = DATA.apis.map(a => ({ ...a, s: statOf(a) }));
 
   /* 报头 */
