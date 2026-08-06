@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>采集站信号台 · 接口监控目录</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20260806r">
+<link rel="stylesheet" href="style.css?v=20260806s">
 </head>
 <body data-page="index">
 <header class="mast" id="hdr"></header>
@@ -32,7 +32,6 @@
     </div>
     <div class="radar-legend">
       <span><i style="background:var(--green)"></i>在线</span>
-      <span><i style="background:var(--amber)"></i>波动</span>
       <span><i style="background:var(--red)"></i>离线</span>
       <span>悬停看读数 · 点击进详情</span>
     </div>
@@ -53,7 +52,7 @@
     <div class="sc-grid">
       <div class="sc-cell"><div class="k">接口总数</div><div class="v" id="scTotal">—</div></div>
       <div class="sc-cell"><div class="k">在线</div><div class="v g" id="scOnline">—</div></div>
-      <div class="sc-cell"><div class="k">待测</div><div class="v a" id="scWarn">—</div></div>
+      <div class="sc-cell"><div class="k">高可用</div><div class="v a" id="scWarn">—</div></div>
       <div class="sc-cell"><div class="k">离线</div><div class="v r" id="scFail">—</div></div>
       <div class="sc-cell"><div class="k">平均响应</div><div class="v" id="scAvg">—</div></div>
       <div class="sc-cell"><div class="k">默认隐藏</div><div class="v" id="scHidden">—</div></div>
@@ -67,7 +66,7 @@
     <div class="fb-field"><label>状态</label>
       <select id="fStatus">
         <option value="all">全部状态</option><option value="ok">在线</option>
-        <option value="warn">待测/波动</option><option value="fail">离线</option>
+        <option value="fail">离线</option>
       </select>
     </div>
     <div class="fb-field"><label>接口格式</label>
@@ -99,6 +98,6 @@
 </div>
 
 <footer class="site-foot" id="ftr"></footer>
-<script src="desk.js?v=20260806r"></script>
+<script src="desk.js?v=20260806s"></script>
 </body>
 </html>

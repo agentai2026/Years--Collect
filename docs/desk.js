@@ -5,16 +5,15 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 function statOf(a) {
   const h = Array.isArray(a.history) ? a.history : [];
   if (!h.length) {
-    return { st: 'warn', label: '待测', up: 0, avg: null, lastMs: null };
+    // 没测到 = 不能用，不搞「待测」中间态
+    return { st: 'fail', label: '离线', up: 0, avg: null, lastMs: null };
   }
   const last = h[h.length - 1] || {};
   const up = h.filter(x => x.ok).length / h.length;
   const ms = h.filter(x => x.ok && x.ms).map(x => x.ms);
   const avg = ms.length ? Math.round(ms.reduce((p, c) => p + c, 0) / ms.length) : null;
-  let st = 'ok', label = '在线';
-  if (!last.ok) { st = 'fail'; label = '离线'; }
-  else if (up < 0.9) { st = 'warn'; label = '波动'; }
-  return { st, label, up, avg, lastMs: last.ok ? last.ms : null };
+  if (!last.ok) return { st: 'fail', label: '离线', up, avg, lastMs: null };
+  return { st: 'ok', label: '在线', up, avg, lastMs: last.ms || null };
 }
 function stBadge(s) { return `<span class="st ${s.st}"><i></i>${s.label}</span>`; }
 /** Compact category summary for table cells */
@@ -149,18 +148,18 @@ function pageIndex(DATA, apis) {
   const iss = $('#heroIssue'); if (iss) iss.textContent = issueNo(DATA.updated);
   const visible = apis.filter(a => !a.restricted);
   const online = apis.filter(a => a.s.st === 'ok').length;
-  const warn = apis.filter(a => a.s.st === 'warn').length;
   const fail = apis.filter(a => a.s.st === 'fail').length;
+  const high = apis.filter(a => a.s.st === 'ok' && a.s.up >= 0.95).length;
   const msAll = visible.filter(a => a.s.avg).map(a => a.s.avg);
   const avgAll = msAll.length ? Math.round(msAll.reduce((p, c) => p + c, 0) / msAll.length) : 0;
   const hidden = apis.filter(a => a.restricted).length;
 
   /* 今日信号卡 */
   $('#scDate').textContent = DATA.updated;
-  countUp($('#scPct'), Math.round(online / apis.length * 100), '%', 1200);
+  countUp($('#scPct'), Math.round(online / Math.max(apis.length, 1) * 100), '%', 1200);
   countUp($('#scTotal'), apis.length);
   countUp($('#scOnline'), online);
-  countUp($('#scWarn'), warn);
+  countUp($('#scWarn'), high);
   countUp($('#scFail'), fail);
   countUp($('#scAvg'), avgAll);
   $('#scAvg').insertAdjacentHTML('beforeend', '<small style="font-size:.4em;color:#9a947f;font-weight:400"> ms</small>');
