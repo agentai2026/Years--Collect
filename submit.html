@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>投稿接口 · 采集站信号台</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="submit">
+<header class="mast" id="hdr"></header>
+<div class="ticker" id="tick"></div>
+
+<div class="container prose">
+  <h2>投稿你的接口</h2>
+  <p>本站<strong>没有后端、没有站内表单</strong>——所有接口都通过 GitHub Issue 投稿，公开透明、可追溯，也方便维护者合并进 <code>data.json</code>。</p>
+
+  <div class="step"><div class="n">1</div><div>
+    <strong>打开 GitHub 仓库的 Issues 页</strong><br>
+    点下方按钮直达，选择「新接口投稿」模板（New Issue → 接口投稿）。
+  </div></div>
+  <div class="step"><div class="n">2</div><div>
+    <strong>按模板填写信息</strong><br>
+    必填：接口名称、接口地址、适配 CMS 类型；选填：是否受限 / Token 获取方式、期望署名（默认取你的 GitHub ID）。
+  </div></div>
+  <div class="step"><div class="n">3</div><div>
+    <strong>等待巡检入库并署名</strong><br>
+    维护者验证可用后合并进目录，你的名字会出现在列表与详情页的「好心人」一栏，长期展示。
+  </div></div>
+
+  <a class="cta" id="issueBtn" href="https://github.com/agentai2026/Years--Collect/issues/new?template=submit.md" target="_blank" rel="noopener">去 GitHub Issue 投稿 →</a>
+
+  <h2>投稿格式示例</h2>
+  <table class="t">
+    <tr><th>字段</th><th>示例</th><th>说明</th></tr>
+    <tr><td>接口名称</td><td>闪电源</td><td>简短好记，4 字以内最佳</td></tr>
+    <tr><td>接口地址</td><td class="mono">https://api.example.com/provide/vod/</td><td>以 / 结尾的原始地址</td></tr>
+    <tr><td>适配 CMS</td><td>maccms10</td><td>maccms10 / maccmsv8 / yycms / freekan</td></tr>
+    <tr><td>是否受限</td><td>否</td><td>受限接口默认在首页隐藏展示</td></tr>
+    <tr><td>署名</td><td>@你的ID</td><td>展示在「好心人」一栏</td></tr>
+  </table>
+  <div class="tip">请勿投稿侵权、违法内容接口；发现已有接口失效，也可以开 Issue 报障，同样会记入维护贡献。</div>
+</div>
+
+<footer class="site-foot" id="ftr"></footer>
+<script src="app.js"></script>
+<script>fetch('data.json').then(r=>r.json()).then(d=>{document.getElementById('issueBtn').href=d.repo+'/issues/new?template=submit.md'})</script>
+</body>
+</html>
