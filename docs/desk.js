@@ -118,8 +118,8 @@ async function bootInner() {
     </div>
     <div class="foot-col">
       <h5>联系与共建</h5>
-      <a href="${DATA.repo}/issues/new?template=submit.md" target="_blank" rel="noopener">投稿新接口 → Issue</a>
-      <a href="${DATA.repo}/issues/new?template=bug.md" target="_blank" rel="noopener">接口失效报障</a>
+      <a href="${DATA.repo}/issues/new?template=submit.yml" target="_blank" rel="noopener">投稿新接口 → Issue</a>
+      <a href="${DATA.repo}/issues/new?template=bug.yml" target="_blank" rel="noopener">接口失效报障</a>
       <a href="${DATA.repo}" target="_blank" rel="noopener">GitHub 仓库</a>
       <a href="mailto:desk@signal.example">desk@signal.example</a>
     </div>

@@ -1,0 +1,50 @@
+name: 接口失效报障
+description: 报告目录中某个接口已离线或异常
+title: "[报障] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量附上完整 URL 与报错信息，方便快速复核。
+
+  - type: input
+    id: target
+    attributes:
+      label: 接口名称 / ID
+      placeholder: 例如：快车采集 / src-01
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: symptoms
+    attributes:
+      label: 问题现象
+      options:
+        - label: 完全无法访问
+        - label: 返回错误（403 / 500 等）
+        - label: 数据为空或不完整
+        - label: 其他（请在下方说明）
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现说明
+      description: 访问的完整 URL、错误信息或响应片段
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: 发现时间
+      placeholder: 例如：2026-08-07 上午
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注
+      placeholder: 可留空

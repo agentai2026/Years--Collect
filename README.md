@@ -47,8 +47,8 @@ node scripts/classify.mjs
 
 ## 投稿
 
-- [新接口投稿](https://github.com/agentai2026/Years--Collect/issues/new?template=submit.md)
-- [接口失效报障](https://github.com/agentai2026/Years--Collect/issues/new?template=bug.md)
+- [新接口投稿](https://github.com/agentai2026/Years--Collect/issues/new?template=submit.yml)
+- [接口失效报障](https://github.com/agentai2026/Years--Collect/issues/new?template=bug.yml)
 
 ## 免责声明
 

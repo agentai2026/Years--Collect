@@ -1,0 +1,73 @@
+name: 接口投稿
+description: 投稿一个新的采集接口到信号台目录（表单填写）
+title: "[投稿] "
+labels: [submit]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        填写后提交即可。维护者验证可用后会写入目录，你的署名会出现在「好心人」一栏。
+
+  - type: input
+    id: name
+    attributes:
+      label: 接口名称
+      description: 简短好记，4 字以内最佳
+      placeholder: 例如：闪电源
+    validations:
+      required: true
+
+  - type: input
+    id: api
+    attributes:
+      label: 接口地址
+      description: 原始采集地址，建议以 / 结尾
+      placeholder: https://api.example.com/api.php/provide/vod/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cms
+    attributes:
+      label: 适配 CMS
+      description: 不确定可选「其他 / 未知」
+      multiple: true
+      options:
+        - maccms10
+        - maccmsv8
+        - yycms
+        - freekan
+        - 其他 / 未知
+    validations:
+      required: true
+
+  - type: dropdown
+    id: restricted
+    attributes:
+      label: 是否受限
+      options:
+        - 否（公开可用）
+        - 是（需 Token / 授权）
+    validations:
+      required: true
+
+  - type: textarea
+    id: token
+    attributes:
+      label: 受限说明
+      description: 若需 Token / 授权，请说明获取方式；公开可用可留空
+      placeholder: 例如：联系某某获取 key
+
+  - type: input
+    id: credit
+    attributes:
+      label: 署名
+      description: 默认使用你的 GitHub ID，也可自定义
+      placeholder: 可留空
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注
+      description: 可选：来源、分类提示等
+      placeholder: 可留空
