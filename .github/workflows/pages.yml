@@ -9,14 +9,14 @@ on:
     paths:
       - "docs/**"
       - ".github/workflows/pages.yml"
-  workflow_dispatch:
+  workflow_dispatch: {}
   workflow_run:
     workflows:
-      - "1 - Sync yszzq.com"
-      - "2 - Sync ziyuanzu.com"
-      - "3 - Sync GitHub sources"
-      - "4 - Health probe"
-      - "5 - Classify categories"
+      - "Sync yszzq.com"
+      - "Sync ziyuanzu.com"
+      - "Sync GitHub sources"
+      - "Health probe"
+      - "Classify categories"
     types: [completed]
 
 permissions:

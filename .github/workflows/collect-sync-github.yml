@@ -1,9 +1,9 @@
-name: "3 - Sync GitHub sources"
+name: Sync GitHub sources
 
 on:
+  workflow_dispatch: {}
   schedule:
     - cron: "0 3 * * *"
-  workflow_dispatch:
 
 permissions:
   contents: write
