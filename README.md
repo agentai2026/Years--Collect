@@ -1,21 +1,18 @@
-# 采集站信号台 · Years--Collect
+﻿# 采集站信号台 · Years--Collect
 
 纯静态的采集接口监控目录：多源自动同步、可用性探测、分类识别、历史快照，并提供 MCP 查询。
 
-## 五条自动化
+## 自动化工作流
 
-| # | 工作流 | 脚本 | 作用 | 默认频率 |
-|---|--------|------|------|----------|
-| 1 | [1 - Sync yszzq.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-1-yszzq.yml) | `scripts/sync-yszzq.mjs` | 从 [yszzq.com](https://www.yszzq.com/) 采集接口页入库 | 每 6 小时 |
-| 2 | [2 - Sync ziyuanzu.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-2-ziyuanzu.yml) | `scripts/sync-ziyuanzu.mjs` | 从 [ziyuanzu.com](https://www.ziyuanzu.com/) 活跃源站入库 | 每 6 小时 |
-| 3 | [3 - Sync GitHub sources](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-3-github.yml) | `scripts/sync-github.mjs` | 在 GitHub 代码里搜索 `provide/vod` 等接口并入库 | 每天 |
-| 4 | [4 - Health probe](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-4-health.yml) | `scripts/monitor.mjs` | 检测本项目全部接口是否可用，写 30 日 history + 归档 | 每 2 小时 |
-| 5 | [5 - Classify categories](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-5-classify.yml) | `scripts/classify.mjs` | 探测各站类型，拉取 `class` 分类写入 `categories`/`tags` | 每 6 小时 |
-| 6 | [Deploy Pages](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) | — | 发布 `docs/` 到 GitHub Pages | 文档变更 / 上列成功后自动 |
+| 工作流 | 脚本 / 入口 | 作用 | 默认频率 |
+|--------|-------------|------|----------|
+| [Collect maintenance](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-maintenance.yml) | `sync-yszzq` / `sync-ziyuanzu` / `sync-github` / `classify` | 多源入库 + 分类；手动 Run 时选 `task` | 每 6 小时（定时跑 yszzq / ziyuanzu / github / classify） |
+| [Health probe](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-health.yml) | `scripts/monitor.mjs` | 探测接口可用性，写 history + 归档 | 每 2 小时 |
+| [Deploy Pages](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) | — | 发布 `docs/` 到 GitHub Pages | 文档变更 / 上列成功后自动 |
 
-均可在 Actions 里手动 **Run workflow**。
+均可在 Actions 里手动 **Run workflow**（maintenance 需选择 `task`：`yszzq` / `ziyuanzu` / `github` / `classify` / `health`）。
 
-### GitHub 搜索说明（第 3 条）
+### GitHub 搜索说明（maintenance → github）
 
 跨仓库代码搜索建议在仓库 Secrets 里配置 `GH_SEARCH_TOKEN`（classic PAT，勾选 `public_repo`）。未配置时会回退到 `github.token`，可能搜不到全站代码。
 
@@ -32,7 +29,7 @@ https://agentai2026.github.io/Years--Collect/
 |------|------|
 | `docs/` | 页面 + `catalog.json` |
 | `scripts/` | 自动化脚本 |
-| `.github/workflows/` | 五条 Actions |
+| `.github/workflows/` | Collect maintenance / Health / Pages |
 | `data/` | 巡检快照 `latest.json` / `archives/` |
 | `mcp/` | MCP 查询服务 |
 
