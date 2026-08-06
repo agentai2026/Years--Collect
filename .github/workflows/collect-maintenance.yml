@@ -20,8 +20,8 @@ permissions:
   contents: write
 
 concurrency:
-  # Keep different manual tasks from cancelling each other.
-  group: collect-maintenance-${{ github.event.inputs.task || github.event_name }}-${{ github.run_id }}
+  # Serialize all catalog writers so pushes do not conflict.
+  group: catalog-writers
   cancel-in-progress: false
 
 jobs:

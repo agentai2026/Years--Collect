@@ -9,8 +9,9 @@ permissions:
   contents: write
 
 concurrency:
-  group: health-probe
-  cancel-in-progress: true
+  # Share queue with Collect maintenance (both write catalog.json).
+  group: catalog-writers
+  cancel-in-progress: false
 
 jobs:
   probe:
