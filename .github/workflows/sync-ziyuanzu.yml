@@ -1,4 +1,4 @@
-name: "2 · Sync ziyuanzu.com"
+name: "2 - Sync ziyuanzu.com"
 
 on:
   schedule:

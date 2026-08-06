@@ -1,7 +1,7 @@
-﻿name: Deploy Pages
+name: Deploy Pages
 
-# Always publish docs/ via Actions (not legacy Jekyll).
-# workflow_run covers catalog updates committed by other Actions
+# Publish docs/ via Actions (not legacy Jekyll).
+# workflow_run covers catalog updates from other Actions
 # (GITHUB_TOKEN pushes do not retrigger push workflows).
 on:
   push:
@@ -12,11 +12,11 @@ on:
   workflow_dispatch:
   workflow_run:
     workflows:
-      - "1 · Sync yszzq.com"
-      - "2 · Sync ziyuanzu.com"
-      - "3 · Sync GitHub sources"
-      - "4 · Health probe"
-      - "5 · Classify categories"
+      - "1 - Sync yszzq.com"
+      - "2 - Sync ziyuanzu.com"
+      - "3 - Sync GitHub sources"
+      - "4 - Health probe"
+      - "5 - Classify categories"
     types: [completed]
 
 permissions:

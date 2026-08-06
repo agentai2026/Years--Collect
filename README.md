@@ -6,11 +6,12 @@
 
 | # | 工作流 | 脚本 | 作用 | 默认频率 |
 |---|--------|------|------|----------|
-| 1 | [Sync yszzq.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-yszzq.yml) | `scripts/sync-yszzq.mjs` | 从 [yszzq.com](https://www.yszzq.com/) 采集接口页入库 | 每 6 小时 |
-| 2 | [Sync ziyuanzu.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-ziyuanzu.yml) | `scripts/sync-ziyuanzu.mjs` | 从 [ziyuanzu.com](https://www.ziyuanzu.com/) 活跃源站入库 | 每 6 小时 |
-| 3 | [Sync GitHub sources](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-github.yml) | `scripts/sync-github.mjs` | 在 GitHub 代码里搜索 `provide/vod` 等接口并入库 | 每天 |
-| 4 | [Health probe](https://github.com/agentai2026/Years--Collect/actions/workflows/health-probe.yml) | `scripts/monitor.mjs` | 检测本项目全部接口是否可用，写 30 日 history + 归档 | 每 2 小时 |
-| 5 | [Classify categories](https://github.com/agentai2026/Years--Collect/actions/workflows/classify-categories.yml) | `scripts/classify.mjs` | 探测各站类型，拉取 `class` 分类写入 `categories`/`tags` | 每 6 小时 |
+| 1 | [1 - Sync yszzq.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-yszzq.yml) | `scripts/sync-yszzq.mjs` | 从 [yszzq.com](https://www.yszzq.com/) 采集接口页入库 | 每 6 小时 |
+| 2 | [2 - Sync ziyuanzu.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-ziyuanzu.yml) | `scripts/sync-ziyuanzu.mjs` | 从 [ziyuanzu.com](https://www.ziyuanzu.com/) 活跃源站入库 | 每 6 小时 |
+| 3 | [3 - Sync GitHub sources](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-github.yml) | `scripts/sync-github.mjs` | 在 GitHub 代码里搜索 `provide/vod` 等接口并入库 | 每天 |
+| 4 | [4 - Health probe](https://github.com/agentai2026/Years--Collect/actions/workflows/health-probe.yml) | `scripts/monitor.mjs` | 检测本项目全部接口是否可用，写 30 日 history + 归档 | 每 2 小时 |
+| 5 | [5 - Classify categories](https://github.com/agentai2026/Years--Collect/actions/workflows/classify-categories.yml) | `scripts/classify.mjs` | 探测各站类型，拉取 `class` 分类写入 `categories`/`tags` | 每 6 小时 |
+| 6 | [Deploy Pages](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) | — | 发布 `docs/` 到 GitHub Pages | 文档变更 / 上列成功后自动 |
 
 均可在 Actions 里手动 **Run workflow**。
 
