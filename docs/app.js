@@ -185,7 +185,13 @@ function pageIndex(DATA, apis) {
   $('#fCat').addEventListener('change', e => { fCat = e.target.value; rows(); });
   $('#showRes').addEventListener('change', e => { showRes = e.target.checked; rows(); });
   rows();
-  initRadar(apis.filter(a => !a.restricted));
+  const radarApis = apis.filter(a => !a.restricted);
+  const meta = $('#radarMeta');
+  if (meta) {
+    const on = radarApis.filter(a => a.s.st === 'ok').length;
+    meta.textContent = `${on}/${radarApis.length} 在线`;
+  }
+  initRadar(radarApis);
 }
 
 /* 今日信号波形（动态）：呼吸律动 + 扫描亮点 + 悬停读数 */
