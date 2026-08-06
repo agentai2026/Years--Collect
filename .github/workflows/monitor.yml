@@ -18,7 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      SYNC_LIMIT: "60"
+      # 0 = sync all active sources (skip /source/defunct)
+      SYNC_LIMIT: "0"
       ARCHIVE_KEEP: "120"
     steps:
       - name: Checkout

@@ -22,7 +22,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1928
+     "ms": 2061
     }
    ]
   },
@@ -45,7 +45,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 759
+     "ms": 909
     }
    ]
   },
@@ -59,7 +59,7 @@
    "site": "https://www.ziyuanzu.com/source/guangsuziyuanzhan-4",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 110226,
+   "total": 110228,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -68,7 +68,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 991
+     "ms": 1223
     }
    ]
   },
@@ -91,7 +91,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 869
+     "ms": 964
     }
    ]
   },
@@ -105,7 +105,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-6",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 108899,
+   "total": 108904,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -114,7 +114,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1383
+     "ms": 1489
     }
    ]
   },
@@ -128,7 +128,7 @@
    "site": "https://www.ziyuanzu.com/source/xinjiziyuanzhan-9",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 54876,
+   "total": 54879,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -137,7 +137,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1110
+     "ms": 1249
     }
    ]
   },
@@ -150,7 +150,7 @@
    "domain": "api.wujinapi.me",
    "site": "https://www.ziyuanzu.com/source/wuziyuanzhan-11",
    "source": "ziyuanzu.com",
-   "http": 200,
+   "http": 0,
    "total": 117458,
    "tags": [],
    "categories": [],
@@ -159,8 +159,8 @@
    "history": [
     {
      "date": "2026-08-06",
-     "ok": true,
-     "ms": 581
+     "ok": false,
+     "ms": null
     }
    ]
   },
@@ -183,7 +183,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1060
+     "ms": 2051
     }
    ]
   },
@@ -229,7 +229,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 792
+     "ms": 891
     }
    ]
   },
@@ -243,7 +243,7 @@
    "site": "https://www.ziyuanzu.com/source/suocaijizhan-21",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 141989,
+   "total": 141990,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -252,7 +252,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 797
+     "ms": 919
     }
    ]
   },
@@ -266,7 +266,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-22",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109563,
+   "total": 109565,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -275,7 +275,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1153
+     "ms": 1276
     }
    ]
   },
@@ -298,7 +298,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1631
+     "ms": 1828
     }
    ]
   },
@@ -312,7 +312,7 @@
    "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-28",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109973,
+   "total": 109974,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -321,7 +321,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1560
+     "ms": 1517
     }
    ]
   },
@@ -335,7 +335,7 @@
    "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-29",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109973,
+   "total": 109974,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -344,7 +344,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1248
+     "ms": 1386
     }
    ]
   },
@@ -367,7 +367,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 356
+     "ms": 405
     }
    ]
   },
@@ -381,7 +381,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-34",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 97664,
+   "total": 97666,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -390,7 +390,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1839
+     "ms": 2306
     }
    ]
   },
@@ -413,7 +413,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 337
+     "ms": 1029
     }
    ]
   },
@@ -436,7 +436,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 2079
+     "ms": 2131
     }
    ]
   },
@@ -459,7 +459,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1713
+     "ms": 1130
     }
    ]
   },
@@ -468,7 +468,7 @@
    "name": "大地资源站",
    "cms": "maccms10",
    "contributor": "@ziyuanzu",
-   "api": "https://dadiapi.com/api.php/",
+   "api": "https://dadiapi.com/api.php",
    "domain": "dadiapi.com",
    "site": "https://www.ziyuanzu.com/source/dadiziyuanzhan-71",
    "source": "ziyuanzu.com",
@@ -482,7 +482,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 859
+     "ms": 928
     }
    ]
   },
@@ -496,7 +496,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-39",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 66496,
+   "total": 66497,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -505,7 +505,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 847
+     "ms": 1076
     }
    ]
   },
@@ -528,7 +528,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 806
+     "ms": 892
     }
    ]
   },
@@ -551,7 +551,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1009
+     "ms": 1080
     }
    ]
   },
@@ -574,7 +574,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 501
+     "ms": 530
     }
    ]
   },
@@ -597,7 +597,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 920
+     "ms": 1021
     }
    ]
   },
@@ -620,7 +620,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 896
+     "ms": 946
     }
    ]
   },
@@ -643,7 +643,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 964
+     "ms": 954
     }
    ]
   },
@@ -712,7 +712,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 852
+     "ms": 779
     }
    ]
   },
@@ -721,7 +721,7 @@
    "name": "彩猫资源站",
    "cms": "maccms10",
    "contributor": "@ziyuanzu",
-   "api": "https://caiji.semaozy.net/inc/api.php/",
+   "api": "https://caiji.semaozy.net/inc/api.php",
    "domain": "caiji.semaozy.net",
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-59",
    "source": "ziyuanzu.com",
@@ -735,7 +735,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 702
+     "ms": 751
     }
    ]
   },
@@ -758,7 +758,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 919
+     "ms": 804
     }
    ]
   },
@@ -781,7 +781,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1068
+     "ms": 1142
     }
    ]
   },
@@ -827,7 +827,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 968
+     "ms": 782
     }
    ]
   },
@@ -850,7 +850,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1729
+     "ms": 574
     }
    ]
   },
@@ -873,7 +873,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1573
+     "ms": 1306
     }
    ]
   },
@@ -942,7 +942,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 744
+     "ms": 712
     }
    ]
   },
@@ -1080,7 +1080,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 775
+     "ms": 961
     }
    ]
   },
@@ -1103,7 +1103,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 771
+     "ms": 760
     }
    ]
   },
@@ -1126,7 +1126,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 640
+     "ms": 644
     }
    ]
   },
@@ -1149,7 +1149,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 702
+     "ms": 701
     }
    ]
   },
@@ -1163,7 +1163,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-25",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 108819,
+   "total": 108821,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -1172,7 +1172,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1224
+     "ms": 1314
     }
    ]
   },
@@ -1186,7 +1186,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-31",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109902,
+   "total": 109904,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -1195,7 +1195,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1051
+     "ms": 977
     }
    ]
   },
@@ -1218,7 +1218,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 706
+     "ms": 722
     }
    ]
   },
@@ -1241,7 +1241,7 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1355
+     "ms": 1358
     }
    ]
   },
@@ -1264,7 +1264,513 @@
     {
      "date": "2026-08-06",
      "ok": true,
-     "ms": 1880
+     "ms": 1971
+    }
+   ]
+  },
+  {
+   "id": "zy-baiziyuanzhan-94",
+   "name": "免费资源站",
+   "cms": "jsonapi",
+   "contributor": "@ziyuanzu",
+   "api": "https://www.kxgav.com/api/json.php",
+   "domain": "www.kxgav.com",
+   "site": "https://www.ziyuanzu.com/source/baiziyuanzhan-94",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 23270,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 957
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-95",
+   "name": "美少女资源站",
+   "cms": "jsonapi",
+   "contributor": "@ziyuanzu",
+   "api": "https://www.msnii.com/api/json.php",
+   "domain": "www.msnii.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-95",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 24563,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 1108
+    }
+   ]
+  },
+  {
+   "id": "zy-avziyuanzhan-97",
+   "name": "X色A",
+   "cms": "jsonapi",
+   "contributor": "@ziyuanzu",
+   "api": "https://www.pgxdy.com/api/json.php",
+   "domain": "www.pgxdy.com",
+   "site": "https://www.ziyuanzu.com/source/avziyuanzhan-97",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 23436,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 872
+    }
+   ]
+  },
+  {
+   "id": "zy-xshuijiziyuanzhan-98",
+   "name": "清水源资源站",
+   "cms": "jsonapi",
+   "contributor": "@ziyuanzu",
+   "api": "https://www.xrbsp.com/api/json.php",
+   "domain": "www.xrbsp.com",
+   "site": "https://www.ziyuanzu.com/source/xshuijiziyuanzhan-98",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 23276,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 1336
+    }
+   ]
+  },
+  {
+   "id": "zy-xziyuanzhan-99",
+   "name": "香系源资源站",
+   "cms": "jsonapi",
+   "contributor": "@ziyuanzu",
+   "api": "https://www.gdlsp.com/api/json.php",
+   "domain": "www.gdlsp.com",
+   "site": "https://www.ziyuanzu.com/source/xziyuanzhan-99",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 23598,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 1638
+    }
+   ]
+  },
+  {
+   "id": "zy-jiziyuanzhan-89",
+   "name": "雅集资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.yjzy.com/api.php/provide/vod/",
+   "domain": "api.yjzy.com",
+   "site": "https://www.ziyuanzu.com/source/jiziyuanzhan-89",
+   "source": "ziyuanzu.com",
+   "http": 0,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
+    }
+   ]
+  },
+  {
+   "id": "zy-yiziyuanzhan-17",
+   "name": "爱奇艺资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://iqiyizyapi.com/api.php/provide/vod/",
+   "domain": "iqiyizyapi.com",
+   "site": "https://www.ziyuanzu.com/source/yiziyuanzhan-17",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 65470,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 4660
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-50",
+   "name": "滴滴资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.ddapi.cc/api.php/provide/vod/",
+   "domain": "api.ddapi.cc",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-50",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 43341,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 751
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-53",
+   "name": "番茄资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://fqzy.me/api.php/provide/vod/",
+   "domain": "fqzy.me",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-53",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 108805,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 900
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-63",
+   "name": "鲨鱼资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://shayuapi.com/api.php/provide/vod/",
+   "domain": "shayuapi.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-63",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 275706,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 7497
+    }
+   ]
+  },
+  {
+   "id": "zy-yingyuanziyuanzhan-35",
+   "name": "飘零影院资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://p2100.net/api.php/provide/vod/",
+   "domain": "p2100.net",
+   "site": "https://www.ziyuanzu.com/source/yingyuanziyuanzhan-35",
+   "source": "ziyuanzu.com",
+   "http": 403,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-73",
+   "name": "奥斯卡资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://aosikazy.com/api.php/provide/vod/",
+   "domain": "aosikazy.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-73",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 210868,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 1509
+    }
+   ]
+  },
+  {
+   "id": "zy-xziyuanzhan-56",
+   "name": "精品X资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://www.jingpinx.com/api.php/provide/vod/",
+   "domain": "www.jingpinx.com",
+   "site": "https://www.ziyuanzu.com/source/xziyuanzhan-56",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 50604,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 984
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuan-19",
+   "name": "猫眼资源",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.maoyanapi.top/api.php/provide/vod/",
+   "domain": "api.maoyanapi.top",
+   "site": "https://www.ziyuanzu.com/source/ziyuan-19",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 33705,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 1329
+    }
+   ]
+  },
+  {
+   "id": "zy-uziyuanzhan-78",
+   "name": "u酷资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.ukuzy.com/api.php/provide/vod/",
+   "domain": "api.ukuzy.com",
+   "site": "https://www.ziyuanzu.com/source/uziyuanzhan-78",
+   "source": "ziyuanzu.com",
+   "http": 0,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-24",
+   "name": "茅台资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://mtzy5.com/api.php/provide/vod/",
+   "domain": "mtzy5.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-24",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 138907,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 2366
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-74",
+   "name": "奶香香资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://naixxzy.com/api.php/provide/vod/",
+   "domain": "naixxzy.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-74",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 174204,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 2327
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-45",
+   "name": "杏系资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://json.xingba222.com/api.php/provide/vod/",
+   "domain": "json.xingba222.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-45",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 106219,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": true,
+     "ms": 877
+    }
+   ]
+  },
+  {
+   "id": "zy-pianziyuanzhan-83",
+   "name": "淘片资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.tpzy.com/api.php/provide/vod/",
+   "domain": "api.tpzy.com",
+   "site": "https://www.ziyuanzu.com/source/pianziyuanzhan-83",
+   "source": "ziyuanzu.com",
+   "http": 0,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
+    }
+   ]
+  },
+  {
+   "id": "zy-dianyingtianziyuanzhan-84",
+   "name": "电影天堂资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.dyttzy.com/api.php/provide/vod/",
+   "domain": "api.dyttzy.com",
+   "site": "https://www.ziyuanzu.com/source/dianyingtianziyuanzhan-84",
+   "source": "ziyuanzu.com",
+   "http": 0,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
+    }
+   ]
+  },
+  {
+   "id": "zy-liangziyuanzhan-86",
+   "name": "量子资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.lzizy.com/api.php/provide/vod/",
+   "domain": "api.lzizy.com",
+   "site": "https://www.ziyuanzu.com/source/liangziyuanzhan-86",
+   "source": "ziyuanzu.com",
+   "http": 0,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
+    }
+   ]
+  },
+  {
+   "id": "zy-ziyuanzhan-87",
+   "name": "金鹰资源站",
+   "cms": "maccms10",
+   "contributor": "@ziyuanzu",
+   "api": "https://api.jyzy.com/api.php/provide/vod/",
+   "domain": "api.jyzy.com",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-87",
+   "source": "ziyuanzu.com",
+   "http": 0,
+   "total": 0,
+   "tags": [],
+   "categories": [],
+   "restricted": false,
+   "note": "synced from ziyuanzu.com",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "ok": false,
+     "ms": null
     }
    ]
   }
@@ -1293,6 +1799,12 @@
    "code": "freekan",
    "param": "/api.php/vod",
    "tip": "后台 → 扩展 → 资源采集 → 添加 API 节点"
+  },
+  {
+   "type": "通用 JSON API",
+   "code": "jsonapi",
+   "param": "",
+   "tip": "直接使用接口地址，按站点文档接入"
   }
  ],
  "variants": [

@@ -14,8 +14,12 @@ export const TIMEOUT_MS = 12_000;
 export const HISTORY_LIMIT = 30;
 export const GAP_MS = 200;
 export const ARCHIVE_KEEP = Number(process.env.ARCHIVE_KEEP || 120);
-export const SYNC_LIMIT = Number(process.env.SYNC_LIMIT || 60);
+/** 0 or unset negative => sync all active sources */
+export const SYNC_LIMIT = process.env.SYNC_LIMIT === undefined
+  ? 0
+  : Number(process.env.SYNC_LIMIT);
 export const ZIYUANZU_SITEMAP = 'https://www.ziyuanzu.com/sitemap-sources.xml';
+export const INCLUDE_DEFUNCT = process.env.INCLUDE_DEFUNCT === '1';
 
 export function shanghaiDate(d = new Date()) {
   return new Intl.DateTimeFormat('en-CA', {
@@ -71,7 +75,12 @@ export function ensureDataDirs() {
 }
 
 export function buildProbeUrl(apiUrl, cmsMeta) {
-  const param = cmsMeta?.param || '?ac=list';
+  // Non-MacCMS JSON endpoints are probed as-is
+  if (/\.php(?:$|\?)/i.test(apiUrl) && !/provide\/vod|api\.php\/provide/i.test(apiUrl)) {
+    return apiUrl.replace(/\/$/, '');
+  }
+  const param = cmsMeta?.param;
+  if (!param) return apiUrl;
   if (param.startsWith('?') || param.startsWith('&')) {
     const base = apiUrl.replace(/\?.*$/, '');
     const q = param.startsWith('?') ? param.slice(1) : param.slice(1);
@@ -173,7 +182,9 @@ export function normalizeApi(url) {
     const u = new URL(url.trim());
     u.hash = '';
     let path = u.pathname;
-    if (!path.endsWith('/')) path += '/';
+    // keep .php endpoints without forced trailing slash
+    if (!/\.php$/i.test(path) && !path.endsWith('/')) path += '/';
+    if (/\.php\/$/i.test(path)) path = path.slice(0, -1);
     return `${u.origin}${path}${u.search}`;
   } catch {
     return url.trim();

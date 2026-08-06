@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 /**
- * Sync collect APIs from ziyuanzu.com sitemap into data.json.
- * Caps at SYNC_LIMIT (default 60) to keep Actions runtime reasonable.
+ * Sync collect APIs from ziyuanzu.com sitemap into docs/data.json.
+ * By default syncs ALL active (/source/<slug>) pages; skips /source/defunct/*.
+ * SYNC_LIMIT>0 caps the count; INCLUDE_DEFUNCT=1 also pulls defunct pages.
  */
 import {
   DATA_PATH,
   GAP_MS,
+  INCLUDE_DEFUNCT,
   SYNC_LIMIT,
   ZIYUANZU_SITEMAP,
   domainOf,
@@ -29,11 +31,14 @@ async function fetchText(url) {
 function parseSourceUrls(sitemapXml) {
   return [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)]
     .map((m) => m[1].trim())
-    .filter((u) => /\/source\/[a-zA-Z0-9\-]+\/?$/.test(u));
+    .filter((u) => {
+      if (/\/source\/defunct\//i.test(u)) return INCLUDE_DEFUNCT;
+      return /\/source\/[a-zA-Z0-9\-]+\/?$/.test(u);
+    });
 }
 
 function slugFromUrl(url) {
-  const m = url.match(/\/source\/([a-zA-Z0-9\-]+)\/?$/);
+  const m = url.match(/\/source\/(?:defunct\/)?([a-zA-Z0-9\-]+)\/?$/);
   return m ? m[1] : `src-${Date.now()}`;
 }
 
@@ -46,29 +51,55 @@ function nameFromPage(html, slug) {
 }
 
 function extractApis(html) {
-  const found = [...html.matchAll(/https?:\/\/[a-zA-Z0-9.\-_/]+(?:api\.php[^\s"'<>]*|provide\/vod[^\s"'<>]*)/gi)]
-    .map((m) => m[0].replace(/[),.;]+$/, ''));
+  const patterns = [
+    /https?:\/\/[a-zA-Z0-9.\-_/]+(?:api\.php[^\s"'<>]*|provide\/vod[^\s"'<>]*)/gi,
+    /https?:\/\/[a-zA-Z0-9.\-_/]+\/api\/json\.php[^\s"'<>]*/gi,
+    /https?:\/\/[a-zA-Z0-9.\-_/]+\/api\.php[^\s"'<>]*/gi,
+  ];
+  const found = [];
+  for (const re of patterns) {
+    for (const m of html.matchAll(re)) found.push(m[0].replace(/[),.;]+$/, ''));
+  }
   const uniq = [];
   const seen = new Set();
   for (const raw of found) {
-    if (/example\.com/i.test(raw)) continue;
+    if (/example\.com|ziyuanzu\.com/i.test(raw)) continue;
     const n = normalizeApi(raw);
     if (seen.has(n)) continue;
     seen.add(n);
     uniq.push(n);
   }
+  // Prefer MacCMS provide/vod style when multiple candidates exist
+  uniq.sort((a, b) => {
+    const score = (u) => (/provide\/vod/i.test(u) ? 0 : /api\.php/i.test(u) ? 1 : 2);
+    return score(a) - score(b);
+  });
   return uniq;
 }
 
-function blankHistory() {
-  return [];
+function guessCms(api) {
+  if (/provide\/vod/i.test(api)) return 'maccms10';
+  if (/json\.php/i.test(api)) return 'jsonapi';
+  return 'maccms10';
+}
+
+function ensureCms(data) {
+  if (!Array.isArray(data.cms)) data.cms = [];
+  if (!data.cms.some((c) => c.code === 'jsonapi')) {
+    data.cms.push({
+      type: '通用 JSON API',
+      code: 'jsonapi',
+      param: '',
+      tip: '直接使用接口地址，按站点文档接入',
+    });
+  }
 }
 
 function makeApiEntry({ id, name, api, site, source }) {
   return {
     id,
     name,
-    cms: 'maccms10',
+    cms: guessCms(api),
     contributor: '@ziyuanzu',
     api,
     domain: domainOf(api),
@@ -80,7 +111,7 @@ function makeApiEntry({ id, name, api, site, source }) {
     categories: [],
     restricted: false,
     note: 'synced from ziyuanzu.com',
-    history: blankHistory(),
+    history: [],
   };
 }
 
@@ -90,13 +121,16 @@ async function main() {
     return;
   }
 
-  console.log(`Sync ziyuanzu sources · limit=${SYNC_LIMIT}`);
+  const limitLabel = SYNC_LIMIT > 0 ? SYNC_LIMIT : 'all';
+  console.log(`Sync ziyuanzu sources · limit=${limitLabel} defunct=${INCLUDE_DEFUNCT ? 'yes' : 'no'}`);
   const sitemap = await fetchText(ZIYUANZU_SITEMAP);
   const sourceUrls = parseSourceUrls(sitemap);
-  console.log(`sitemap sources: ${sourceUrls.length}`);
+  console.log(`sitemap active sources: ${sourceUrls.length}`);
 
-  const picked = sourceUrls.slice(0, Math.max(1, SYNC_LIMIT));
+  const picked = SYNC_LIMIT > 0 ? sourceUrls.slice(0, SYNC_LIMIT) : sourceUrls;
   const synced = [];
+  let skipped = 0;
+  let failed = 0;
 
   for (let i = 0; i < picked.length; i++) {
     const pageUrl = picked[i];
@@ -105,6 +139,7 @@ async function main() {
       const html = await fetchText(pageUrl);
       const apis = extractApis(html);
       if (!apis.length) {
+        skipped += 1;
         console.log(`  skip ${slug} (no api)`);
       } else {
         const api = apis[0];
@@ -119,18 +154,19 @@ async function main() {
         console.log(`  ok   ${slug} -> ${api}`);
       }
     } catch (err) {
+      failed += 1;
       console.log(`  fail ${slug}: ${err.message}`);
     }
     if (i < picked.length - 1) await sleep(GAP_MS);
   }
 
   const data = readData();
+  ensureCms(data);
   const byApi = new Map(data.apis.map((a) => [normalizeApi(a.api), a]));
   const byId = new Map(data.apis.map((a) => [a.id, a]));
   let added = 0;
   let updated = 0;
 
-  // Drop demo example.com entries once we have real sync data
   if (synced.length) {
     const before = data.apis.length;
     data.apis = data.apis.filter((a) => !/example-\d+\.com|api\.example\.com/i.test(a.api));
@@ -148,6 +184,7 @@ async function main() {
       existing.domain = domainOf(key);
       existing.site = item.site;
       existing.source = item.source;
+      existing.cms = guessCms(key);
       if (!existing.contributor) existing.contributor = '@ziyuanzu';
       updated += 1;
     } else {
@@ -160,7 +197,10 @@ async function main() {
   }
 
   writeData(data);
-  console.log(`sync done · added=${added} updated=${updated} total=${data.apis.length} -> ${DATA_PATH}`);
+  console.log(
+    `sync done · pages=${picked.length} ok=${synced.length} skip=${skipped} fail=${failed} `
+    + `added=${added} updated=${updated} total=${data.apis.length} -> ${DATA_PATH}`,
+  );
 }
 
 main().catch((err) => {

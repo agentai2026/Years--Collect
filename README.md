@@ -45,9 +45,10 @@ node scripts/monitor.mjs
 
 | 变量 | 说明 |
 |------|------|
-| `SYNC_LIMIT` | 同步源上限（默认 60） |
+| `SYNC_LIMIT` | 同步数量上限；`0` 表示同步全部活跃站（默认） |
 | `ARCHIVE_KEEP` | 归档保留份数（默认 120） |
 | `SKIP_SYNC=1` | 跳过同步 |
+| `INCLUDE_DEFUNCT=1` | 同时同步 `/source/defunct/` 失效站（默认不同步） |
 
 工作流：[Monitor endpoints](https://github.com/agentai2026/Years--Collect/actions/workflows/monitor.yml)
 
