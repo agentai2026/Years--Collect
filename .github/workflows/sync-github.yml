@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      GITHUB_SYNC_LIMIT: "40"
+      GITHUB_SYNC_LIMIT: "100"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

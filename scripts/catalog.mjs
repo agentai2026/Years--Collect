@@ -4,6 +4,7 @@
 import {
   DATA_PATH,
   domainOf,
+  isPlausibleCollectApi,
   normalizeApi,
   readData,
   writeData,
@@ -51,8 +52,9 @@ export function makeApiEntry({ id, name, api, site = '', source = '', contributo
 }
 
 export function preferCollectApi(apis) {
-  const list = [...new Set(apis.map(normalizeApi))]
-    .filter((a) => a && !/localhost|127\.0\.0\.1|example\.com|yszzq\.com|ziyuanzu\.com/i.test(a));
+  const list = [...new Set((apis || []).map(normalizeApi))]
+    .filter((a) => a && isPlausibleCollectApi(a))
+    .filter((a) => !/yszzq\.com|ziyuanzu\.com/i.test(a));
   list.sort((a, b) => score(b) - score(a));
   return list[0] || null;
 }
@@ -85,7 +87,7 @@ export function mergeEntries(entries, { dropDemo = true } = {}) {
 
   for (const item of entries) {
     const key = normalizeApi(item.api);
-    if (!key) continue;
+    if (!key || !isPlausibleCollectApi(key)) continue;
     const existing = byApi.get(key) || byId.get(item.id);
     if (existing) {
       existing.name = item.name || existing.name;

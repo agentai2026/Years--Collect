@@ -179,21 +179,67 @@ export function upsertHistory(history, entry) {
 
 export function normalizeApi(url) {
   try {
-    const u = new URL(url.trim());
+    let raw = String(url || '').trim();
+    // drop trailing junk often copied from markdown/json
+    raw = raw.replace(/[,;，。`'"》）)\]]+$/g, '');
+    raw = raw.split(/,|，|%E8%A7%A3%E6%9E%90/)[0];
+    const u = new URL(raw);
     u.hash = '';
     let path = u.pathname;
-    // keep .php endpoints without forced trailing slash
-    if (!/\.php$/i.test(path) && !path.endsWith('/')) path += '/';
-    if (/\.php\/$/i.test(path)) path = path.slice(0, -1);
+    // MacCMS roots: collapse to .../provide/vod/
+    if (/provide\/vod/i.test(path)) {
+      path = path.replace(/(provide\/vod).*$/i, '$1/');
+      u.search = '';
+    } else {
+      if (!/\.php$/i.test(path) && !path.endsWith('/')) path += '/';
+      if (/\.php\/$/i.test(path)) path = path.slice(0, -1);
+      // drop ephemeral probe/query params on collect roots
+      if (/[?&]ac=/i.test(u.search)) u.search = '';
+    }
     return `${u.origin}${path}${u.search}`;
   } catch {
-    return url.trim();
+    return '';
+  }
+}
+
+/** Reject placeholders / broken strings discovered in TVBox dumps */
+export function isPlausibleCollectApi(url) {
+  const key = normalizeApi(url);
+  if (!key) return false;
+  try {
+    const u = new URL(key);
+    const host = u.hostname.toLowerCase();
+    if (!host || host === 'localhost') return false;
+    if (/^\d+\.\d+\.\d+\.\d+$/.test(host) && host.startsWith('127.')) return false;
+    if (
+      /^(xxx\.com|example\.com|example\.org|example\.invalid|test\.com)$/i.test(host) ||
+      /^your-/i.test(host) ||
+      /\.example$/i.test(host) ||
+      /maccms\.cf$/i.test(host) ||
+      host === 'wabc.ml' ||
+      host === 'api.example.com'
+    ) {
+      return false;
+    }
+    if (/demo\.|localhost|127\.0\.0\.1|your-maccms|xxx\.com|example\.(com|org|invalid)/i.test(key)) return false;
+    let decoded = key;
+    try {
+      decoded = decodeURIComponent(key);
+    } catch {
+      /* keep */
+    }
+    if (/[,%\s`]|解析|）|\)\s*$/i.test(decoded.replace(/^https?:\/\//, ''))) return false;
+    if (!/(provide\/vod|\/api\.php|json\.php|\/inc\/api\.php)/i.test(key)) return false;
+    if (/\/from\//i.test(u.pathname)) return false;
+    return true;
+  } catch {
+    return false;
   }
 }
 
 export function domainOf(url) {
   try {
-    return new URL(url).hostname;
+    return new URL(normalizeApi(url) || url).hostname;
   } catch {
     return '';
   }
