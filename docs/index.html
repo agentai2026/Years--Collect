@@ -4,13 +4,23 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>采集站信号台 · 接口监控目录</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20260806h">
+<link rel="stylesheet" href="style.css?v=20260806i">
 </head>
 <body data-page="index">
 <header class="mast" id="hdr"></header>
 <div class="ticker" id="tick"></div>
 
 <div class="container radar-wrap">
+  <div class="hero" style="border:0;padding:0">
+    <div class="hero-kicker">Signal Desk · No.<span id="heroIssue">—</span></div>
+    <h1>活着的接口，<br>才有<span class="hl">信号</span></h1>
+    <p class="sub">每 2 小时全站探测，连续 30 天留档。绿的在岗、黄的告病、红的失联——点开任意一家，速度、可用率、好心人署名，全部可查。</p>
+    <div class="hero-cta">
+      <a class="cta" href="#catalog">翻阅本期目录</a>
+      <a class="cta alt" href="submit.html">投稿你的接口</a>
+    </div>
+    <div class="hero-quote">「接口会跑路，<br>记录不会。」<span>—— 信号台编辑部</span></div>
+  </div>
   <div>
     <div class="radar-box">
       <canvas id="radar"></canvas>
@@ -22,16 +32,6 @@
       <span><i style="background:var(--red)"></i>离线</span>
       <span>悬停看读数 · 点击进详情</span>
     </div>
-  </div>
-  <div class="hero" style="border:0;padding:0">
-    <div class="hero-kicker">Signal Desk · No.<span id="heroIssue">—</span></div>
-    <h1>活着的接口，<br>才有<span class="hl">信号</span></h1>
-    <p class="sub">每 2 小时全站探测，连续 30 天留档。绿的在岗、黄的告病、红的失联——点开任意一家，速度、可用率、好心人署名，全部可查。</p>
-    <div class="hero-cta">
-      <a class="cta" href="#catalog">翻阅本期目录</a>
-      <a class="cta alt" href="submit.html">投稿你的接口</a>
-    </div>
-    <div class="hero-quote">「接口会跑路，<br>记录不会。」<span>—— 信号台编辑部</span></div>
   </div>
 </div>
 
@@ -95,6 +95,6 @@
 </div>
 
 <footer class="site-foot" id="ftr"></footer>
-<script src="app.js?v=20260806h"></script>
+<script src="app.js?v=20260806i"></script>
 </body>
 </html>
