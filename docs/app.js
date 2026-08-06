@@ -140,14 +140,33 @@ function pageIndex(DATA, apis) {
       <span class="nm"><a href="detail.html?id=${a.id}">${a.name}</a></span>
       <span class="ms">${a.s.avg}ms</span></li>`).join('');
 
+  /* 首页目录只展示最好用的 10 个：在线优先 → 可用率高 → 均速快 */
+  const best = [...visible]
+    .filter(a => a.s.st === 'ok')
+    .sort((a, b) => (b.s.up - a.s.up) || ((a.s.avg ?? 9e9) - (b.s.avg ?? 9e9)))
+    .slice(0, 10);
+  const bestIds = new Set(best.map(a => a.id));
+  // 在线不足 10 个时，用高可用率接口补齐
+  if (best.length < 10) {
+    for (const a of [...visible].sort((a, b) => (b.s.up - a.s.up) || ((a.s.avg ?? 9e9) - (b.s.avg ?? 9e9)))) {
+      if (bestIds.has(a.id)) continue;
+      best.push(a);
+      bestIds.add(a.id);
+      if (best.length >= 10) break;
+    }
+  }
+
+  const title = document.querySelector('#catalog');
+  if (title) title.childNodes[0].textContent = '精选接口 ';
+
   let q = '', f = 'all', fCms = 'all', fCat = 'all', showRes = false;
   const rows = () => {
-    let list = apis.filter(a => showRes || !a.restricted);
+    let list = best.slice();
     if (f !== 'all') list = list.filter(a => a.s.st === f);
     if (fCms !== 'all') list = list.filter(a => (DATA.cms.find(c => c.code === a.cms)?.type || a.cms) === fCms);
     if (fCat !== 'all') list = list.filter(a => (a.tags || []).includes(fCat));
     if (q) list = list.filter(a => (a.name + a.api + a.domain + a.cms + (a.tags || []).join('') + (a.categories || []).join('')).toLowerCase().includes(q));
-    $('#cnt').textContent = `${list.length} 个接口`;
+    $('#cnt').textContent = `最好用 ${list.length} / 10`;
     $('#tbody').innerHTML = list.length ? list.map(a => `
       <tr>
         <td class="name"><a href="detail.html?id=${a.id}">${a.name}</a>${a.restricted ? ' <span class="st mute"><i></i>受限</span>' : ''}</td>
