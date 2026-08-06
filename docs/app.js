@@ -3,7 +3,11 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
 function statOf(a) {
-  const h = a.history, last = h[h.length - 1];
+  const h = Array.isArray(a.history) ? a.history : [];
+  if (!h.length) {
+    return { st: 'warn', label: '待测', up: 0, avg: null, lastMs: null };
+  }
+  const last = h[h.length - 1] || {};
   const up = h.filter(x => x.ok).length / h.length;
   const ms = h.filter(x => x.ok && x.ms).map(x => x.ms);
   const avg = ms.length ? Math.round(ms.reduce((p, c) => p + c, 0) / ms.length) : null;
@@ -20,9 +24,11 @@ function copyText(t, btn) {
   });
 }
 function spark(h) {
-  return `<div class="spark" title="近30日可用率 ${(h.filter(x=>x.ok).length/30*100).toFixed(1)}%">` + h.map(x => {
+  const hist = Array.isArray(h) ? h : [];
+  if (!hist.length) return `<div class="spark" title="暂无巡检记录"></div>`;
+  return `<div class="spark" title="近${hist.length}日可用率 ${(hist.filter(x=>x.ok).length/hist.length*100).toFixed(1)}%">` + hist.map(x => {
     if (!x.ok) return `<i class="fail" style="height:100%"></i>`;
-    const pct = Math.max(12, Math.min(100, 100 - (x.ms - 150) / 18));
+    const pct = Math.max(12, Math.min(100, 100 - ((x.ms || 0) - 150) / 18));
     return `<i class="${x.ms > 1200 ? 'warn' : ''}" style="height:${pct}%"></i>`;
   }).join('') + `</div>`;
 }
