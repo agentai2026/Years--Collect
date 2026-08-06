@@ -3,7 +3,7 @@
     "years-collect-monitor": {
       "command": "node",
       "args": [
-        "mcp_server.mjs"
+        "mcp/mcp_server.mjs"
       ]
     }
   }
