@@ -89,7 +89,7 @@ async function boot() {
       <span class="mono">第 ${issueNo(DATA.updated)} 期</span>
       <span class="mono">巡检日期 ${DATA.updated}</span>
       <span class="mono">收录 ${DATA.apis.length} 个接口</span>
-      <span class="mono">每日 06:00 更新</span>
+      <span class="mono">每 2 小时巡检</span>
     </div>
   </div>
   <div class="container foot-base">

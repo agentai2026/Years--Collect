@@ -1,68 +1,93 @@
 ﻿# 采集站信号台 · Years--Collect
 
-纯静态的采集接口监控目录：每日巡检状态、30 日可用率、一键配置下载与 CMS 对接教程。
+纯静态的采集接口监控目录：定时巡检、30 日可用率、历史快照、一键配置、CMS 对接教程，并提供 MCP 供 AI 查询。
+
+参考同类项目能力对齐：[mylazily/ziyuanzhan](https://github.com/mylazily/ziyuanzhan)。
 
 ## 在线访问
 
-GitHub Pages：
-
 https://agentai2026.github.io/Years--Collect/
+
+## 功能
+
+- **定时监测**：每 2 小时自动同步 + 探测（可手动触发）
+- **外部同步**：从 [ziyuanzu.com](https://www.ziyuanzu.com/) sitemap 拉取采集接口写入 `data.json`（默认最多 60 个，可用 `SYNC_LIMIT` 调整）
+- **实时数据**：HTTP 状态、响应时间、在线/离线、资源量
+- **历史存档**：`data/latest.json` + `data/archives/monitor_*.json`（默认保留 120 份）
+- **静态页面**：信号台 UI（雷达、目录、投稿、教程）+ GitHub Pages
+- **MCP 服务器**：给 Cursor / Claude 等查询在线、离线、最快接口与统计
 
 ## 本地预览
 
-本站通过 `fetch('data.json')` 加载数据，**不能直接双击打开 HTML**，需要本地 HTTP 服务：
+本站通过 `fetch('data.json')` 加载数据，**不能直接双击打开 HTML**：
 
 ```bash
-# PowerShell（Python 可用时）
-python -m http.server 8080
-
-# 或 Node
 npx --yes serve -p 8080
 ```
 
-浏览器打开：http://localhost:8080/
+打开 http://localhost:8080/
 
-## 定时巡检
-
-GitHub Actions 每天 **北京时间 06:00** 自动探测 `data.json` 中全部接口，回写当日 `history`（保留 30 天）并提交到 `main`，Pages 随之更新。
+## 巡检与同步
 
 | 项 | 说明 |
 |----|------|
 | 工作流 | [Monitor endpoints](https://github.com/agentai2026/Years--Collect/actions/workflows/monitor.yml) |
-| 脚本 | `scripts/monitor.mjs` |
-| 手动触发 | Actions → Monitor endpoints → Run workflow |
-
-本地手动跑一次：
+| 频率 | 每 2 小时（`0 */2 * * *` UTC） |
+| 同步 | `node scripts/sync.mjs` |
+| 探测 | `node scripts/monitor.mjs` |
+| 跳过同步 | `SKIP_SYNC=1 node scripts/monitor.mjs` |
 
 ```bash
+# 完整跑一遍（同步 + 探测 + 写归档）
+node scripts/sync.mjs
 node scripts/monitor.mjs
 ```
 
-当前演示数据里的 `api.example-*.com` 无法真正连通，巡检会记为离线；把 `data.json` 里的 `api` 换成真实地址后即可正常出绿。
+环境变量：
+
+- `SYNC_LIMIT`：同步源数量上限（默认 60）
+- `ARCHIVE_KEEP`：归档保留份数（默认 120）
+- `SKIP_SYNC=1`：工作流/本地跳过同步
+
+## MCP
+
+```bash
+node mcp_server.mjs
+```
+
+配置示例见 [`mcp.json`](mcp.json)。可用工具：
+
+- `get_all_resources` / `get_online_resources` / `get_offline_resources`
+- `get_statistics` / `search_resource` / `get_fastest_resources`
 
 ## 目录结构
 
-| 文件 | 说明 |
-|------|------|
-| `index.html` | 首页：雷达、今日信号、接口目录 |
-| `detail.html` | 接口详情 |
-| `category.html` | 内容分类 |
-| `download.html` | 一键配置下载 |
-| `guide.html` | CMS 对接教程 |
-| `submit.html` | 投稿说明 |
-| `data.json` | 全部接口与巡检数据 |
-| `scripts/monitor.mjs` | 定时巡检脚本 |
-| `app.js` / `style.css` | 逻辑与样式 |
+```
+Years--Collect/
+├── .github/workflows/monitor.yml
+├── data/
+│   ├── latest.json
+│   └── archives/monitor_*.json
+├── scripts/
+│   ├── lib.mjs
+│   ├── sync.mjs
+│   └── monitor.mjs
+├── mcp_server.mjs
+├── mcp.json
+├── data.json
+├── index.html / detail.html / ...
+└── app.js / style.css
+```
 
 ## 投稿
-
-通过 GitHub Issue 投稿新接口或报障：
 
 - [新接口投稿](https://github.com/agentai2026/Years--Collect/issues/new?template=submit.md)
 - [接口失效报障](https://github.com/agentai2026/Years--Collect/issues/new?template=bug.md)
 
-维护者审核后合并进 `data.json`。
+## 免责声明
 
-## 技术说明
+本项目为第三方开源监测与目录工具；从 ziyuanzu.com 同步的数据仅供学习与技术交流，请自行确认接口授权与内容合规。与 ziyuanzu.com 官方无关。
 
-无后端、无构建步骤。部署到任意静态托管即可；本仓库使用 GitHub Pages（`main` 分支根目录）。巡检由 GitHub Actions 定时写入 `data.json`。
+## License
+
+MIT

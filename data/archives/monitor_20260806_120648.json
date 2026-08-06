@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-08-06 12:06:38",
+  "source": "https://github.com/agentai2026/Years--Collect",
+  "resources": [
+    {
+      "id": "zy-360ziyuanzhan-1",
+      "name": "360资源站",
+      "link": "https://360zy.com/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/360ziyuanzhan-1",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 68249,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://360zy.com/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 2084,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-ziyuanzhan-3",
+      "name": "鸭鸭资源站",
+      "link": "https://cj.yayazy.net/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/ziyuanzhan-3",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 119637,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://cj.yayazy.net/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 788,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-guangsuziyuanzhan-4",
+      "name": "光速资源站",
+      "link": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/guangsuziyuanzhan-4",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 110221,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://api.guangsuapi.com/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 943,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-tianyingshiziyuanzhan-5",
+      "name": "天涯影视资源站",
+      "link": "https://tyyszyapi.com/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/tianyingshiziyuanzhan-5",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 68796,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://tyyszyapi.com/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 867,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-ziyuanzhan-6",
+      "name": "豪华资源站",
+      "link": "https://haohuazy.com/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/ziyuanzhan-6",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 108897,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://haohuazy.com/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 1308,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-xinjiziyuanzhan-9",
+      "name": "新极品资源站",
+      "link": "https://jipinvip1.com/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/xinjiziyuanzhan-9",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 54871,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://jipinvip1.com/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 1060,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-wuziyuanzhan-11",
+      "name": "无尽资源站",
+      "link": "https://api.wujinapi.me/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/wuziyuanzhan-11",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 117458,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://api.wujinapi.me/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 535,
+        "is_alive": true,
+        "error": null
+      }
+    },
+    {
+      "id": "zy-ziyuanzhan-13",
+      "name": "暴风资源站",
+      "link": "https://bfzyapi.com/api.php/provide/vod/",
+      "site": "https://www.ziyuanzu.com/source/ziyuanzhan-13",
+      "description": "synced from ziyuanzu.com",
+      "cms": "maccms10",
+      "total": 153195,
+      "uptime": "100.0%",
+      "health": {
+        "url": "https://bfzyapi.com/api.php/provide/vod/?ac=videolist",
+        "status_code": 200,
+        "response_time_ms": 978,
+        "is_alive": true,
+        "error": null
+      }
+    }
+  ],
+  "stats": {
+    "total": 8,
+    "alive": 8,
+    "offline": 0,
+    "online_rate": 100
+  }
+}

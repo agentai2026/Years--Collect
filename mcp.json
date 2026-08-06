@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "years-collect-monitor": {
+      "command": "node",
+      "args": [
+        "mcp_server.mjs"
+      ]
+    }
+  }
+}

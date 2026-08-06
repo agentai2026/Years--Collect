@@ -2,8 +2,8 @@ name: Monitor endpoints
 
 on:
   schedule:
-    # 06:00 Asia/Shanghai
-    - cron: "0 22 * * *"
+    # every 2 hours (UTC), same cadence as ziyuanzhan
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,6 +16,10 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SYNC_LIMIT: "60"
+      ARCHIVE_KEEP: "120"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,18 +29,22 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Probe APIs and update data.json
+      - name: Sync sources from ziyuanzu.com
+        continue-on-error: true
+        run: node scripts/sync.mjs
+
+      - name: Probe APIs and write archives
         run: node scripts/monitor.mjs
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data.json; then
-            echo "No data.json changes."
+          git add data.json data/
+          if git diff --cached --quiet; then
+            echo "No data changes."
             exit 0
           fi
           DAY=$(node -e "console.log(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()))")
-          git add data.json
           git commit -m "data: update endpoint status ${DAY}"
           git push
