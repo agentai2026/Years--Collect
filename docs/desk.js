@@ -545,7 +545,7 @@ function pageDetail(DATA) {
           <div class="ident-cell"><div class="k">响应时间</div><div class="v mono">${last.ok ? last.ms + ' ms' : '—'}</div></div>
           <div class="ident-cell"><div class="k">资源数量</div><div class="v mono">${a.total.toLocaleString()}</div></div>
           <div class="ident-cell"><div class="k">接口域名</div><div class="v mono">${a.domain}</div></div>
-          <div class="ident-cell"><div class="k">进入官网</div><div class="v">${a.site ? `<a href="${a.site}" target="_blank" rel="noopener">${a.domain || '打开站点'}</a>` : (a.domain ? `<a href="https://${a.domain}" target="_blank" rel="noopener">${a.domain}</a>` : '—')}</div></div>
+          <div class="ident-cell"><div class="k">进入官网</div><div class="v">${(() => { try { const u = new URL(a.api); return `<a href="${u.origin}/" target="_blank" rel="noopener">${u.host}</a>`; } catch { return a.domain ? `<a href="https://${a.domain}/" target="_blank" rel="noopener">${a.domain}</a>` : '—'; } })()}</div></div>
           <div class="ident-cell"><div class="k">好心人</div><div class="v">${a.contributor} 投稿维护</div></div>
         </div>
         <div class="copy-row" style="margin-top:14px"><code>${a.api}</code><button class="btn" data-c="${a.api}">复制根地址</button></div>
