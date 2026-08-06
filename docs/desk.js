@@ -17,6 +17,15 @@ function statOf(a) {
   return { st, label, up, avg, lastMs: last.ok ? last.ms : null };
 }
 function stBadge(s) { return `<span class="st ${s.st}"><i></i>${s.label}</span>`; }
+/** Compact category summary for table cells */
+function catSummary(a) {
+  const cats = ((a.tags && a.tags.length) ? a.tags : (a.categories || []))
+    .filter(t => t && t !== '受限内容');
+  if (!cats.length) return '—';
+  const show = cats.slice(0, 3);
+  const extra = cats.length > 3 ? ` +${cats.length - 3}` : '';
+  return `${show.join(' · ')}${extra}`;
+}
 function copyText(t, btn) {
   navigator.clipboard.writeText(t).then(() => {
     const old = btn.textContent; btn.textContent = '已复制 ✓'; btn.classList.add('done');
@@ -207,7 +216,7 @@ function pageIndex(DATA, apis) {
         <td class="mono">${a.s.lastMs ? a.s.lastMs + 'ms' : '—'}</td>
         <td><div class="bar ${a.s.st}"><b style="width:${(a.s.up * 100).toFixed(0)}%"></b></div></td>
         <td class="mono">${(a.s.up * 100).toFixed(1)}%</td>
-        <td>${DATA.cms.find(c => c.code === a.cms)?.type || a.cms}</td>
+        <td title="${((a.categories || []).filter(t => t !== '受限内容').join('、')) || ''}">${catSummary(a)}</td>
         <td>${a.contributor}</td>
       </tr>`).join('') : `<tr><td colspan="7"><div class="empty">没有匹配的接口，换个条件试试</div></td></tr>`;
   };
