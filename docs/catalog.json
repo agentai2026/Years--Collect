@@ -4619,7 +4619,7 @@
   {
    "id": "ys-243",
    "name": "无水印资源网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://api.wsyzy.net/api.php/provide/vod/from/wsym3u8/at/xml/",
    "domain": "api.wsyzy.net",
@@ -4797,7 +4797,7 @@
   {
    "id": "ys-237",
    "name": "牛牛资源网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://api.niuniuzy.me/api.php/provide/vod/from/nnm3u8/at/xml/",
    "domain": "api.niuniuzy.me",
@@ -4989,7 +4989,7 @@
   {
    "id": "ys-235",
    "name": "OK资源采集网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "http://api.okzyw.net/api.php/provide/vod/from/okm3u8/at/xml/",
    "domain": "api.okzyw.net",
@@ -5208,7 +5208,7 @@
   {
    "id": "ys-221",
    "name": "天涯影视资源网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://tyyszyapi.com/api.php/provide/vod/at/xml/?ac=list",
    "domain": "tyyszyapi.com",
@@ -5304,7 +5304,7 @@
   {
    "id": "ys-220",
    "name": "爱奇艺资源站",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://www.iqiyizyapi.com/api.php/provide/vod/at/xml/",
    "domain": "www.iqiyizyapi.com",
@@ -5892,7 +5892,7 @@
   {
    "id": "ys-181",
    "name": "魔都动漫资源采集网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://www.mdzyapi.com/api.php/provide/vod/at/xml/",
    "domain": "www.mdzyapi.com",
@@ -5994,7 +5994,7 @@
   {
    "id": "ys-176",
    "name": "鸭鸭（丫丫）资源网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://cj.yayazy.net/api.php/provide/vod/from/yym3u8/at/xml/",
    "domain": "cj.yayazy.net",
@@ -6315,7 +6315,7 @@
   {
    "id": "ys-149",
    "name": "优质资源库",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://api.yzzy-api.com/inc/api.php?ac=list",
    "domain": "api.yzzy-api.com",
@@ -6506,7 +6506,7 @@
   {
    "id": "ys-147",
    "name": "大地资源",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://dadiapi.com/api.php/provide/vod/",
    "domain": "dadiapi.com",
@@ -6595,7 +6595,7 @@
   {
    "id": "ys-140",
    "name": "新浪资源采集网",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/at/xml/",
    "domain": "api.xinlangapi.com",
@@ -6660,7 +6660,7 @@
   {
    "id": "ys-138",
    "name": "金鹰资源网苹果CMS",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://jyzyapi.com/provide/vod/at/xml/",
    "domain": "jyzyapi.com",
@@ -6787,7 +6787,7 @@
   {
    "id": "ys-123",
    "name": "百度资源",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://api.apibdzy.com/api.php/provide/vod/at/xml/",
    "domain": "api.apibdzy.com",
@@ -6878,7 +6878,7 @@
   {
    "id": "ys-119",
    "name": "红牛资源采集地址",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://www.hongniuzy2.com/api.php/provide/vod/at/xml/",
    "domain": "www.hongniuzy2.com",
