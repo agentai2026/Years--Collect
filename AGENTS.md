@@ -1,34 +1,29 @@
 # AGENTS.md
 
-Guidance for coding agents working on Years--Collect.
+## Automations (5)
 
-## Layout
+1. `sync-yszzq.mjs` ← yszzq.com API pages  
+2. `sync-ziyuanzu.mjs` ← ziyuanzu.com active sources  
+3. `sync-github.mjs` ← GitHub code search (`GH_SEARCH_TOKEN` recommended)  
+4. `monitor.mjs` ← health probe + archives  
+5. `classify.mjs` ← categories / CMS type  
 
-| Path | Role |
-|------|------|
-| `docs/` | **Pages** — static site + `docs/catalog.json` (GitHub Pages `/docs`) |
-| `scripts/` | **Automation** — `sync.mjs`, `monitor.mjs`, shared `lib.mjs` |
-| `.github/workflows/` | **Automation** — scheduled probe / commit |
-| `data/` | **Probe snapshots** — `latest.json`, `archives/` |
-| `mcp/` | **MCP** — `mcp_server.mjs`, `mcp.json` |
+Shared merge helpers: `scripts/catalog.mjs`  
+Shared HTTP/history helpers: `scripts/lib.mjs`  
+Catalog path: `docs/catalog.json`
 
 ## Do
 
-- Keep the frontend driven by `docs/catalog.json` (`apis[].history` daily samples).
-- Write run archives only under `data/`.
-- Prefer Node built-ins for monitor/sync; keep `SYNC_LIMIT` modest.
-
-## Don't
-
-- Don't put HTML outside `docs/` (Pages source is `/docs`).
-- Don't commit secrets.
-- Don't scrape more than `SYNC_LIMIT` without raising the workflow timeout.
+- Keep frontend reading `docs/catalog.json`.
+- Prefer upsert-by-API-URL when merging sources.
+- Keep Actions schedules staggered to reduce push conflicts.
 
 ## Commands
 
 ```bash
-npx --yes serve -p 8080 docs
-node scripts/sync.mjs
+node scripts/sync-yszzq.mjs
+node scripts/sync-ziyuanzu.mjs
+node scripts/sync-github.mjs
 node scripts/monitor.mjs
-node mcp/mcp_server.mjs
+node scripts/classify.mjs
 ```

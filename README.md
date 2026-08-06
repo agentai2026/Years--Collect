@@ -1,64 +1,48 @@
 ﻿# 采集站信号台 · Years--Collect
 
-纯静态的采集接口监控目录：定时巡检、30 日可用率、历史快照、一键配置、CMS 对接教程，并提供 MCP 供 AI 查询。
+纯静态的采集接口监控目录：多源自动同步、可用性探测、分类识别、历史快照，并提供 MCP 查询。
 
-## 目录说明
+## 五条自动化
 
-| 目录 / 文件 | 分类 | 说明 |
-|-------------|------|------|
-| [`docs/`](docs/) | **页面** | 站点 HTML / CSS / JS，以及页面读取的 `catalog.json`（GitHub Pages 发布目录） |
-| [`scripts/`](scripts/) | **自动化** | 同步源、探测接口脚本 |
-| [`.github/workflows/`](.github/workflows/) | **自动化** | 每 2 小时定时跑同步 + 探测并提交 |
-| [`data/`](data/) | **巡检数据** | 每次探测的 `latest.json` 与 `archives/monitor_*.json` 快照 |
-| [`mcp/`](mcp/) | **MCP** | AI 查询服务器与配置示例 |
-| `README.md` / `AGENTS.md` / `LICENSE` | **文档** | 说明与协议 |
+| # | 工作流 | 脚本 | 作用 | 默认频率 |
+|---|--------|------|------|----------|
+| 1 | [Sync yszzq.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-yszzq.yml) | `scripts/sync-yszzq.mjs` | 从 [yszzq.com](https://www.yszzq.com/) 采集接口页入库 | 每 6 小时 |
+| 2 | [Sync ziyuanzu.com](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-ziyuanzu.yml) | `scripts/sync-ziyuanzu.mjs` | 从 [ziyuanzu.com](https://www.ziyuanzu.com/) 活跃源站入库 | 每 6 小时 |
+| 3 | [Sync GitHub sources](https://github.com/agentai2026/Years--Collect/actions/workflows/sync-github.yml) | `scripts/sync-github.mjs` | 在 GitHub 代码里搜索 `provide/vod` 等接口并入库 | 每天 |
+| 4 | [Health probe](https://github.com/agentai2026/Years--Collect/actions/workflows/health-probe.yml) | `scripts/monitor.mjs` | 检测本项目全部接口是否可用，写 30 日 history + 归档 | 每 2 小时 |
+| 5 | [Classify categories](https://github.com/agentai2026/Years--Collect/actions/workflows/classify-categories.yml) | `scripts/classify.mjs` | 探测各站类型，拉取 `class` 分类写入 `categories`/`tags` | 每 6 小时 |
+
+均可在 Actions 里手动 **Run workflow**。
+
+### GitHub 搜索说明（第 3 条）
+
+跨仓库代码搜索建议在仓库 Secrets 里配置 `GH_SEARCH_TOKEN`（classic PAT，勾选 `public_repo`）。未配置时会回退到 `github.token`，可能搜不到全站代码。
 
 ## 在线访问
 
 https://agentai2026.github.io/Years--Collect/
 
-## 功能
+## 目录说明
 
-- **定时监测**：每 2 小时自动同步 + 探测（可手动触发）
-- **外部同步**：从 [ziyuanzu.com](https://www.ziyuanzu.com/) sitemap 拉取采集接口写入 `docs/catalog.json`
-- **实时数据**：HTTP 状态、响应时间、在线/离线、资源量
-- **历史存档**：`data/latest.json` + `data/archives/monitor_*.json`
-- **静态页面**：`docs/` 信号台 UI + GitHub Pages（`/docs`）
-- **MCP 服务器**：查询在线、离线、最快接口与统计
+| 路径 | 分类 |
+|------|------|
+| `docs/` | 页面 + `catalog.json` |
+| `scripts/` | 自动化脚本 |
+| `.github/workflows/` | 五条 Actions |
+| `data/` | 巡检快照 `latest.json` / `archives/` |
+| `mcp/` | MCP 查询服务 |
 
-## 本地预览
-
-页面在 `docs/`，需起静态服务：
+## 本地命令
 
 ```bash
 npx --yes serve -p 8080 docs
-```
 
-打开 http://localhost:8080/
-
-## 巡检与同步
-
-```bash
-node scripts/sync.mjs
+node scripts/sync-yszzq.mjs
+node scripts/sync-ziyuanzu.mjs
+node scripts/sync-github.mjs
 node scripts/monitor.mjs
+node scripts/classify.mjs
 ```
-
-| 变量 | 说明 |
-|------|------|
-| `SYNC_LIMIT` | 同步数量上限；`0` 表示同步全部活跃站（默认） |
-| `ARCHIVE_KEEP` | 归档保留份数（默认 120） |
-| `SKIP_SYNC=1` | 跳过同步 |
-| `INCLUDE_DEFUNCT=1` | 同时同步 `/source/defunct/` 失效站（默认不同步） |
-
-工作流：[Monitor endpoints](https://github.com/agentai2026/Years--Collect/actions/workflows/monitor.yml)
-
-## MCP
-
-```bash
-node mcp/mcp_server.mjs
-```
-
-配置见 [`mcp/mcp.json`](mcp/mcp.json)。
 
 ## 投稿
 
@@ -67,7 +51,7 @@ node mcp/mcp_server.mjs
 
 ## 免责声明
 
-本项目为第三方开源监测与目录工具；从 ziyuanzu.com 同步的数据仅供学习与技术交流，请自行确认接口授权与内容合规。与 ziyuanzu.com 官方无关。
+本项目为第三方开源监测与目录工具；同步自各公开站点 / GitHub 的数据仅供学习与技术交流，请自行确认接口授权与内容合规。
 
 ## License
 

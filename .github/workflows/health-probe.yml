@@ -1,8 +1,7 @@
-name: Monitor endpoints
+name: "4 · Health probe"
 
 on:
   schedule:
-    # every 2 hours (UTC), same cadence as ziyuanzhan
     - cron: "0 */2 * * *"
   workflow_dispatch:
 
@@ -10,42 +9,28 @@ permissions:
   contents: write
 
 concurrency:
-  group: monitor-endpoints
+  group: health-probe
   cancel-in-progress: false
 
 jobs:
-  monitor:
+  probe:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      # 0 = sync all active sources (skip /source/defunct)
-      SYNC_LIMIT: "0"
       ARCHIVE_KEEP: "120"
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
-
-      - name: Sync sources from ziyuanzu.com
-        continue-on-error: true
-        run: node scripts/sync.mjs
-
-      - name: Probe APIs and write archives
+      - name: Probe all catalog APIs
         run: node scripts/monitor.mjs
-
-      - name: Commit and push if changed
+      - name: Commit results if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/catalog.json data/
-          if git diff --cached --quiet; then
-            echo "No data changes."
-            exit 0
-          fi
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           DAY=$(node -e "console.log(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()))")
           git commit -m "data: update endpoint status ${DAY}"
           git push
