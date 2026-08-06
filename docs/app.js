@@ -1,7 +1,7 @@
 /* legacy shim — loads desk.js */
 (function(){
   var s=document.createElement('script');
-  s.src='desk.js?v=20260806u';
+  s.src='desk.js?v=20260806v';
   s.onerror=function(){console.error('desk.js load failed');};
   document.head.appendChild(s);
 })();

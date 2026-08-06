@@ -475,28 +475,26 @@ function pageCategory(DATA, apis) {
   });
 }
 /* ---------------- 一键配置下载页 ---------------- */
-/** 内容桶：safe=常规（允许伦理） / adult=明确18+ / unknown=不确定 */
+/** 内容桶：safe=常规（允许伦理/港台三级） / adult=有其他成人分类 / unknown=无分类 */
 function contentBucket(a) {
-  /* 伦理/伦理片算常规；其余成人向分类才进 18+ */
+  /* 伦理、港台三级算常规；无码/有码/里番等其它才进 18+ */
   const HARD =
-    /无码|有码|中文字幕|麻豆|里番|情色|色情|成人|禁片|口交|强奸|乱伦|人妻|骑兵|步兵|换脸|女同|男同|制服诱惑|黄网|R18|18\+|AV专|AV片|日本AV|欧美AV|SM调教|港台三级|日韩无码|日本无码|日本有码|亚洲情色|三级/;
-  const isEthics = (c) => /伦理/.test(c) && !HARD.test(String(c).replace(/伦理/g, ''));
+    /无码|有码|中文字幕|麻豆|里番|情色|色情|成人|禁片|口交|强奸|乱伦|人妻|骑兵|步兵|换脸|女同|男同|制服诱惑|黄网|R18|18\+|AV专|AV片|日本AV|欧美AV|SM调教|日韩无码|日本无码|日本有码|亚洲情色|迷奸|毁三观|裸聊|福利姬/;
+  const isSoft = (c) => {
+    const s = String(c || '');
+    if (/伦理/.test(s) && !HARD.test(s.replace(/伦理/g, ''))) return true;
+    if (/港台三级|^三级片$|^三级$/.test(s) && !HARD.test(s.replace(/港台三级|三级片|三级/g, ''))) return true;
+    return false;
+  };
   const ADULT_NAME =
-    /AV资源|色情|成人|里番|伦理站|色站|美少女|X色|搜A|色仓库|黑料|番号|福利站|水乐园|JKUN|老牌X|精品X|杏系|桃花|辣椒|模特资源|彩猫|大地|155|奶香/;
-  const SAFE_TOP = new Set([
-    '电影', '连续剧', '电视剧', '综艺', '动漫', '纪录片', '短剧', '国产剧', '韩剧', '港剧', '日剧', '台剧',
-    '欧美剧', '港澳剧', '泰剧', '动作片', '喜剧片', '爱情片', '科幻片', '恐怖片', '战争片', '剧情片',
-    '动画片', '体育', '体育赛事', '资讯', '爽文短剧', '电影解说', '短剧大全', '电影片', '伦理片', '伦理',
-  ]);
+    /AV资源|色情站|成人站|里番|伦理站|色站|美少女|X色|搜A|色仓库|黑料|番号站|福利站|水乐园|JKUN|老牌X|精品X|杏系|桃花资源|辣椒资源|模特资源|彩猫|大地资源|155资源|奶香|番号资源/;
   const cats = (a.categories || []).filter((c) => c && c !== '受限内容');
-  const tags = (a.tags || []).filter((c) => c !== '受限内容');
-  if (a.restricted || tags.includes('受限内容') || ADULT_NAME.test(a.name || '')) return 'adult';
-  const hard = cats.filter((c) => HARD.test(c) && !isEthics(c));
+  // 下载分流以分类为准，不沿用旧的 restricted 误标
+  if (ADULT_NAME.test(a.name || '')) return 'adult';
+  const hard = cats.filter((c) => HARD.test(c) && !isSoft(c));
   if (hard.length) return 'adult';
   if (!cats.length) return 'unknown';
-  const safeN = cats.filter((c) => SAFE_TOP.has(c) || isEthics(c)).length;
-  if (safeN >= 2) return 'safe';
-  return 'unknown';
+  return 'safe';
 }
 
 function pageDownload(DATA, apis) {
@@ -513,8 +511,8 @@ function pageDownload(DATA, apis) {
   $('#dlCount').innerHTML = `${buckets.all.length}<small> 高可用全部</small>`;
   $('#dlSafe').innerHTML = `${buckets.safe.length}<small> 确认常规</small>`;
   $('#dlAdult').innerHTML = `${buckets.adult.length}<small> 明确 18+</small>`;
-  $('#dlMeta').textContent = `更新时间: ${DATA.updated} · 分类不明未进常规：${buckets.unknown.length} 个`;
-  $('#lead').textContent = `${new Date(DATA.updated).getFullYear()} 苹果CMS 一键采集配置。高可用 ${buckets.all.length} 站；常规 ${buckets.safe.length} 站（允许伦理，不含其他 18+）；18+ ${buckets.adult.length} 站。无分类无法判断的 ${buckets.unknown.length} 站不进常规包。总资源约 ${fmtWan(totalRes)}。`;
+  $('#dlMeta').textContent = `更新时间: ${DATA.updated} · 无分类未进常规：${buckets.unknown.length} 个`;
+  $('#lead').textContent = `${new Date(DATA.updated).getFullYear()} 苹果CMS 一键采集配置。高可用 ${buckets.all.length} 站里：常规 ${buckets.safe.length}（可含伦理/港台三级）、18+ ${buckets.adult.length}（分类含无码/有码等）、未进常规 ${buckets.unknown.length}（无分类）。采集源本身成人站居多，所以常规不会接近全部。总资源约 ${fmtWan(totalRes)}。`;
 
   const preview = buckets.safe.length ? buckets.safe : buckets.all;
   $('#dlPreview').innerHTML = preview.slice(0, 10).map((a) => {
@@ -535,8 +533,8 @@ function pageDownload(DATA, apis) {
   const modal = $('#dlModal');
   const openModal = () => {
     $('#dlOptAll').textContent = `${buckets.all.length} 个高可用`;
-    $('#dlOptSafe').textContent = `${buckets.safe.length} 个 · 可含伦理，不含其他 18+`;
-    $('#dlOptAdult').textContent = `${buckets.adult.length} 个 · 明确成人/受限`;
+    $('#dlOptSafe').textContent = `${buckets.safe.length} 个 · 可含伦理/港台三级`;
+    $('#dlOptAdult').textContent = `${buckets.adult.length} 个 · 含无码/有码等`;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
   };
