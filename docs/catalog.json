@@ -441,7 +441,7 @@
    "site": "https://www.ziyuanzu.com/source/xinjiziyuanzhan-9",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 55171,
+   "total": 55176,
    "tags": [
     "受限内容",
     "视频一区",
@@ -623,7 +623,7 @@
    "site": "https://github.com/07751000/001github.io/blob/410c03197241f93ce0d0a9c295c4dd587b4d3d54/01.json",
    "source": "github",
    "http": 200,
-   "total": 153343,
+   "total": 153348,
    "tags": [
     "连续剧",
     "电影解说",
@@ -1280,7 +1280,7 @@
    "site": "https://github.com/hd9211/maotv/blob/a80c244bdb2765c0c0aae73b7dcd72ae7faf71e5/cyys1.txt",
    "source": "github",
    "http": 200,
-   "total": 181882,
+   "total": 180282,
    "tags": [
     "受限内容",
     "无码专区",
@@ -1642,7 +1642,7 @@
   {
    "id": "zy-dadiziyuanzhan-71",
    "name": "大地资源站",
-   "cms": "maccms10",
+   "cms": "maccmsv8",
    "contributor": "@ziyuanzu",
    "api": "https://dadiapi.com/api.php",
    "domain": "dadiapi.com",
@@ -2372,7 +2372,7 @@
   {
    "id": "zy-ziyuanzhan-59",
    "name": "彩猫资源站",
-   "cms": "maccms10",
+   "cms": "maccmsv8",
    "contributor": "@ziyuanzu",
    "api": "https://caiji.semaozy.net/inc/api.php",
    "domain": "caiji.semaozy.net",
@@ -5563,7 +5563,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/233.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 97939,
+   "total": 97951,
    "tags": [
     "受限内容",
     "中文字幕",
@@ -7663,7 +7663,7 @@
    "site": "https://github.com/alantang1977/X/blob/d780e5f8e2aba5ad18636b3485ebfab76f2e9f1b/vox.json",
    "source": "github",
    "http": 200,
-   "total": 187844,
+   "total": 187846,
    "tags": [
     "电影",
     "剧集",
