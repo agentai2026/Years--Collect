@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>一键采集配置下载 · 采集站信号台</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=20260806t">
+<link rel="stylesheet" href="style.css?v=20260806u">
 </head>
 <body data-page="download">
 <header class="mast" id="hdr"></header>
@@ -37,9 +37,9 @@
     <div class="dl-modal-backdrop" data-close></div>
     <div class="dl-modal-card" role="dialog" aria-modal="true" aria-labelledby="dlModalTitle">
       <h3 id="dlModalTitle">选择下载范围</h3>
-      <p class="dl-modal-tip">常规包严格排除 18+；分类不明、仅含伦理片等无法确认的接口一律不进常规包。</p>
+      <p class="dl-modal-tip">常规允许「伦理」分类；一旦出现无码/有码/三级等其他 18+ 分类则进 18+ 包。无分类、无法判断的不进常规。</p>
       <label class="dl-opt"><input type="radio" name="dlPack" value="all"><span><b>下载全部</b><small id="dlOptAll">—</small></span></label>
-      <label class="dl-opt"><input type="radio" name="dlPack" value="safe" checked><span><b>下载常规采集站</b><small id="dlOptSafe">— · 无 18+，不确定已排除</small></span></label>
+      <label class="dl-opt"><input type="radio" name="dlPack" value="safe" checked><span><b>下载常规采集站</b><small id="dlOptSafe">— · 可含伦理，不含其他 18+</small></span></label>
       <label class="dl-opt"><input type="radio" name="dlPack" value="adult"><span><b>下载 18+ 采集站</b><small id="dlOptAdult">— · 明确成人/受限</small></span></label>
       <div class="dl-modal-actions">
         <button type="button" class="dl-btn" id="btnJson">⇩ JSON</button>
@@ -83,6 +83,6 @@
 </div>
 
 <footer class="site-foot" id="ftr"></footer>
-<script src="desk.js?v=20260806t"></script>
+<script src="desk.js?v=20260806u"></script>
 </body>
 </html>

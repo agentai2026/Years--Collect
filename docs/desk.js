@@ -475,26 +475,26 @@ function pageCategory(DATA, apis) {
   });
 }
 /* ---------------- 一键配置下载页 ---------------- */
-/** 内容桶：safe=确认常规 / adult=明确18+ / unknown=不确定（常规不要） */
+/** 内容桶：safe=常规（允许伦理） / adult=明确18+ / unknown=不确定 */
 function contentBucket(a) {
+  /* 伦理/伦理片算常规；其余成人向分类才进 18+ */
   const HARD =
-    /无码|有码|中文字幕|麻豆|里番|情色|色情|成人|禁片|口交|强奸|乱伦|人妻|骑兵|步兵|换脸|女同|男同|制服诱惑|三级|黄网|R18|18\+|AV专|AV片|日本AV|欧美AV|SM调教|伦理|港台三级|日韩无码|日本无码|日本有码|亚洲情色/;
+    /无码|有码|中文字幕|麻豆|里番|情色|色情|成人|禁片|口交|强奸|乱伦|人妻|骑兵|步兵|换脸|女同|男同|制服诱惑|黄网|R18|18\+|AV专|AV片|日本AV|欧美AV|SM调教|港台三级|日韩无码|日本无码|日本有码|亚洲情色|三级/;
+  const isEthics = (c) => /伦理/.test(c) && !HARD.test(String(c).replace(/伦理/g, ''));
   const ADULT_NAME =
-    /AV|色情|成人|里番|伦理|色站|美少女|X色|搜A|色仓库|黑料|番号|福利站|水乐园|JKUN|老牌X|精品X|杏系|桃花|辣椒|模特资源|彩猫|大地|155|奶香/;
+    /AV资源|色情|成人|里番|伦理站|色站|美少女|X色|搜A|色仓库|黑料|番号|福利站|水乐园|JKUN|老牌X|精品X|杏系|桃花|辣椒|模特资源|彩猫|大地|155|奶香/;
   const SAFE_TOP = new Set([
     '电影', '连续剧', '电视剧', '综艺', '动漫', '纪录片', '短剧', '国产剧', '韩剧', '港剧', '日剧', '台剧',
     '欧美剧', '港澳剧', '泰剧', '动作片', '喜剧片', '爱情片', '科幻片', '恐怖片', '战争片', '剧情片',
-    '动画片', '体育', '体育赛事', '资讯', '爽文短剧', '电影解说', '短剧大全', '电影片',
+    '动画片', '体育', '体育赛事', '资讯', '爽文短剧', '电影解说', '短剧大全', '电影片', '伦理片', '伦理',
   ]);
   const cats = (a.categories || []).filter((c) => c && c !== '受限内容');
   const tags = (a.tags || []).filter((c) => c !== '受限内容');
   if (a.restricted || tags.includes('受限内容') || ADULT_NAME.test(a.name || '')) return 'adult';
-  const hard = cats.filter((c) => HARD.test(c));
-  if (hard.length >= 2) return 'adult';
-  if (hard.length === 1 && /^伦理片$/.test(hard[0])) return 'unknown'; // 仅伦理片：不确定，常规不要
+  const hard = cats.filter((c) => HARD.test(c) && !isEthics(c));
   if (hard.length) return 'adult';
   if (!cats.length) return 'unknown';
-  const safeN = cats.filter((c) => SAFE_TOP.has(c)).length;
+  const safeN = cats.filter((c) => SAFE_TOP.has(c) || isEthics(c)).length;
   if (safeN >= 2) return 'safe';
   return 'unknown';
 }
@@ -513,8 +513,8 @@ function pageDownload(DATA, apis) {
   $('#dlCount').innerHTML = `${buckets.all.length}<small> 高可用全部</small>`;
   $('#dlSafe').innerHTML = `${buckets.safe.length}<small> 确认常规</small>`;
   $('#dlAdult').innerHTML = `${buckets.adult.length}<small> 明确 18+</small>`;
-  $('#dlMeta').textContent = `更新时间: ${DATA.updated} · 不确定已排除出常规：${buckets.unknown.length} 个`;
-  $('#lead').textContent = `${new Date(DATA.updated).getFullYear()} 苹果CMS 一键采集配置。高可用 ${buckets.all.length} 站（可用率≥95%）；常规 ${buckets.safe.length} 站（确认无 18+）；18+ ${buckets.adult.length} 站。分类不明或仅含伦理片的 ${buckets.unknown.length} 站不进常规包。总资源约 ${fmtWan(totalRes)}。`;
+  $('#dlMeta').textContent = `更新时间: ${DATA.updated} · 分类不明未进常规：${buckets.unknown.length} 个`;
+  $('#lead').textContent = `${new Date(DATA.updated).getFullYear()} 苹果CMS 一键采集配置。高可用 ${buckets.all.length} 站；常规 ${buckets.safe.length} 站（允许伦理，不含其他 18+）；18+ ${buckets.adult.length} 站。无分类无法判断的 ${buckets.unknown.length} 站不进常规包。总资源约 ${fmtWan(totalRes)}。`;
 
   const preview = buckets.safe.length ? buckets.safe : buckets.all;
   $('#dlPreview').innerHTML = preview.slice(0, 10).map((a) => {
@@ -530,12 +530,12 @@ function pageDownload(DATA, apis) {
   }).join('');
   $('#dlMore').textContent = buckets.safe.length
     ? `预览为确认常规站（前 ${Math.min(10, preview.length)} 个）。点上方按钮选择范围后下载。`
-    : `当前确认常规站为 0（多数含伦理片或分类不明已排除）。可用「全部」或「18+」下载。`;
+    : `当前确认常规站为 0（无分类或含其他 18+ 已分流）。可用「全部」或「18+」下载。`;
 
   const modal = $('#dlModal');
   const openModal = () => {
     $('#dlOptAll').textContent = `${buckets.all.length} 个高可用`;
-    $('#dlOptSafe').textContent = `${buckets.safe.length} 个 · 无 18+，不确定已排除`;
+    $('#dlOptSafe').textContent = `${buckets.safe.length} 个 · 可含伦理，不含其他 18+`;
     $('#dlOptAdult').textContent = `${buckets.adult.length} 个 · 明确成人/受限`;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
