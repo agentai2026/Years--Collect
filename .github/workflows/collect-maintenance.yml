@@ -20,8 +20,9 @@ permissions:
   contents: write
 
 concurrency:
-  group: collect-maintenance-${{ github.event.inputs.task || 'schedule' }}
-  cancel-in-progress: true
+  # Keep different manual tasks from cancelling each other.
+  group: collect-maintenance-${{ github.event.inputs.task || github.event_name }}-${{ github.run_id }}
+  cancel-in-progress: false
 
 jobs:
   run:
