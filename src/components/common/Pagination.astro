@@ -47,15 +47,24 @@ if (r < page.lastPage - 2) pages.push(HIDDEN);
 if (r === page.lastPage - 2) pages.push(page.lastPage - 1);
 if (r < page.lastPage) pages.push(page.lastPage);
 
+const LIST_PATH = "/all/";
+
 const getPageUrl = (p: number) => {
-	const first = page.url.first || "/";
-	if (p === 1) return first.endsWith("/") ? first : `${first}/`;
-	const base = first.replace(/\/$/, "");
-	return `${base}/${p}/`;
+	// 不要用 page.url.first：Astro 在 [...page] 下有时会给成 "/"，拼成 /2/ /3/ 而不是 /all/2/
+	if (p <= 1) return LIST_PATH;
+	return `${LIST_PATH}${p}/`;
 };
 
 /** Astro page.url.prev/next 有时不含 base，统一走 url() */
-const hrefOrHash = (path?: string | null) => (path ? url(path) : "#");
+const hrefOrHash = (path?: string | null) => {
+	if (!path) return "#";
+	// 纠正错误的 /2/ /3/（缺 all 段）
+	const fixed = path.replace(
+		/^(?:\/Years--Collect)?\/(\d+)\/?$/,
+		(_m, n) => `${LIST_PATH}${n}/`,
+	);
+	return url(fixed);
+};
 ---
 
 <div class:list={[className, "pagination-wrapper flex flex-col gap-4 items-center"]} style={style}>
