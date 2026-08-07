@@ -1,0 +1,307 @@
+---
+import { Icon } from "astro-icon/components";
+import { projectsPageConfig, siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+if (!siteConfig.pages.projects) {
+	return Astro.redirect("/404/");
+}
+
+const { title, description, projects } = projectsPageConfig;
+
+const statusClass: Record<(typeof projects)[number]["status"], string> = {
+	进行中: "is-active",
+	已完成: "is-done",
+	维护中: "is-maintain",
+	想法中: "is-idea",
+};
+---
+
+<MainGridLayout title={title} description={description}>
+	<div class="projects-page card-base onload-animation">
+		<header class="projects-head">
+			<div class="projects-title-row">
+				<div class="projects-icon" aria-hidden="true">
+					<Icon is:inline name="material-symbols:folder-code-outline" class="text-[1.5rem]" />
+				</div>
+				<div>
+					<h1 class="projects-title">{title}</h1>
+					<p class="projects-desc">{description}</p>
+				</div>
+			</div>
+			<p class="projects-count">{projects.length} 个项目</p>
+		</header>
+
+		<ul class="projects-list">
+			{
+				projects.map((project) => (
+					<li class="project-card">
+						<div class="project-card-top">
+							<div class="project-card-icon" aria-hidden="true">
+								<Icon
+									is:inline
+									name={project.icon || "material-symbols:widgets-outline"}
+									class="text-[1.35rem]"
+								/>
+							</div>
+							<span class:list={["project-status", statusClass[project.status]]}>
+								{project.status}
+							</span>
+						</div>
+
+						<h2 class="project-name">{project.name}</h2>
+						<p class="project-desc">{project.desc}</p>
+
+						{
+							project.tags && project.tags.length > 0 && (
+								<ul class="project-tags">
+									{project.tags.map((tag) => (
+										<li>{tag}</li>
+									))}
+								</ul>
+							)
+						}
+
+						{(project.url || project.repo) && (
+							<div class="project-actions">
+								{project.url && (
+									<a class="project-link" href={project.url}>
+										查看
+										<span aria-hidden="true">→</span>
+									</a>
+								)}
+								{project.repo && (
+									<a
+										class="project-link is-ghost"
+										href={project.repo}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										源码
+									</a>
+								)}
+							</div>
+						)}
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</MainGridLayout>
+
+<style>
+	.projects-page {
+		padding: clamp(1.35rem, 3vw, 2rem) clamp(1.2rem, 3vw, 2.1rem)
+			clamp(1.4rem, 3vw, 2rem);
+	}
+
+	.projects-head {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: space-between;
+		gap: 0.85rem 1.25rem;
+		margin-bottom: 1.4rem;
+		padding-bottom: 1.15rem;
+		border-bottom: 1px solid color-mix(in oklab, var(--line-divider) 80%, transparent);
+	}
+
+	.projects-title-row {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.85rem;
+	}
+
+	.projects-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 0.75rem;
+		color: #fff;
+		background: var(--primary);
+		flex: none;
+	}
+
+	:global(.dark) .projects-icon {
+		color: rgba(0, 0, 0, 0.72);
+	}
+
+	.projects-title {
+		margin: 0;
+		font-size: clamp(1.55rem, 3vw, 1.9rem);
+		font-weight: 850;
+		line-height: 1.25;
+	}
+
+	.projects-desc {
+		margin: 0.35rem 0 0;
+		font-size: 0.92rem;
+		line-height: 1.6;
+		opacity: 0.62;
+	}
+
+	.projects-count {
+		margin: 0;
+		font-size: 0.78rem;
+		font-weight: 650;
+		letter-spacing: 0.04em;
+		opacity: 0.45;
+	}
+
+	.projects-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+		gap: 0.9rem;
+	}
+
+	.project-card {
+		display: flex;
+		flex-direction: column;
+		gap: 0.55rem;
+		padding: 1.1rem 1.05rem 1rem;
+		border-radius: 1.15rem;
+		background: color-mix(in srgb, var(--primary) 4%, transparent);
+		border: 1px solid color-mix(in srgb, var(--primary) 10%, transparent);
+		transition:
+			transform 0.18s ease,
+			background-color 0.18s ease,
+			border-color 0.18s ease;
+	}
+
+	.project-card:hover {
+		transform: translateY(-2px);
+		background: color-mix(in srgb, var(--primary) 8%, transparent);
+		border-color: color-mix(in srgb, var(--primary) 20%, transparent);
+	}
+
+	.project-card-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+	}
+
+	.project-card-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.35rem;
+		height: 2.35rem;
+		border-radius: 0.8rem;
+		color: var(--primary);
+		background: color-mix(in srgb, var(--primary) 12%, transparent);
+	}
+
+	.project-status {
+		font-size: 0.7rem;
+		font-weight: 750;
+		padding: 0.18rem 0.55rem;
+		border-radius: 9999px;
+		letter-spacing: 0.02em;
+	}
+
+	.project-status.is-active {
+		color: #047857;
+		background: color-mix(in srgb, #10b981 16%, transparent);
+	}
+
+	.project-status.is-done {
+		color: #1d4ed8;
+		background: color-mix(in srgb, #3b82f6 16%, transparent);
+	}
+
+	.project-status.is-maintain {
+		color: #b45309;
+		background: color-mix(in srgb, #f59e0b 16%, transparent);
+	}
+
+	.project-status.is-idea {
+		color: #6b7280;
+		background: color-mix(in srgb, #9ca3af 16%, transparent);
+	}
+
+	:global(.dark) .project-status.is-active {
+		color: #6ee7b7;
+	}
+
+	:global(.dark) .project-status.is-done {
+		color: #93c5fd;
+	}
+
+	:global(.dark) .project-status.is-maintain {
+		color: #fcd34d;
+	}
+
+	.project-name {
+		margin: 0.15rem 0 0;
+		font-size: 1.05rem;
+		font-weight: 800;
+		line-height: 1.35;
+	}
+
+	.project-desc {
+		margin: 0;
+		flex: 1;
+		font-size: 0.86rem;
+		line-height: 1.65;
+		opacity: 0.68;
+	}
+
+	.project-tags {
+		list-style: none;
+		margin: 0.15rem 0 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+	}
+
+	.project-tags li {
+		font-size: 0.7rem;
+		font-weight: 650;
+		padding: 0.15rem 0.5rem;
+		border-radius: 9999px;
+		opacity: 0.75;
+		background: color-mix(in oklab, var(--card-bg) 55%, transparent);
+		border: 1px solid color-mix(in oklab, var(--line-divider) 70%, transparent);
+	}
+
+	.project-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+		margin-top: 0.35rem;
+	}
+
+	.project-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		padding: 0.4rem 0.75rem;
+		border-radius: 9999px;
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: #fff;
+		background: var(--primary);
+		transition: opacity 0.15s ease, transform 0.15s ease;
+	}
+
+	:global(.dark) .project-link {
+		color: rgba(0, 0, 0, 0.72);
+	}
+
+	.project-link:hover {
+		opacity: 0.9;
+		transform: translateX(1px);
+	}
+
+	.project-link.is-ghost {
+		color: var(--primary);
+		background: color-mix(in srgb, var(--primary) 12%, transparent);
+	}
+</style>

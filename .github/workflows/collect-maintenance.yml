@@ -20,7 +20,6 @@ permissions:
   contents: write
 
 concurrency:
-  # Serialize all catalog writers so pushes do not conflict.
   group: catalog-writers
   cancel-in-progress: false
 
@@ -35,7 +34,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Sync yszzq.com
         if: ${{ github.event_name == 'schedule' || inputs.task == 'yszzq' }}
@@ -62,4 +61,4 @@ jobs:
       - name: Commit results if changed
         run: |
           DAY=$(node -e "console.log(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()))")
-          bash scripts/git-push-catalog.sh "data: collect maintenance ${DAY}" docs/catalog.json data/
+          bash scripts/git-push-catalog.sh "data: collect maintenance ${DAY}" docs/catalog.json public/collect-assets/catalog.json data/

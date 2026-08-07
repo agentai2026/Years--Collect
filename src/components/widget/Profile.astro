@@ -1,0 +1,154 @@
+---
+import { Icon } from "astro-icon/components";
+import ImageWrapper from "@/components/common/ImageWrapper.astro";
+import { profileConfig } from "@/config/profileConfig";
+import { url } from "@/utils/url-utils";
+
+interface Props {
+	class?: string;
+	style?: string;
+}
+
+const { style } = Astro.props;
+const className = Astro.props.class;
+
+const links = profileConfig.links;
+const onlyOne = links.length === 1;
+
+function linkClass(showName?: boolean) {
+	if (onlyOne || showName) {
+		return "btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95";
+	}
+	return "btn-regular rounded-lg h-10 w-10 active:scale-90";
+}
+---
+
+<div class:list={["card-base", "p-3", className]} style={style}>
+	<a
+		aria-label="Go to About Page"
+		href={url("/about/")}
+		class="group block relative mx-auto mt-1 lg:mx-0 lg:mt-0 mb-3
+       max-w-48 lg:max-w-none overflow-hidden rounded-xl active:scale-95"
+	>
+		<div
+			class="absolute transition pointer-events-none group-hover:bg-black/30 group-active:bg-black/50
+        w-full h-full z-50 flex items-center justify-center"
+		>
+			<Icon
+				is:inline
+				name="fa7-regular:address-card"
+				class="transition opacity-0 scale-90 group-hover:scale-100 group-hover:opacity-100 text-white text-5xl"
+			/>
+		</div>
+		<ImageWrapper
+			src={profileConfig.avatar || ""}
+			alt="Profile Image of the Author"
+			class="profile-avatar-image mx-auto lg:w-full h-full lg:mt-0"
+			loading="eager"
+			fetchpriority="high"
+			widths={[350]}
+			sizes="350px"
+		/>
+	</a>
+	<div class="px-2">
+		<div class="font-bold text-xl text-center mb-1 dark:text-neutral-50 transition">
+			{profileConfig.name}
+		</div>
+		<div class="h-1 w-5 bg-(--primary) mx-auto rounded-full mb-2 transition"></div>
+		<div class="text-center text-neutral-400 mb-2.5 transition">
+			{profileConfig.bio}
+		</div>
+		<div class="flex flex-wrap gap-2 justify-center mb-1">
+			{
+				links.map((item) => {
+					const cls = linkClass(item.showName || onlyOne);
+					const showLabel = onlyOne || item.showName;
+
+					if (item.url.startsWith("mailto:")) {
+						const encodedEmail = Buffer.from(
+							item.url.replace("mailto:", ""),
+						).toString("base64");
+						return (
+							<a
+								rel="me"
+								aria-label={item.name}
+								href="#"
+								data-encoded-email={encodedEmail}
+								onclick={`(function(){const e=this.getAttribute('data-encoded-email');const d=atob(e);this.href='mailto:'+d;this.removeAttribute('data-encoded-email');this.removeAttribute('onclick');this.click();return false;}).call(this);`}
+								class={cls}
+							>
+								<Icon is:inline name={item.icon} class="text-[1.5rem]" />
+								{showLabel && item.name}
+							</a>
+						);
+					}
+
+					if (item.url.startsWith("copy:")) {
+						const text = item.url.slice(5);
+						return (
+							<button
+								type="button"
+								aria-label={`复制${item.name}`}
+								title={`点击复制${item.name}`}
+								data-copy={text}
+								data-copy-label={item.name}
+								class:list={[cls, "profile-copy-btn"]}
+							>
+								<Icon is:inline name={item.icon} class="text-[1.5rem]" />
+								{showLabel && item.name}
+							</button>
+						);
+					}
+
+					const isExternal = item.url.startsWith("http");
+					return (
+						<a
+							rel="me"
+							aria-label={item.name}
+							href={item.url}
+							target={isExternal ? "_blank" : undefined}
+							class={cls}
+						>
+							<Icon is:inline name={item.icon} class="text-[1.5rem]" />
+							{showLabel && item.name}
+						</a>
+					);
+				})
+			}
+		</div>
+	</div>
+</div>
+
+<script>
+	function bindProfileCopy() {
+		document.querySelectorAll<HTMLButtonElement>(".profile-copy-btn").forEach((btn) => {
+			if (btn.dataset.copyBound) return;
+			btn.dataset.copyBound = "1";
+			btn.addEventListener("click", async () => {
+				const text = btn.getAttribute("data-copy") || "";
+				const label = btn.getAttribute("data-copy-label") || "";
+				try {
+					await navigator.clipboard.writeText(text);
+					const oldTitle = btn.getAttribute("title") || "";
+					btn.setAttribute("title", `${label}已复制`);
+					btn.classList.add("is-copied");
+					setTimeout(() => {
+						btn.setAttribute("title", oldTitle);
+						btn.classList.remove("is-copied");
+					}, 1200);
+				} catch {
+					window.prompt(`复制${label}`, text);
+				}
+			});
+		});
+	}
+
+	bindProfileCopy();
+	document.addEventListener("swup:page:view", bindProfileCopy);
+</script>
+
+<style>
+	.profile-copy-btn.is-copied {
+		color: var(--primary);
+	}
+</style>

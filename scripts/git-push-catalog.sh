@@ -5,7 +5,7 @@ MSG="${1:?commit message required}"
 shift || true
 PATHS=("$@")
 if [ "${#PATHS[@]}" -eq 0 ]; then
-  PATHS=(docs/catalog.json)
+  PATHS=(docs/catalog.json public/collect-assets/catalog.json)
 fi
 
 git config user.name "github-actions[bot]"

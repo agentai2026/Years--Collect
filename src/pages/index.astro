@@ -1,0 +1,248 @@
+---
+import { homePageConfig, profileConfig, siteConfig } from "@/config";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+
+const today = new Date();
+const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
+const dateLabel = `${today.getFullYear()} 年 ${today.getMonth() + 1} 月 ${today.getDate()} 日 · 周${weekdays[today.getDay()]}`;
+
+const start = new Date(`${siteConfig.siteStartDate}T00:00:00`);
+const days = Math.max(
+	1,
+	Math.floor((Date.now() - start.getTime()) / 86400000) + 1,
+);
+---
+
+<MainGridLayout title={siteConfig.title} description={siteConfig.description}>
+	<article class="home-note card-base onload-animation" aria-label="岁月的主页">
+		<div class="home-note-glow" aria-hidden="true"></div>
+
+		<header class="home-note-head">
+			<p class="home-note-date">{dateLabel}</p>
+			<h1 class="home-note-title">{homePageConfig.journalTitle}</h1>
+			<p class="home-note-from">— {profileConfig.name}</p>
+		</header>
+
+		<div class="home-note-body">
+			{homePageConfig.paragraphs.map((p) => (
+				<p>{p}</p>
+			))}
+		</div>
+
+		<section class="home-note-now" aria-labelledby="home-now-title">
+			<h2 id="home-now-title">{homePageConfig.nowTitle}</h2>
+			<ul>
+				{homePageConfig.nowItems.map((item) => (
+					<li>
+						<a href={item.href}>
+							<strong>{item.name}</strong>
+							<span>{item.desc}</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+
+		<nav class="home-note-links" aria-label="继续逛逛">
+			{homePageConfig.links.map((link) => (
+				<a href={link.href}>{link.label}</a>
+			))}
+		</nav>
+
+		<footer class="home-note-foot">
+			<span>站点已开放 {days} 天</span>
+			<span aria-hidden="true">·</span>
+			<span>{homePageConfig.closing}</span>
+		</footer>
+	</article>
+</MainGridLayout>
+
+<style>
+	.home-note {
+		position: relative;
+		overflow: hidden;
+		isolation: isolate;
+		padding: clamp(1.5rem, 3.2vw, 2.25rem) clamp(1.25rem, 3.2vw, 2.35rem)
+			clamp(1.25rem, 2.8vw, 1.75rem);
+	}
+
+	.home-note-glow {
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		pointer-events: none;
+		background:
+			radial-gradient(
+				ellipse 80% 45% at 0% 0%,
+				color-mix(in srgb, var(--primary) 14%, transparent),
+				transparent 60%
+			),
+			radial-gradient(
+				ellipse 50% 40% at 100% 100%,
+				color-mix(in srgb, var(--primary) 8%, transparent),
+				transparent 55%
+			);
+	}
+
+	.home-note-head,
+	.home-note-body,
+	.home-note-now,
+	.home-note-links,
+	.home-note-foot {
+		position: relative;
+		z-index: 1;
+	}
+
+	.home-note-head {
+		margin-bottom: 1.35rem;
+		padding-bottom: 1.15rem;
+		border-bottom: 1px dashed color-mix(in oklab, var(--line-divider) 85%, transparent);
+		animation: home-note-in 0.55s ease both;
+	}
+
+	.home-note-date {
+		margin: 0 0 0.55rem;
+		font-size: 0.78rem;
+		font-weight: 650;
+		letter-spacing: 0.04em;
+		opacity: 0.45;
+	}
+
+	.home-note-title {
+		margin: 0;
+		font-size: clamp(1.55rem, 3.5vw, 2rem);
+		font-weight: 850;
+		line-height: 1.35;
+		letter-spacing: 0.02em;
+	}
+
+	.home-note-from {
+		margin: 0.65rem 0 0;
+		font-size: 0.88rem;
+		opacity: 0.5;
+	}
+
+	.home-note-body {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		animation: home-note-in 0.55s ease 0.06s both;
+	}
+
+	.home-note-body p {
+		margin: 0;
+		font-size: 0.98rem;
+		line-height: 1.9;
+		opacity: 0.82;
+	}
+
+	.home-note-now {
+		margin-top: 1.6rem;
+		animation: home-note-in 0.55s ease 0.12s both;
+	}
+
+	.home-note-now h2 {
+		margin: 0 0 0.75rem;
+		font-size: 0.78rem;
+		font-weight: 750;
+		letter-spacing: 0.08em;
+		opacity: 0.42;
+	}
+
+	.home-note-now ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.55rem;
+	}
+
+	.home-note-now a {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15rem;
+		padding: 0.85rem 0.95rem;
+		border-radius: 0.95rem;
+		border: 1px solid color-mix(in srgb, var(--primary) 12%, transparent);
+		background: color-mix(in srgb, var(--primary) 4%, transparent);
+		transition:
+			transform 0.15s ease,
+			background-color 0.15s ease,
+			border-color 0.15s ease;
+	}
+
+	.home-note-now a:hover {
+		transform: translateX(3px);
+		background: color-mix(in srgb, var(--primary) 9%, transparent);
+		border-color: color-mix(in srgb, var(--primary) 24%, transparent);
+	}
+
+	.home-note-now strong {
+		font-size: 0.95rem;
+		font-weight: 780;
+	}
+
+	.home-note-now span {
+		font-size: 0.82rem;
+		line-height: 1.5;
+		opacity: 0.55;
+	}
+
+	.home-note-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem 0.15rem;
+		margin-top: 1.5rem;
+		padding-top: 1.15rem;
+		border-top: 1px solid color-mix(in oklab, var(--line-divider) 80%, transparent);
+		animation: home-note-in 0.55s ease 0.18s both;
+	}
+
+	.home-note-links a {
+		padding: 0.35rem 0.7rem;
+		border-radius: 9999px;
+		font-size: 0.86rem;
+		font-weight: 700;
+		opacity: 0.72;
+		transition: color 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+	}
+
+	.home-note-links a:hover {
+		opacity: 1;
+		color: var(--primary);
+		background: color-mix(in srgb, var(--primary) 10%, transparent);
+	}
+
+	.home-note-foot {
+		margin: 1.25rem 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+		font-size: 0.76rem;
+		line-height: 1.5;
+		opacity: 0.42;
+		animation: home-note-in 0.55s ease 0.22s both;
+	}
+
+	@keyframes home-note-in {
+		from {
+			opacity: 0;
+			transform: translateY(8px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.home-note-head,
+		.home-note-body,
+		.home-note-now,
+		.home-note-links,
+		.home-note-foot {
+			animation: none !important;
+		}
+	}
+</style>

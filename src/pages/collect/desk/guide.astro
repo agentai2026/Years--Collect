@@ -1,0 +1,45 @@
+---
+import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
+---
+<CollectDeskLayout title="对接教程 · 影视采集站信号台" page="guide">
+	<header class="mast" id="hdr"></header>
+	<div class="ticker" id="tick"></div>
+
+	<div class="container prose">
+		<h2>对接教程</h2>
+		<p>三步把信号台的采集接口接进你的 CMS。不同程序后台菜单略有差异，核心都是：<strong>粘贴接口地址 → 保存 → 点采集</strong>。</p>
+
+		<div class="step"><div class="n">1</div><div>
+			<strong>挑一个状态为「在线」的接口</strong><br />
+			在<a href="/collect/desk/">信号目录</a>里优先选在线率高、30日均速小的接口；受限接口需先联系投稿人获取授权。
+		</div></div>
+		<div class="step"><div class="n">2</div><div>
+			<strong>复制接口地址</strong><br />
+			进入接口详情页，点「复制接口」拿到原始地址；详情页同时提供适配对应 CMS 的完整采集地址（已拼好 <code>?ac=</code> 参数）。
+		</div></div>
+		<div class="step"><div class="n">3</div><div>
+			<strong>在 CMS 后台添加并采集</strong><br />
+			按下表找到你的程序对应的入口，粘贴地址保存，然后执行一次采集验证数据是否入库。
+		</div></div>
+
+		<h2>各 CMS 配置入口</h2>
+		<table class="t">
+			<tr><th>程序</th><th>采集参数</th><th>配置路径</th></tr>
+			<tr><td>苹果CMS V10</td><td class="mono">?ac=videolist</td><td>后台 → 视频 → 采集接口 → 自定义资源</td></tr>
+			<tr><td>苹果CMS V8</td><td class="mono">?ac=list</td><td>后台 → 采集 → 资源库管理 → 添加资源站</td></tr>
+			<tr><td>YYCMS</td><td class="mono">?ac=list&amp;pg=1</td><td>系统设置 → 资源站配置 → 新增接口</td></tr>
+			<tr><td>飞飞CMS Freekan</td><td class="mono">/api.php/vod</td><td>后台 → 扩展 → 资源采集 → 添加 API 节点</td></tr>
+		</table>
+
+		<h2>常见问题</h2>
+		<ul>
+			<li><strong>采集为空？</strong>先确认接口当前状态不是「离线」，再检查分类绑定是否已设置。</li>
+			<li><strong>提示 403 / 需要 Token？</strong>该接口为受限接口，在详情页找到「好心人」联系方式申请授权。</li>
+			<li><strong>速度慢？</strong>换 Top 10 里排名靠前的接口，或避开晚高峰采集。</li>
+			<li><strong>内容合规？</strong>本站仅收录接口信号状态，请自行确保所采集内容符合当地法规与版权要求。</li>
+		</ul>
+		<div class="tip">教程不涉及任何付费服务。接口失效、参数变更，欢迎通过 GitHub Issue 反馈。</div>
+	</div>
+
+	<footer class="site-foot" id="ftr"></footer>
+</CollectDeskLayout>

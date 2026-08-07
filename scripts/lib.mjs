@@ -3,8 +3,10 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-/** Site catalog consumed by docs/*.html */
+/** Canonical catalog — same path as original Years--Collect (22222) */
 export const DATA_PATH = join(ROOT, 'docs', 'catalog.json');
+/** Astro static mirror served at /collect-assets/catalog.json */
+export const PUBLIC_CATALOG_PATH = join(ROOT, 'public', 'collect-assets', 'catalog.json');
 /** Timed probe snapshots (latest + archives) */
 export const DATA_DIR = join(ROOT, 'data');
 export const LATEST_PATH = join(DATA_DIR, 'latest.json');
@@ -66,8 +68,16 @@ export function readData() {
   return JSON.parse(readFileSync(DATA_PATH, 'utf8'));
 }
 
+export function syncPublicCatalog() {
+  mkdirSync(dirname(PUBLIC_CATALOG_PATH), { recursive: true });
+  writeFileSync(PUBLIC_CATALOG_PATH, readFileSync(DATA_PATH, 'utf8'));
+}
+
 export function writeData(data) {
+  mkdirSync(dirname(DATA_PATH), { recursive: true });
   writeFileSync(DATA_PATH, `${JSON.stringify(data, null, 1)}\n`, 'utf8');
+  // Keep Astro public mirror in lockstep; automation never writes public as source of truth
+  syncPublicCatalog();
 }
 
 export function ensureDataDirs() {

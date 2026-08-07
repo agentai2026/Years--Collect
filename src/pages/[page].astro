@@ -1,0 +1,21 @@
+---
+import { siteConfig } from "@/config";
+import { getSortedPosts } from "@/utils/content-utils";
+
+/**
+ * 兼容旧主页分页：/2/ /3/ … → /all/2/ /all/3/ …
+ *（文章列表已从主页迁到「文章 → 全部」）
+ */
+export async function getStaticPaths() {
+	const posts = await getSortedPosts();
+	const pageSize = siteConfig.pagination.postsPerPage;
+	const lastPage = Math.max(1, Math.ceil(posts.length / pageSize));
+
+	return Array.from({ length: Math.max(0, lastPage - 1) }, (_, i) => ({
+		params: { page: String(i + 2) },
+	}));
+}
+
+const page = Astro.params.page;
+return Astro.redirect(`/all/${page}/`, 301);
+---

@@ -1,0 +1,16 @@
+# Dependencies / build
+node_modules/
+dist/
+.astro/
+.pnpm-store/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+
+# Optional local overrides
+.vscode/
+.idea/

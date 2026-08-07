@@ -1,0 +1,113 @@
+---
+import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
+---
+<CollectDeskLayout title="投稿接口 · 影视采集站信号台" page="submit">
+	<header class="mast" id="hdr"></header>
+	<div class="ticker" id="tick"></div>
+
+	<section class="submit-hero">
+		<div class="container submit-hero-inner">
+			<div class="submit-hero-copy">
+				<p class="submit-kicker mono">Signal Desk · Dispatch</p>
+				<h1>把接口<br />送进<span class="hl">信号台</span></h1>
+				<p class="submit-lead">本站没有站内表单。投稿走公开的 GitHub Issue，可追溯、好合并，通过后会出现在目录与详情页的「好心人」一栏。</p>
+				<div class="submit-actions">
+					<a class="cta submit-cta" id="issueBtn" href="https://github.com/agentai2026/Years--Collect/issues/new?template=submit.yml" target="_blank" rel="noopener">打开投稿 Issue</a>
+					<a class="submit-ghost" href="https://github.com/agentai2026/Years--Collect/issues/new?template=bug.yml" target="_blank" rel="noopener">报障失效接口</a>
+				</div>
+				<p class="submit-note mono">预计 1–3 天巡检入库 · 无需登录本站</p>
+			</div>
+
+			<aside class="dispatch-slip" aria-label="投稿字段预览">
+				<div class="dispatch-slip-head">
+					<span class="mono">FORM 01</span>
+					<span class="mono">公开投稿</span>
+				</div>
+				<div class="dispatch-row"><span>接口名称</span><b>闪电源</b></div>
+				<div class="dispatch-row"><span>接口地址</span><code>https://api.example.com/api.php/provide/vod/</code></div>
+				<div class="dispatch-row"><span>适配 CMS</span><b>maccms10</b></div>
+				<div class="dispatch-row"><span>是否受限</span><b>否 · 公开可用</b></div>
+				<div class="dispatch-row"><span>署名</span><b>@你的 GitHub ID</b></div>
+				<div class="dispatch-slip-foot mono">填写真实地址 · 以 / 结尾</div>
+			</aside>
+		</div>
+	</section>
+
+	<section class="container submit-body">
+		<div class="submit-rail" aria-label="投稿步骤">
+			<div class="submit-rail-item">
+				<span class="mono">01</span>
+				<h2>开 Issue</h2>
+				<p>点上方按钮，选「接口投稿」模板。</p>
+			</div>
+			<div class="submit-rail-item">
+				<span class="mono">02</span>
+				<h2>填字段</h2>
+				<p>名称、地址必填；CMS、受限、署名按需勾选。</p>
+			</div>
+			<div class="submit-rail-item">
+				<span class="mono">03</span>
+				<h2>等入库</h2>
+				<p>验证可用后写入 <code>catalog.json</code>，署名长期展示。</p>
+			</div>
+		</div>
+
+		<div class="submit-fields">
+			<div class="submit-fields-head">
+				<h2>字段说明</h2>
+				<p>和 Issue 模板一一对应，照着填即可。</p>
+			</div>
+			<div class="submit-field-grid">
+				<div class="submit-field">
+					<h3>接口名称</h3>
+					<p>简短好记，四字以内最佳。</p>
+					<span class="mono">例 · 闪电源</span>
+				</div>
+				<div class="submit-field">
+					<h3>接口地址</h3>
+					<p>原始采集地址，建议以 <code>/</code> 结尾。</p>
+					<span class="mono">例 · …/provide/vod/</span>
+				</div>
+				<div class="submit-field">
+					<h3>适配 CMS</h3>
+					<p>maccms10 / v8 / yycms / freekan 等。</p>
+					<span class="mono">可多选 · 可填其他</span>
+				</div>
+				<div class="submit-field">
+					<h3>是否受限</h3>
+					<p>需 Token 的接口请写清获取方式。</p>
+					<span class="mono">受限默认首页隐藏</span>
+				</div>
+				<div class="submit-field">
+					<h3>署名</h3>
+					<p>展示在「好心人」；默认用你的 GitHub ID。</p>
+					<span class="mono">可选自定义</span>
+				</div>
+				<div class="submit-field">
+					<h3>备注</h3>
+					<p>来源、分类提示、特殊说明均可。</p>
+					<span class="mono">选填</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="submit-foot-note">
+			<p>请勿投稿侵权或违法内容接口。发现目录里已有接口失效，可用「报障」模板开 Issue。</p>
+		</div>
+	</section>
+
+	<footer class="site-foot" id="ftr"></footer>
+
+	<script is:inline>
+		fetch(`/collect-assets/catalog.json?t=${Date.now()}`, { cache: "no-store" })
+			.then((r) => r.json())
+			.then((d) => {
+				if (!d.repo) return;
+				const issue = document.getElementById("issueBtn");
+				if (issue) issue.href = `${d.repo}/issues/new?template=submit.yml`;
+				const bug = document.querySelector(".submit-ghost");
+				if (bug) bug.href = `${d.repo}/issues/new?template=bug.yml`;
+			})
+			.catch(() => {});
+	</script>
+</CollectDeskLayout>

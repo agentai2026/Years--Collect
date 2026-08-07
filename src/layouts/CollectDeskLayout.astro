@@ -1,0 +1,28 @@
+---
+interface Props {
+	title: string;
+	page: "index" | "category" | "detail" | "download" | "guide" | "submit";
+}
+
+const { title, page } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith("/")
+	? import.meta.env.BASE_URL
+	: `${import.meta.env.BASE_URL}/`;
+---
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>{title}</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap"
+		/>
+		<link rel="stylesheet" href={`${base}collect-assets/style.css?v=20260807d`} />
+	</head>
+	<body data-page={page} data-base={base} data-blog-home={base}>
+		<slot />
+		<script is:inline src={`${base}collect-assets/desk.js?v=20260807d`}></script>
+	</body>
+</html>

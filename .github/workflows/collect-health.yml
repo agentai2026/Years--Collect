@@ -9,7 +9,6 @@ permissions:
   contents: write
 
 concurrency:
-  # Share queue with Collect maintenance (both write catalog.json).
   group: catalog-writers
   cancel-in-progress: false
 
@@ -23,10 +22,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
       - name: Probe all catalog APIs
         run: node scripts/monitor.mjs
       - name: Commit results if changed
         run: |
           DAY=$(node -e "console.log(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()))")
-          bash scripts/git-push-catalog.sh "data: update endpoint status ${DAY}" docs/catalog.json data/
+          bash scripts/git-push-catalog.sh "data: update endpoint status ${DAY}" docs/catalog.json public/collect-assets/catalog.json data/
