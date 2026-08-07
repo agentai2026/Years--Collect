@@ -118,7 +118,7 @@ export const siteConfig: SiteConfig = {
 		// 网格模式的封面固定在卡片顶部，不受此项影响
 		coverPosition: "right",
 		// 文章简介显示行数，设为 0 则不截断
-		descriptionLines: 2,
+		descriptionLines: 4,
 		// 文章卡片底部统计和发布日期是否显示图标
 		showStatsIcons: true,
 		// 标签显示位置
@@ -182,7 +182,7 @@ export const siteConfig: SiteConfig = {
 	// 分页配置
 	pagination: {
 		// 每页显示的文章数量
-		postsPerPage: 5,
+		postsPerPage: 10,
 	},
 
 	// 图像优化及响应式配置

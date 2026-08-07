@@ -1,6 +1,9 @@
 ---
 import { homePageConfig, profileConfig, siteConfig } from "@/config";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { getSortedPosts } from "@/utils/content-utils";
+import { formatDateToYYYYMMDD } from "@/utils/date-utils";
+import { getPostUrlBySlug, url } from "@/utils/url-utils";
 
 const today = new Date();
 const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
@@ -11,6 +14,15 @@ const days = Math.max(
 	1,
 	Math.floor((Date.now() - start.getTime()) / 86400000) + 1,
 );
+
+const recentPosts = (await getSortedPosts()).slice(0, 5).map((entry) => ({
+	title: entry.data.title,
+	published: entry.data.published,
+	category: entry.data.category,
+	description: entry.data.description || "",
+	sourceLink: entry.data.sourceLink || "",
+	href: getPostUrlBySlug(entry.id),
+}));
 ---
 
 <MainGridLayout title={siteConfig.title} description={siteConfig.description}>
@@ -34,7 +46,7 @@ const days = Math.max(
 			<ul>
 				{homePageConfig.nowItems.map((item) => (
 					<li>
-						<a href={item.href}>
+						<a href={url(item.href)}>
 							<strong>{item.name}</strong>
 							<span>{item.desc}</span>
 						</a>
@@ -43,9 +55,37 @@ const days = Math.max(
 			</ul>
 		</section>
 
+		{
+			recentPosts.length > 0 && (
+				<section class="home-note-recent" aria-labelledby="home-recent-title">
+					<div class="home-note-recent-head">
+						<h2 id="home-recent-title">最近读过 / 采到</h2>
+						<a href={url("/all/")}>全部文章 →</a>
+					</div>
+					<ul>
+						{recentPosts.map((post) => (
+							<li>
+								<a href={post.href}>
+									<div class="home-note-recent-meta">
+										<time datetime={formatDateToYYYYMMDD(post.published)}>
+											{formatDateToYYYYMMDD(post.published)}
+										</time>
+										{post.category && <span>{post.category}</span>}
+										{post.sourceLink && <span class="is-src">采集</span>}
+									</div>
+									<strong>{post.title}</strong>
+									{post.description && <span>{post.description}</span>}
+								</a>
+							</li>
+						))}
+					</ul>
+				</section>
+			)
+		}
+
 		<nav class="home-note-links" aria-label="继续逛逛">
 			{homePageConfig.links.map((link) => (
-				<a href={link.href}>{link.label}</a>
+				<a href={url(link.href)}>{link.label}</a>
 			))}
 		</nav>
 
@@ -87,6 +127,7 @@ const days = Math.max(
 	.home-note-head,
 	.home-note-body,
 	.home-note-now,
+	.home-note-recent,
 	.home-note-links,
 	.home-note-foot {
 		position: relative;
@@ -141,7 +182,8 @@ const days = Math.max(
 		animation: home-note-in 0.55s ease 0.12s both;
 	}
 
-	.home-note-now h2 {
+	.home-note-now h2,
+	.home-note-recent-head h2 {
 		margin: 0 0 0.75rem;
 		font-size: 0.78rem;
 		font-weight: 750;
@@ -149,7 +191,8 @@ const days = Math.max(
 		opacity: 0.42;
 	}
 
-	.home-note-now ul {
+	.home-note-now ul,
+	.home-note-recent ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -158,7 +201,8 @@ const days = Math.max(
 		gap: 0.55rem;
 	}
 
-	.home-note-now a {
+	.home-note-now a,
+	.home-note-recent a {
 		display: flex;
 		flex-direction: column;
 		gap: 0.15rem;
@@ -172,21 +216,82 @@ const days = Math.max(
 			border-color 0.15s ease;
 	}
 
-	.home-note-now a:hover {
+	.home-note-now a:hover,
+	.home-note-recent a:hover {
 		transform: translateX(3px);
 		background: color-mix(in srgb, var(--primary) 9%, transparent);
 		border-color: color-mix(in srgb, var(--primary) 24%, transparent);
 	}
 
-	.home-note-now strong {
+	.home-note-now strong,
+	.home-note-recent strong {
 		font-size: 0.95rem;
 		font-weight: 780;
+		line-height: 1.45;
 	}
 
-	.home-note-now span {
+	.home-note-now span,
+	.home-note-recent a > span {
 		font-size: 0.82rem;
-		line-height: 1.5;
+		line-height: 1.55;
 		opacity: 0.55;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.home-note-recent {
+		margin-top: 1.6rem;
+		animation: home-note-in 0.55s ease 0.16s both;
+	}
+
+	.home-note-recent-head {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 0.75rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.home-note-recent-head h2 {
+		margin: 0;
+	}
+
+	.home-note-recent-head a {
+		padding: 0;
+		border: none;
+		background: none;
+		border-radius: 0;
+		font-size: 0.78rem;
+		font-weight: 700;
+		color: var(--primary);
+		opacity: 0.85;
+		transform: none;
+	}
+
+	.home-note-recent-head a:hover {
+		transform: none;
+		background: none;
+		text-decoration: underline;
+	}
+
+	.home-note-recent-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem 0.55rem;
+		margin-bottom: 0.15rem;
+		font-size: 0.72rem;
+		font-weight: 650;
+		opacity: 0.48;
+	}
+
+	.home-note-recent-meta .is-src {
+		padding: 0.05rem 0.4rem;
+		border-radius: 9999px;
+		background: color-mix(in srgb, var(--primary) 12%, transparent);
+		color: var(--primary);
+		opacity: 1;
 	}
 
 	.home-note-links {
@@ -196,7 +301,7 @@ const days = Math.max(
 		margin-top: 1.5rem;
 		padding-top: 1.15rem;
 		border-top: 1px solid color-mix(in oklab, var(--line-divider) 80%, transparent);
-		animation: home-note-in 0.55s ease 0.18s both;
+		animation: home-note-in 0.55s ease 0.2s both;
 	}
 
 	.home-note-links a {
@@ -222,7 +327,7 @@ const days = Math.max(
 		font-size: 0.76rem;
 		line-height: 1.5;
 		opacity: 0.42;
-		animation: home-note-in 0.55s ease 0.22s both;
+		animation: home-note-in 0.55s ease 0.24s both;
 	}
 
 	@keyframes home-note-in {
@@ -240,6 +345,7 @@ const days = Math.max(
 		.home-note-head,
 		.home-note-body,
 		.home-note-now,
+		.home-note-recent,
 		.home-note-links,
 		.home-note-foot {
 			animation: none !important;

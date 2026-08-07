@@ -1,12 +1,11 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { render } from "astro:content";
 import Pagination from "@/components/common/Pagination.astro";
+import PostPage from "@/components/layout/PostPage.astro";
 import { profileConfig, siteConfig } from "@/config";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import { getSortedPosts } from "@/utils/content-utils";
-import { formatDateToYYYYMMDD } from "@/utils/date-utils";
-import { getCategoryUrl, getPostUrlBySlug, url } from "@/utils/url-utils";
+import { getCategoryUrl, getTagUrl, url } from "@/utils/url-utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const allBlogPosts = await getSortedPosts();
@@ -16,33 +15,33 @@ export const getStaticPaths = (async ({ paginate }) => {
 
 const { page } = Astro.props;
 const len = page.data.length;
+const allPosts = await getSortedPosts();
 
 const today = new Date();
 const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
 const dateLabel = `${today.getFullYear()} 年 ${today.getMonth() + 1} 月 ${today.getDate()} 日 · 周${weekdays[today.getDay()]}`;
 
-const entries = await Promise.all(
-	page.data.map(async (entry) => {
-		const { remarkPluginFrontmatter } = await render(entry);
-		return {
-			id: entry.id,
-			title: entry.data.title,
-			published: entry.data.published,
-			category: entry.data.category,
-			tags: entry.data.tags || [],
-			author: entry.data.author || profileConfig.name,
-			sourceLink: entry.data.sourceLink || "",
-			href: getPostUrlBySlug(entry.id),
-			excerpt:
-				entry.data.description ||
-				remarkPluginFrontmatter.excerpt ||
-				"",
-			words: remarkPluginFrontmatter.words as number | undefined,
-		};
-	}),
-);
+const sourceBuckets = new Map<string, number>();
+const categoryBuckets = new Map<string, number>();
+for (const post of allPosts) {
+	const tags = post.data.tags || [];
+	const sourceTag =
+		tags.find((t) => ["WinDiscover", "吾爱破解", "CoderNav", "采集"].includes(t) && t !== "采集") ||
+		(post.data.sourceLink ? "外站采集" : "本站随笔");
+	sourceBuckets.set(sourceTag, (sourceBuckets.get(sourceTag) || 0) + 1);
+	const cat = post.data.category || "未分类";
+	categoryBuckets.set(cat, (categoryBuckets.get(cat) || 0) + 1);
+}
 
+const sourceStats = [...sourceBuckets.entries()].sort((a, b) => b[1] - a[1]);
+const categoryStats = [...categoryBuckets.entries()].sort((a, b) => b[1] - a[1]);
+const collectedCount = allPosts.filter((p) => !!p.data.sourceLink).length;
+const ownCount = allPosts.length - collectedCount;
 const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.lastPage} 页`;
+
+const hotTags = [
+	...new Set(allPosts.flatMap((p) => p.data.tags || []).filter((t) => t !== "采集")),
+].slice(0, 8);
 ---
 
 <MainGridLayout title="全部文章" description="岁月的文章手记 · 采集与随笔">
@@ -54,72 +53,80 @@ const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.last
 			<h1 class="all-note-title">读过的，采来的</h1>
 			<p class="all-note-from">— {profileConfig.name} · {totalLabel}</p>
 			<p class="all-note-lead">
-				这里是文章手记：自己写的、从外面采回来的，都放在一起。点开就能看正文；来源站会在文里注明。
+				自己写的、从外面采回来的都放这里。点开看全文；文首会标明出处。下面按完整卡片列出，方便慢慢翻。
 			</p>
 		</header>
+
+		<section class="all-note-stats" aria-label="文章概览">
+			<div class="all-note-stat">
+				<strong>{allPosts.length}</strong>
+				<span>全部</span>
+			</div>
+			<div class="all-note-stat">
+				<strong>{collectedCount}</strong>
+				<span>采集转载</span>
+			</div>
+			<div class="all-note-stat">
+				<strong>{ownCount}</strong>
+				<span>本站随笔</span>
+			</div>
+			<div class="all-note-stat">
+				<strong>{categoryStats.length}</strong>
+				<span>分类</span>
+			</div>
+		</section>
+
+		{
+			sourceStats.length > 0 && (
+				<section class="all-note-sources" aria-label="来源分布">
+					<h2>来源</h2>
+					<ul>
+						{sourceStats.map(([name, count]) => (
+							<li>
+								<span>{name}</span>
+								<em>{count}</em>
+							</li>
+						))}
+					</ul>
+				</section>
+			)
+		}
 
 		<nav class="all-note-filters" aria-label="快捷入口">
 			<a class="is-active" href={url("/all/")}>全部</a>
 			<a href={url("/archive/")}>归档</a>
 			<a href={url("/categories/")}>分类</a>
 			<a href={url("/tags/")}>标签</a>
+			{categoryStats.slice(0, 3).map(([name]) => (
+				<a href={getCategoryUrl(name)}>{name}</a>
+			))}
 		</nav>
 
 		{
-			entries.length === 0 ? (
-				<p class="all-note-empty">暂时还没有文章。等采集跑起来，或自己写一篇就好。</p>
-			) : (
-				<ol class="all-note-list">
-					{entries.map((item, i) => (
-						<li style={`animation-delay: ${0.05 + i * 0.04}s`}>
-							<a class="all-note-item" href={item.href}>
-								<div class="all-note-item-meta">
-									<time datetime={formatDateToYYYYMMDD(item.published)}>
-										{formatDateToYYYYMMDD(item.published)}
-									</time>
-									{item.category && (
-										<span class="all-note-cat">{item.category}</span>
-									)}
-									{item.sourceLink && <span class="all-note-src">采集</span>}
-									{item.words ? <span>{item.words} 字</span> : null}
-								</div>
-								<h2 class="all-note-item-title">{item.title}</h2>
-								{item.excerpt && (
-									<p class="all-note-item-excerpt">{item.excerpt}</p>
-								)}
-								{item.tags.length > 0 && (
-									<div class="all-note-tags">
-										{item.tags.slice(0, 4).map((tag) => (
-											<span>#{tag}</span>
-										))}
-									</div>
-								)}
-							</a>
-						</li>
+			hotTags.length > 0 && (
+				<nav class="all-note-tags-bar" aria-label="热门标签">
+					{hotTags.map((tag) => (
+						<a href={getTagUrl(tag)}>#{tag}</a>
 					))}
-				</ol>
+				</nav>
 			)
 		}
+	</article>
 
+	<div class="all-note-feed">
+		<PostPage page={page} />
 		{
 			page.total > page.size && (
-				<div class="all-note-pager">
+				<div class="all-note-pager flex w-full justify-center">
 					<Pagination
 						class="mx-auto"
 						page={page}
-						style={`animation-delay: calc(var(--content-delay) + ${len * 40}ms)`}
+						style={`animation-delay: calc(var(--content-delay) + ${len * 50}ms)`}
 					/>
 				</div>
 			)
 		}
-
-		<footer class="all-note-foot">
-			<span>想按年份翻 →</span>
-			<a href={url("/archive/")}>去归档</a>
-			<span aria-hidden="true">·</span>
-			<a href={getCategoryUrl("资讯精选")}>资讯精选</a>
-		</footer>
-	</article>
+	</div>
 </MainGridLayout>
 
 <style>
@@ -127,8 +134,9 @@ const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.last
 		position: relative;
 		overflow: hidden;
 		isolation: isolate;
+		margin-bottom: 1rem;
 		padding: clamp(1.5rem, 3.2vw, 2.25rem) clamp(1.25rem, 3.2vw, 2.35rem)
-			clamp(1.25rem, 2.8vw, 1.75rem);
+			clamp(1.15rem, 2.6vw, 1.6rem);
 	}
 
 	.all-note-glow {
@@ -150,18 +158,17 @@ const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.last
 	}
 
 	.all-note-head,
+	.all-note-stats,
+	.all-note-sources,
 	.all-note-filters,
-	.all-note-list,
-	.all-note-empty,
-	.all-note-pager,
-	.all-note-foot {
+	.all-note-tags-bar {
 		position: relative;
 		z-index: 1;
 	}
 
 	.all-note-head {
 		margin-bottom: 1.1rem;
-		padding-bottom: 1.1rem;
+		padding-bottom: 1rem;
 		border-bottom: 1px dashed color-mix(in oklab, var(--line-divider) 85%, transparent);
 		animation: all-note-in 0.55s ease both;
 	}
@@ -195,12 +202,84 @@ const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.last
 		opacity: 0.78;
 	}
 
+	.all-note-stats {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0.55rem;
+		margin-bottom: 1rem;
+		animation: all-note-in 0.55s ease 0.04s both;
+	}
+
+	.all-note-stat {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		padding: 0.75rem 0.7rem;
+		border-radius: 0.9rem;
+		border: 1px solid color-mix(in srgb, var(--primary) 12%, transparent);
+		background: color-mix(in srgb, var(--primary) 5%, transparent);
+		text-align: center;
+	}
+
+	.all-note-stat strong {
+		font-size: 1.25rem;
+		font-weight: 850;
+		line-height: 1.1;
+		color: var(--primary);
+	}
+
+	.all-note-stat span {
+		font-size: 0.72rem;
+		font-weight: 650;
+		opacity: 0.5;
+	}
+
+	.all-note-sources {
+		margin-bottom: 1rem;
+		animation: all-note-in 0.55s ease 0.08s both;
+	}
+
+	.all-note-sources h2 {
+		margin: 0 0 0.55rem;
+		font-size: 0.75rem;
+		font-weight: 750;
+		letter-spacing: 0.08em;
+		opacity: 0.42;
+	}
+
+	.all-note-sources ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+	}
+
+	.all-note-sources li {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		padding: 0.38rem 0.7rem;
+		border-radius: 9999px;
+		font-size: 0.82rem;
+		font-weight: 700;
+		border: 1px solid color-mix(in srgb, var(--primary) 14%, transparent);
+		background: color-mix(in srgb, var(--card-bg) 88%, var(--primary));
+	}
+
+	.all-note-sources em {
+		font-style: normal;
+		font-size: 0.75rem;
+		opacity: 0.55;
+	}
+
 	.all-note-filters {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.35rem;
-		margin-bottom: 1.15rem;
-		animation: all-note-in 0.55s ease 0.05s both;
+		margin-bottom: 0.65rem;
+		animation: all-note-in 0.55s ease 0.1s both;
 	}
 
 	.all-note-filters a {
@@ -225,123 +304,32 @@ const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.last
 		border-color: color-mix(in srgb, var(--primary) 18%, transparent);
 	}
 
-	.all-note-empty {
-		margin: 1.5rem 0;
-		font-size: 0.95rem;
-		opacity: 0.55;
-		line-height: 1.7;
-	}
-
-	.all-note-list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 0.65rem;
-	}
-
-	.all-note-list > li {
-		animation: all-note-in 0.5s ease both;
-	}
-
-	.all-note-item {
-		display: flex;
-		flex-direction: column;
-		gap: 0.35rem;
-		padding: 1rem 1.05rem;
-		border-radius: 1rem;
-		border: 1px solid color-mix(in srgb, var(--primary) 12%, transparent);
-		background: color-mix(in srgb, var(--primary) 4%, transparent);
-		transition:
-			transform 0.15s ease,
-			background-color 0.15s ease,
-			border-color 0.15s ease;
-	}
-
-	.all-note-item:hover {
-		transform: translateX(3px);
-		background: color-mix(in srgb, var(--primary) 9%, transparent);
-		border-color: color-mix(in srgb, var(--primary) 24%, transparent);
-	}
-
-	.all-note-item-meta {
+	.all-note-tags-bar {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.45rem 0.65rem;
-		font-size: 0.75rem;
+		gap: 0.3rem 0.55rem;
+		animation: all-note-in 0.55s ease 0.12s both;
+	}
+
+	.all-note-tags-bar a {
+		font-size: 0.78rem;
 		font-weight: 650;
 		opacity: 0.48;
+		transition: opacity 0.15s ease, color 0.15s ease;
 	}
 
-	.all-note-cat,
-	.all-note-src {
-		padding: 0.08rem 0.45rem;
-		border-radius: 9999px;
-		background: color-mix(in srgb, var(--primary) 12%, transparent);
-		color: var(--primary);
+	.all-note-tags-bar a:hover {
 		opacity: 1;
+		color: var(--primary);
 	}
 
-	.all-note-src {
-		background: color-mix(in srgb, var(--primary) 8%, transparent);
-	}
-
-	.all-note-item-title {
-		margin: 0;
-		font-size: 1.05rem;
-		font-weight: 800;
-		line-height: 1.45;
-		letter-spacing: 0.01em;
-	}
-
-	.all-note-item-excerpt {
-		margin: 0;
-		font-size: 0.88rem;
-		line-height: 1.7;
-		opacity: 0.58;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-
-	.all-note-tags {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.35rem 0.55rem;
-		margin-top: 0.15rem;
-		font-size: 0.75rem;
-		opacity: 0.42;
+	.all-note-feed {
+		margin-bottom: 0.5rem;
 	}
 
 	.all-note-pager {
-		margin-top: 1.5rem;
-		padding-top: 0.5rem;
-	}
-
-	.all-note-foot {
-		margin: 1.35rem 0 0;
-		padding-top: 1.1rem;
-		border-top: 1px solid color-mix(in oklab, var(--line-divider) 80%, transparent);
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.35rem;
-		font-size: 0.78rem;
-		opacity: 0.5;
-		animation: all-note-in 0.55s ease 0.2s both;
-	}
-
-	.all-note-foot a {
-		font-weight: 700;
-		color: var(--primary);
-		opacity: 0.9;
-	}
-
-	.all-note-foot a:hover {
-		text-decoration: underline;
+		margin-top: 0.25rem;
+		margin-bottom: 1rem;
 	}
 
 	@keyframes all-note-in {
@@ -355,16 +343,19 @@ const totalLabel = `共 ${page.total} 篇 · 第 ${page.currentPage}/${page.last
 		}
 	}
 
+	@media (max-width: 640px) {
+		.all-note-stats {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
 	@media (prefers-reduced-motion: reduce) {
 		.all-note-head,
+		.all-note-stats,
+		.all-note-sources,
 		.all-note-filters,
-		.all-note-list > li,
-		.all-note-foot {
+		.all-note-tags-bar {
 			animation: none !important;
-		}
-
-		.all-note-item:hover {
-			transform: none;
 		}
 	}
 </style>
