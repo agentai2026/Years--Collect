@@ -21,18 +21,18 @@
 
 .banner-post-title {
     max-width: 72rem;
-    font-size: 2.75rem;
-    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.65);
+    /* 与首页主标题同款尺寸与阴影（由 .banner-title 提供） */
+    line-height: 1.15;
 }
 
 .banner-page-title {
-    font-size: clamp(2rem, 4vw, 3rem);
-    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.65);
+    /* 与首页主标题同款：大字 + 柔和阴影（由 .banner-title 提供） */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    line-height: 1.2;
+    line-height: 1.15;
+    width: 100%;
 }
 
 /* .banner-page-title-icon {
@@ -86,8 +86,9 @@
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
 }
 
+/* 文章标题过长时略收紧，避免挤满横幅 */
 @media (max-width: 1280px) {
-    .banner-post-title {
-        font-size: 2.35rem;
+    .banner-post-title.banner-title {
+        font-size: min(var(--banner-title-size, 3rem), 8vw);
     }
 }

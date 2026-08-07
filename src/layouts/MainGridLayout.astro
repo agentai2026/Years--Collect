@@ -178,6 +178,9 @@ const showBannerPageTitle =
 	!isHomePageCheck &&
 	!isPostPage &&
 	!!title;
+
+const pageBannerSubtitles = backgroundWallpaper.common?.homeText?.subtitle ?? [];
+const pageBannerTypewriter = backgroundWallpaper.common?.homeText?.typewriter;
 // 手机端非首页不显示banner的CSS类
 const mobileNonHomeBannerClass = !isHomePageCheck ? "mobile-hide-banner" : "";
 
@@ -677,13 +680,34 @@ const hasMultipleImages =
         setRandomSubtitle();
     </script>
 
-    <!-- Non-home non-post page title overlay (desktop only) -->
+    <!-- Non-home non-post page title overlay — 与首页同款大标题 + 打字机副标题 -->
     {showBannerPageTitle && (
         <div class="banner-page-title-overlay absolute inset-0 z-20 hidden lg:flex items-center justify-center pointer-events-none">
             <div class="w-4/5 lg:w-3/4 text-center mb-0">
-                <div class="banner-page-title font-bold text-white leading-tight inline-flex items-center justify-center gap-3">
-                    {/* <Icon is:inline name="material-symbols:bookmark-rounded" class="banner-page-title-icon" /> */}
-                    <span class="banner-page-title-text">{title}</span>
+                <div class="flex flex-col">
+                    <div
+                        class="banner-title banner-page-title font-bold text-white mb-2 lg:mb-4 leading-tight"
+                        style={{ '--banner-title-size': backgroundWallpaper.common?.homeText?.titleSize || "3rem" }}
+                    >
+                        <span class="banner-page-title-text">{title}</span>
+                    </div>
+                    {pageBannerSubtitles.length > 0 && (
+                        <div
+                            class="banner-subtitle text-white/90 leading-snug"
+                            style={{ fontSize: backgroundWallpaper.common?.homeText?.subtitleSize || "1.5rem" }}
+                        >
+                            {pageBannerTypewriter?.enable ? (
+                                <TypewriterText
+                                    text={pageBannerSubtitles}
+                                    speed={pageBannerTypewriter.speed}
+                                    deleteSpeed={pageBannerTypewriter.deleteSpeed}
+                                    pauseTime={pageBannerTypewriter.pauseTime}
+                                />
+                            ) : (
+                                pageBannerSubtitles[Math.floor(Math.random() * pageBannerSubtitles.length)]
+                            )}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
@@ -694,7 +718,10 @@ const hasMultipleImages =
         <div class="banner-post-meta-overlay absolute inset-0 z-20 hidden lg:flex items-center justify-center pointer-events-none">
             <div class="w-4/5 lg:w-3/4 text-center mb-0">
                 <div class="flex flex-col items-center gap-3">
-                    <div class="banner-post-title font-bold text-white leading-tight">
+                    <div
+                        class="banner-title banner-post-title font-bold text-white leading-tight"
+                        style={{ '--banner-title-size': backgroundWallpaper.common?.homeText?.titleSize || "3rem" }}
+                    >
                         {bannerPostMeta.title}
                     </div>
                     {bannerPostInfoMode === "description" && bannerPostMeta.description && (
