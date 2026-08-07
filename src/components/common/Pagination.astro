@@ -53,6 +53,9 @@ const getPageUrl = (p: number) => {
 	const base = first.replace(/\/$/, "");
 	return `${base}/${p}/`;
 };
+
+/** Astro page.url.prev/next 有时不含 base，统一走 url() */
+const hrefOrHash = (path?: string | null) => (path ? url(path) : "#");
 ---
 
 <div class:list={[className, "pagination-wrapper flex flex-col gap-4 items-center"]} style={style}>
@@ -61,7 +64,7 @@ const getPageUrl = (p: number) => {
     <!-- 移动端简化版分页 -->
     <div class="mobile-pagination flex items-center gap-3">
       <a
-        href={page.url.prev || "#"}
+        href={hrefOrHash(page.url.prev)}
         aria-label={i18n(I18nKey.paginationPrev)}
         aria-disabled={!page.url.prev ? "true" : "false"}
         tabindex={!page.url.prev ? "-1" : "0"}
@@ -88,7 +91,7 @@ const getPageUrl = (p: number) => {
       </div>
 
       <a
-        href={page.url.next || "#"}
+        href={hrefOrHash(page.url.next)}
         aria-label={i18n(I18nKey.paginationNext)}
         aria-disabled={!page.url.next ? "true" : "false"}
         tabindex={!page.url.next ? "-1" : "0"}
@@ -112,7 +115,7 @@ const getPageUrl = (p: number) => {
     <!-- 桌面端完整版分页 -->
     <div class="desktop-pagination flex items-center gap-3">
       <a
-        href={page.url.prev || "#"}
+        href={hrefOrHash(page.url.prev)}
         aria-label={i18n(I18nKey.paginationPrev)}
         aria-disabled={!page.url.prev ? "true" : "false"}
         tabindex={!page.url.prev ? "-1" : "0"}
@@ -157,7 +160,7 @@ const getPageUrl = (p: number) => {
         })
       }
       <a
-        href={page.url.next || "#"}
+        href={hrefOrHash(page.url.next)}
         aria-label={i18n(I18nKey.paginationNext)}
         aria-disabled={!page.url.next ? "true" : "false"}
         tabindex={!page.url.next ? "-1" : "0"}

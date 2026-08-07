@@ -82,6 +82,12 @@ export function url(path: string): string {
 		return path;
 	}
 
+	const base = import.meta.env.BASE_URL || "/";
+	// 已含 base（如 Astro paginate 偶发带上）时不再拼接，避免 /Years--Collect/Years--Collect/...
+	if (base !== "/" && (path === base || path.startsWith(base))) {
+		return path;
+	}
+
 	// 只有本地相对路径才添加BASE_URL
-	return joinUrl("", import.meta.env.BASE_URL, path);
+	return joinUrl("", base, path);
 }
