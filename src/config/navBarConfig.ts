@@ -28,10 +28,10 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		})),
 	});
 
-	// 文章及其子菜单（点击「文章」进入归档页，悬停展开子项）
+	// 文章及其子菜单（点击「文章」进入全部列表，悬停展开子项）
 	links.push({
 		name: "文章",
-		url: "/archive/",
+		url: "/all/",
 		icon: "material-symbols:article",
 		children: [
 			{
