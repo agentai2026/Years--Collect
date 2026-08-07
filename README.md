@@ -82,13 +82,13 @@
 
 ---
 
-## 自动化工作流（大白话）
+## 自动化工作流（页面----功能）
 
 | 名字 | 干什么 | 多久跑一次 |
 | --- | --- | --- |
-| [影视源同步入库](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-maintenance.yml) | 从网上抓影视接口、分类，写进目录 | 每 6 小时 |
-| [影视源在线巡检](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-health.yml) | 测接口还在不在、快不快 | 每 2 小时 |
-| [发布网站](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) | 把站点打包发到网页上 | 有改动 / 上面跑完后 |
+| [影视源页面----同步入库](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-maintenance.yml) | 抓影视接口、分类进目录 | 每 6 小时 |
+| [影视源页面----在线巡检](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-health.yml) | 测接口还在不在、快不快 | 每 2 小时 |
+| [全站页面----发布上线](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) | 把站点打包发到网上 | 有改动 / 上面跑完后 |
 
 （旁边若还有「页面构建部署」，那是 GitHub 自己的发布步骤，不用管。）
 

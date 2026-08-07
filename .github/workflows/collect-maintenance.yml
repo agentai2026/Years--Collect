@@ -1,4 +1,4 @@
-name: 影视源同步入库
+name: 影视源页面----同步入库
 
 on:
   workflow_dispatch:

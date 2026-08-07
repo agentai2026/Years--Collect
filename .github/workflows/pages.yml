@@ -1,4 +1,4 @@
-name: 发布网站
+name: 全站页面----发布上线
 
 # Build Astro site and publish dist/ to GitHub Pages.
 on:
@@ -15,8 +15,8 @@ on:
   workflow_dispatch: {}
   workflow_run:
     workflows:
-      - "影视源同步入库"
-      - "影视源在线巡检"
+      - "影视源页面----同步入库"
+      - "影视源页面----在线巡检"
     types: [completed]
 
 permissions:

@@ -33,10 +33,10 @@ pnpm collect:mcp
 node scripts/verify-collect.mjs
 ```
 
-## GitHub Actions（大白话）
+## GitHub Actions（页面----功能）
 
-- `影视源同步入库` — 每 6 小时把网上的影视接口抓进来分类
-- `影视源在线巡检` — 每 2 小时测一遍接口活不活
-- `发布网站` — 把网页重新打包发到网上
+- `影视源页面----同步入库` — 每 6 小时抓影视接口并分类
+- `影视源页面----在线巡检` — 每 2 小时测接口是否在线
+- `全站页面----发布上线` — 把网站重新打包发上网
 
 Pages 项目站 base：`/Years--Collect/`（`GITHUB_PAGES=1`）。
