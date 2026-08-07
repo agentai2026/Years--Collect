@@ -86,19 +86,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2233
+     "ms": 1971
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-3",
-   "name": "鸭鸭资源站",
+   "name": "鸭鸭（丫丫）资源网",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://cj.yayazy.net/api.php/provide/vod/",
    "domain": "cj.yayazy.net",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-3",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/176.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 119674,
    "tags": [
@@ -187,7 +187,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 358
+     "ms": 375
     }
    ]
   },
@@ -195,11 +195,11 @@
    "id": "zy-guangsuziyuanzhan-4",
    "name": "光速资源站",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://api.guangsuapi.com/api.php/provide/vod/",
    "domain": "api.guangsuapi.com",
-   "site": "https://www.ziyuanzu.com/source/guangsuziyuanzhan-4",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/135.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 110298,
    "tags": [
@@ -251,19 +251,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 585
+     "ms": 608
     }
    ]
   },
   {
    "id": "zy-tianyingshiziyuanzhan-5",
-   "name": "天涯影视资源站",
+   "name": "天涯影视资源网",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://tyyszyapi.com/api.php/provide/vod/",
    "domain": "tyyszyapi.com",
-   "site": "https://www.ziyuanzu.com/source/tianyingshiziyuanzhan-5",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/221.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 68834,
    "tags": [
@@ -352,7 +352,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 425
+     "ms": 307
     }
    ]
   },
@@ -427,7 +427,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1143
+     "ms": 1173
     }
    ]
   },
@@ -504,19 +504,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 546
+     "ms": 504
     }
    ]
   },
   {
    "id": "zy-wuziyuanzhan-11",
-   "name": "api.wujinapi",
+   "name": "无尽资源网",
    "cms": "maccms10",
-   "contributor": "@guxiangbin",
+   "contributor": "@yszzq",
    "api": "https://api.wujinapi.me/api.php/provide/vod/",
    "domain": "api.wujinapi.me",
-   "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/短剧.txt",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/195.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 117550,
    "tags": [
@@ -609,19 +609,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 188
+     "ms": 213
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-13",
-   "name": "bfzyapi",
+   "name": "暴风资源网",
    "cms": "maccms10",
-   "contributor": "@07751000",
+   "contributor": "@yszzq",
    "api": "https://bfzyapi.com/api.php/provide/vod/",
    "domain": "bfzyapi.com",
-   "site": "https://github.com/07751000/001github.io/blob/410c03197241f93ce0d0a9c295c4dd587b4d3d54/01.json",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/184.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 153392,
    "tags": [
@@ -693,19 +693,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 411
+     "ms": 736
     }
    ]
   },
   {
    "id": "zy-jisuziyuanzhan-15",
-   "name": "jszyapi",
+   "name": "极速资源网",
    "cms": "maccms10",
-   "contributor": "@swhtv",
+   "contributor": "@yszzq",
    "api": "https://jszyapi.com/api.php/provide/vod/",
    "domain": "jszyapi.com",
-   "site": "https://github.com/swhtv/111/blob/4d92780319d1f8cbd3cd49a9a0591315364f0bac/fj.json",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/183.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 108222,
    "tags": [
@@ -768,19 +768,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 400
+     "ms": 388
     }
    ]
   },
   {
    "id": "zy-ziyuan-18",
-   "name": "牛牛资源",
+   "name": "牛牛资源网",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://api.niuniuzy.me/api.php/provide/vod/",
    "domain": "api.niuniuzy.me",
-   "site": "https://www.ziyuanzu.com/source/ziyuan-18",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/237.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 121634,
    "tags": [
@@ -869,7 +869,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 382
+     "ms": 383
     }
    ]
   },
@@ -972,7 +972,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 272
+     "ms": 367
     }
    ]
   },
@@ -1045,7 +1045,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 520
+     "ms": 501
     }
    ]
   },
@@ -1059,7 +1059,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-27",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 137365,
+   "total": 137366,
    "tags": [
     "电影",
     "连续剧",
@@ -1130,19 +1130,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 994
+     "ms": 1156
     }
    ]
   },
   {
    "id": "zy-suboziyuanzhan-28",
-   "name": "速播资源站",
+   "name": "速播资源采集规则地址",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://subocj.com/api.php/provide/vod/",
    "domain": "subocj.com",
-   "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-28",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/156.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 110045,
    "tags": [
@@ -1198,7 +1198,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1204
+     "ms": 1058
     }
    ]
   },
@@ -1266,19 +1266,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 680
+     "ms": 876
     }
    ]
   },
   {
    "id": "zy-155ziyuanzhan-33",
-   "name": "155api",
+   "name": "155资源站",
    "cms": "maccms10",
-   "contributor": "@hd9211",
+   "contributor": "@yszzq",
    "api": "https://155api.com/api.php/provide/vod/",
    "domain": "155api.com",
-   "site": "https://github.com/hd9211/maotv/blob/a80c244bdb2765c0c0aae73b7dcd72ae7faf71e5/cyys1.txt",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/187.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 181882,
    "tags": [
@@ -1348,7 +1348,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 558
+     "ms": 109
     }
    ]
   },
@@ -1410,7 +1410,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1443
+     "ms": 2638
     }
    ]
   },
@@ -1477,19 +1477,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 341
+     "ms": 360
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-36",
-   "name": "魔都资源站",
+   "name": "魔都动漫资源采集网",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://www.mdzyapi.com/api.php/provide/vod/",
    "domain": "www.mdzyapi.com",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-36",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/181.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 86694,
    "tags": [
@@ -1560,7 +1560,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1313
+     "ms": 1379
     }
    ]
   },
@@ -1635,7 +1635,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 373
+     "ms": 735
     }
    ]
   },
@@ -1706,19 +1706,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 321
+     "ms": 598
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-39",
-   "name": "爱坤资源站",
+   "name": "ikun资源网",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://ikunzyapi.com/api.php/provide/vod/",
    "domain": "ikunzyapi.com",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-39",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/188.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 66512,
    "tags": [
@@ -1796,7 +1796,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 474
+     "ms": 465
     }
    ]
   },
@@ -1867,7 +1867,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 388
+     "ms": 336
     }
    ]
   },
@@ -1942,7 +1942,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 344
+     "ms": 327
     }
    ]
   },
@@ -2017,7 +2017,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 397
+     "ms": 799
     }
    ]
   },
@@ -2059,13 +2059,13 @@
   },
   {
    "id": "zy-ziyuanzhan-51",
-   "name": "玉兔资源站",
+   "name": "玉兔资源",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://apiyutu.com/api.php/provide/vod/",
    "domain": "apiyutu.com",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-51",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/169.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 207183,
    "tags": [
@@ -2120,7 +2120,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 453
+     "ms": 441
     }
    ]
   },
@@ -2194,7 +2194,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 595
+     "ms": 550
     }
    ]
   },
@@ -2235,7 +2235,7 @@
    "domain": "www.xxibaozyw.com",
    "site": "https://www.ziyuanzu.com/source/wangziyuanzhan-57",
    "source": "ziyuanzu.com",
-   "http": 200,
+   "http": 0,
    "total": 12229,
    "tags": [
     "受限内容",
@@ -2297,8 +2297,8 @@
     },
     {
      "date": "2026-08-07",
-     "ok": true,
-     "ms": 401
+     "ok": false,
+     "ms": null
     }
    ]
   },
@@ -2365,7 +2365,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 249
+     "ms": 278
     }
    ]
   },
@@ -2434,7 +2434,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 249
+     "ms": 245
     }
    ]
   },
@@ -2489,7 +2489,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 329
+     "ms": 322
     }
    ]
   },
@@ -2563,7 +2563,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1295
+     "ms": 768
     }
    ]
   },
@@ -2639,7 +2639,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 511
+     "ms": 861
     }
    ]
   },
@@ -2701,7 +2701,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 360
+     "ms": 481
     }
    ]
   },
@@ -2779,7 +2779,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1200
+     "ms": 1209
     }
    ]
   },
@@ -2845,7 +2845,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1093
+     "ms": 1905
     }
    ]
   },
@@ -2929,7 +2929,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 359
+     "ms": 357
     }
    ]
   },
@@ -3075,13 +3075,13 @@
   },
   {
    "id": "zy-duyunziyuanzhan-91",
-   "name": "api.apibdzy",
+   "name": "百度资源",
    "cms": "maccms10",
-   "contributor": "@loopool",
+   "contributor": "@yszzq",
    "api": "https://api.apibdzy.com/api.php/provide/vod/",
    "domain": "api.apibdzy.com",
-   "site": "https://github.com/loopool/fan/blob/96037b8ab08d96c05b07af68cb70b3428bb6c701/fan.py",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/123.html",
+   "source": "yszzq.com",
    "http": 403,
    "total": 47929,
    "tags": [
@@ -3306,7 +3306,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 311
+     "ms": 255
     }
    ]
   },
@@ -3376,7 +3376,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 192
+     "ms": 199
     }
    ]
   },
@@ -3390,7 +3390,7 @@
    "site": "https://www.ziyuanzu.com/source/daziyuanzhan-14",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 121653,
+   "total": 121655,
    "tags": [
     "受限内容",
     "电影",
@@ -3477,7 +3477,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 327
+     "ms": 335
     }
    ]
   },
@@ -3544,19 +3544,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 749
+     "ms": 798
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-31",
-   "name": "金鹰资源站",
+   "name": "金鹰资源网苹果CMS",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://jyzyapi.com/provide/vod/",
    "domain": "jyzyapi.com",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-31",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/138.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 109974,
    "tags": [
@@ -3611,7 +3611,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 578
+     "ms": 606
     }
    ]
   },
@@ -3658,19 +3658,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 637
+     "ms": 638
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-47",
-   "name": "森林资源站",
+   "name": "森林资源网",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://slapibf.com/api.php/provide/vod/",
    "domain": "slapibf.com",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-47",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/148.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 249166,
    "tags": [
@@ -3756,7 +3756,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1129
+     "ms": 1204
     }
    ]
   },
@@ -3896,7 +3896,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 423
+     "ms": 939
     }
    ]
   },
@@ -3926,7 +3926,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 397
+     "ms": 462
     }
    ]
   },
@@ -3956,7 +3956,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 316
+     "ms": 641
     }
    ]
   },
@@ -3984,7 +3984,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 471
+     "ms": 805
     }
    ]
   },
@@ -4012,7 +4012,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 720
+     "ms": 739
     }
    ]
   },
@@ -4054,7 +4054,7 @@
    "site": "https://www.ziyuanzu.com/source/yiziyuanzhan-17",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 65541,
+   "total": 65542,
    "tags": [
     "电影",
     "连续剧",
@@ -4119,7 +4119,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1663
+     "ms": 2468
     }
    ]
   },
@@ -4189,7 +4189,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 191
+     "ms": 173
     }
    ]
   },
@@ -4250,7 +4250,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 625
+     "ms": 640
     }
    ]
   },
@@ -4314,7 +4314,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1976
+     "ms": 2130
     }
    ]
   },
@@ -4348,13 +4348,13 @@
   },
   {
    "id": "zy-ziyuanzhan-73",
-   "name": "奥斯卡资源站",
+   "name": "奥斯卡资源API",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://aosikazy.com/api.php/provide/vod/",
    "domain": "aosikazy.com",
-   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-73",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/155.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 211050,
    "tags": [
@@ -4405,7 +4405,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1023
+     "ms": 679
     }
    ]
   },
@@ -4468,19 +4468,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 661
+     "ms": 653
     }
    ]
   },
   {
    "id": "zy-ziyuan-19",
-   "name": "猫眼资源",
+   "name": "猫眼资源站",
    "cms": "maccms10",
-   "contributor": "@ziyuanzu",
+   "contributor": "@yszzq",
    "api": "https://api.maoyanapi.top/api.php/provide/vod/",
    "domain": "api.maoyanapi.top",
-   "site": "https://www.ziyuanzu.com/source/ziyuan-19",
-   "source": "ziyuanzu.com",
+   "site": "https://www.yszzq.com/ziyuan/api/224.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 33715,
    "tags": [
@@ -4557,7 +4557,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1116
+     "ms": 1071
     }
    ]
   },
@@ -4671,19 +4671,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1443
+     "ms": 1352
     }
    ]
   },
   {
    "id": "zy-ziyuanzhan-74",
-   "name": "naixxzy",
+   "name": "奶香香资源站",
    "cms": "maccms10",
-   "contributor": "@dlgt7",
+   "contributor": "@yszzq",
    "api": "https://naixxzy.com/api.php/provide/vod/",
    "domain": "naixxzy.com",
-   "site": "https://github.com/dlgt7/TVbox-interface/blob/97fe47b35445f485ee6f323e46f3a78eecec2464/jj.json",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/185.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 174390,
    "tags": [
@@ -4740,7 +4740,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 807
+     "ms": 726
     }
    ]
   },
@@ -4811,7 +4811,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 279
+     "ms": 258
     }
    ]
   },
@@ -4993,7 +4993,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 537
+     "ms": 558
     }
    ]
   },
@@ -5083,7 +5083,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 266
+     "ms": 603
     }
    ]
   },
@@ -5097,7 +5097,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/244.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 85201,
+   "total": 85202,
    "tags": [
     "连续剧",
     "短剧",
@@ -5159,7 +5159,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2878
+     "ms": 2418
     }
    ]
   },
@@ -5261,7 +5261,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 396
+     "ms": 418
     }
    ]
   },
@@ -5347,7 +5347,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1184
+     "ms": 1095
     }
    ]
   },
@@ -5448,7 +5448,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 365
+     "ms": 87
     }
    ]
   },
@@ -5549,7 +5549,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 420
+     "ms": 356
     }
    ]
   },
@@ -5615,7 +5615,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1636
+     "ms": 2163
     }
    ]
   },
@@ -5682,21 +5682,21 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 250
+     "ms": 241
     }
    ]
   },
   {
    "id": "ys-220",
-   "name": "iqiyizyapi",
+   "name": "爱奇艺资源站",
    "cms": "maccms10",
-   "contributor": "@jishitang",
+   "contributor": "@yszzq",
    "api": "https://www.iqiyizyapi.com/api.php/provide/vod/",
    "domain": "www.iqiyizyapi.com",
-   "site": "https://github.com/jishitang/Tool/blob/3d1e966187886369cd5a5178e1ded1f049ba822b/gat2/tvbox.txt",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/220.html",
+   "source": "yszzq.com",
    "http": 200,
-   "total": 65541,
+   "total": 65542,
    "tags": [
     "电影",
     "连续剧",
@@ -5761,7 +5761,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2575
+     "ms": 2849
     }
    ]
   },
@@ -5824,7 +5824,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2270
+     "ms": 1915
     }
    ]
   },
@@ -5838,7 +5838,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/207.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 137365,
+   "total": 137366,
    "tags": [
     "电影",
     "连续剧",
@@ -5909,19 +5909,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 700
+     "ms": 728
     }
    ]
   },
   {
    "id": "ys-205",
-   "name": "cj.rycjapi",
+   "name": "如意资源网",
    "cms": "maccms10",
-   "contributor": "@shidahuilang",
+   "contributor": "@yszzq",
    "api": "https://cj.rycjapi.com/api.php/provide/vod/",
    "domain": "cj.rycjapi.com",
-   "site": "https://github.com/shidahuilang/shuyuan-bak/blob/9f35d160872a4dfdcdebfe6591827050495cfdbe/UZ.json",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/205.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 83001,
    "tags": [
@@ -5981,7 +5981,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2314
+     "ms": 2832
     }
    ]
   },
@@ -6037,7 +6037,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 651
+     "ms": 574
     }
    ]
   },
@@ -6127,19 +6127,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2310
+     "ms": 1799
     }
    ]
   },
   {
    "id": "ys-180",
-   "name": "hhzyapi",
+   "name": "豪华资源网",
    "cms": "maccms10",
-   "contributor": "@libinghui123",
+   "contributor": "@yszzq",
    "api": "https://hhzyapi.com/api.php/provide/vod/",
    "domain": "hhzyapi.com",
-   "site": "https://github.com/libinghui123/tvbox/blob/aa8714ac8740061dcd934a31d60c5ffba50a2577/tvbox/lib/夜魔.txt",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/180.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 108974,
    "tags": [
@@ -6202,7 +6202,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 377
+     "ms": 350
     }
    ]
   },
@@ -6289,7 +6289,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 592
+     "ms": 543
     }
    ]
   },
@@ -6324,14 +6324,14 @@
   {
    "id": "ys-149",
    "name": "优质资源库",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://api.yzzy-api.com/inc/api.php",
    "domain": "api.yzzy-api.com",
    "site": "https://www.yszzq.com/ziyuan/api/149.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 100375,
+   "total": 100347,
    "tags": [
     "电影",
     "连续剧",
@@ -6420,14 +6420,14 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1288
+     "ms": 1526
     }
    ]
   },
   {
    "id": "ys-147",
    "name": "大地资源",
-   "cms": "maccmsv8",
+   "cms": "maccms10",
    "contributor": "@yszzq",
    "api": "https://dadiapi.com/api.php/provide/vod/",
    "domain": "dadiapi.com",
@@ -6491,21 +6491,21 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 267
+     "ms": 593
     }
    ]
   },
   {
    "id": "ys-142",
-   "name": "cj.lziapi",
+   "name": "量子资源网资源",
    "cms": "maccms10",
-   "contributor": "@liu673cn",
+   "contributor": "@yszzq",
    "api": "https://cj.lziapi.com/api.php/provide/vod/",
    "domain": "cj.lziapi.com",
-   "site": "https://github.com/liu673cn/xbb/blob/df208b25a21b9b3de67ebe6c81c550061b6bc3d5/b2.txt",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/142.html",
+   "source": "yszzq.com",
    "http": 200,
-   "total": 148186,
+   "total": 148187,
    "tags": [
     "连续剧",
     "电影解说",
@@ -6572,7 +6572,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 525
+     "ms": 393
     }
    ]
   },
@@ -6637,7 +6637,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 399
+     "ms": 280
     }
    ]
   },
@@ -6701,19 +6701,19 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 223
+     "ms": 367
     }
    ]
   },
   {
    "id": "ys-119",
-   "name": "hongniuzy2",
+   "name": "红牛资源采集地址",
    "cms": "maccms10",
-   "contributor": "@heroaku",
+   "contributor": "@yszzq",
    "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
    "domain": "www.hongniuzy2.com",
-   "site": "https://github.com/heroaku/TVboxo/blob/42edfca812780525e95a1c1c2d97d6ed664e27a4/apit.json",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/119.html",
+   "source": "yszzq.com",
    "http": 200,
    "total": 109636,
    "tags": [
@@ -6774,7 +6774,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 450
+     "ms": 231
     }
    ]
   },
@@ -6839,7 +6839,7 @@
    "site": "https://github.com/liu673cn/bug/blob/7820ab8e94f060401f791a646df760404276098e/vod/xpg.txt",
    "source": "github",
    "http": 200,
-   "total": 148186,
+   "total": 148187,
    "tags": [
     "连续剧",
     "电影解说",
@@ -6901,7 +6901,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 413
+     "ms": 196
     }
    ]
   },
@@ -6924,7 +6924,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1015
+     "ms": 1186
     }
    ]
   },
@@ -7029,7 +7029,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 260
+     "ms": 215
     }
    ]
   },
@@ -7150,7 +7150,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 384
+     "ms": 113
     }
    ]
   },
@@ -7233,7 +7233,7 @@
    "site": "https://github.com/Minerchu/dongguaTV/blob/6b898305740dd4b842cb27fe0b9533e68127cb7a/README.md",
    "source": "github",
    "http": 200,
-   "total": 97678,
+   "total": 97679,
    "tags": [
     "连续剧"
    ],
@@ -7276,7 +7276,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1393
+     "ms": 1987
     }
    ]
   },
@@ -7397,7 +7397,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 175
+     "ms": 198
     }
    ]
   },
@@ -7434,7 +7434,7 @@
    "site": "https://github.com/liu673cn/box/blob/c8665453fc3665fa8d3124d6d9d91fcec4029e66/m.json",
    "source": "github",
    "http": 200,
-   "total": 148186,
+   "total": 148187,
    "tags": [
     "连续剧",
     "电影解说",
@@ -7496,7 +7496,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 722
+     "ms": 323
     }
    ]
   },
@@ -7637,7 +7637,7 @@
    "contributor": "@xiongjian83",
    "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
    "domain": "json02.heimuer.xyz",
-   "site": "https://github.com/xiongjian83/TvBox/blob/fc0772b1d829203b603dfab6b3deb935ef2df7e0/X.json",
+   "site": "https://github.com/xiongjian83/TvBox/blob/bfe316583495c726610521550206a7f3b50bc10e/X.json",
    "source": "github",
    "http": 0,
    "total": 0,
@@ -7660,7 +7660,7 @@
    "contributor": "@alantang1977",
    "api": "https://cj.jusj.top/api.php/provide/vod/",
    "domain": "cj.jusj.top",
-   "site": "https://github.com/alantang1977/X/blob/ba6191dc5f2aa6e4f079cea8214f9f51759e3029/vox.json",
+   "site": "https://github.com/alantang1977/X/blob/d780e5f8e2aba5ad18636b3485ebfab76f2e9f1b/vox.json",
    "source": "github",
    "http": 200,
    "total": 188396,
@@ -7688,7 +7688,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 3256
+     "ms": 2172
     }
    ]
   },
@@ -7745,7 +7745,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 768
+     "ms": 424
     }
    ]
   },
@@ -7768,7 +7768,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 152
+     "ms": 208
     }
    ]
   },
@@ -7855,7 +7855,7 @@
    "tags": [],
    "categories": [],
    "restricted": false,
-   "note": "接口被防爬/返回网页，暂无分类元数据",
+   "note": "synced from github",
    "history": [
     {
      "date": "2026-08-07",
@@ -7920,7 +7920,7 @@
    "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/欧歌.txt",
    "source": "github",
    "http": 200,
-   "total": 148186,
+   "total": 148187,
    "tags": [
     "连续剧",
     "电影解说",
@@ -7982,7 +7982,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 461
+     "ms": 381
     }
    ]
   },
@@ -8050,8 +8050,8 @@
    "history": [
     {
      "date": "2026-08-07",
-     "ok": false,
-     "ms": null
+     "ok": true,
+     "ms": 448
     }
    ]
   },
@@ -8110,7 +8110,7 @@
    "domain": "www.bajiezy.xyz",
    "site": "https://github.com/hd9211/maotv/blob/a80c244bdb2765c0c0aae73b7dcd72ae7faf71e5/maoo2.txt",
    "source": "github",
-   "http": 200,
+   "http": 429,
    "total": 0,
    "tags": [],
    "categories": [],
@@ -8166,7 +8166,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 369
+     "ms": 181
     }
    ]
   },
@@ -8188,8 +8188,8 @@
    "history": [
     {
      "date": "2026-08-07",
-     "ok": false,
-     "ms": null
+     "ok": true,
+     "ms": 757
     }
    ]
   },
@@ -8235,7 +8235,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 202
+     "ms": 240
     }
    ]
   },
@@ -8258,7 +8258,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 666
+     "ms": 499
     }
    ]
   },
@@ -8315,7 +8315,7 @@
    "contributor": "@alantang1977",
    "api": "https://json.heimuer.xyz/api.php/provide/vod/",
    "domain": "json.heimuer.xyz",
-   "site": "https://github.com/alantang1977/pg/blob/7ceaae6ce38bfc4c3711abbf08bb5af2188a0025/py.json",
+   "site": "https://github.com/alantang1977/pg/blob/a25a6de23f9f670787308e8f762c3b7568903866/py.json",
    "source": "github",
    "http": 0,
    "total": 0,
@@ -8399,7 +8399,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 2580
+     "ms": 2859
     }
    ]
   },
@@ -8555,7 +8555,7 @@
    "tags": [],
    "categories": [],
    "restricted": false,
-   "note": "接口被防爬/返回网页，暂无分类元数据",
+   "note": "synced from github",
    "history": [
     {
      "date": "2026-08-07",
@@ -8652,7 +8652,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 752
+     "ms": 525
     }
    ]
   },
@@ -8799,7 +8799,7 @@
     {
      "date": "2026-08-07",
      "ok": true,
-     "ms": 1483
+     "ms": 1257
     }
    ]
   }
