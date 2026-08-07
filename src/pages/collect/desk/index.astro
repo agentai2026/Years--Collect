@@ -1,5 +1,6 @@
 ---
 import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
+import { url } from "@/utils/url-utils";
 ---
 <CollectDeskLayout title="影视采集站信号台 · 接口监控目录" page="index">
 	<header class="mast" id="hdr"></header>
@@ -12,7 +13,7 @@ import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
 			<p class="sub">每 2 小时全站探测，连续 30 天留档。绿的在岗、黄的告病、红的失联——点开任意一家，速度、可用率、好心人署名，全部可查。</p>
 			<div class="hero-cta">
 				<a class="cta" href="#catalog">翻阅本期目录</a>
-				<a class="cta alt" href="/collect/desk/submit/">投稿你的接口</a>
+				<a class="cta alt" href={url("/collect/desk/submit/")}>投稿你的接口</a>
 			</div>
 			<div class="hero-quote">「接口会跑路，<br>记录不会。」<span>—— 信号台编辑部</span></div>
 		</div>
@@ -81,7 +82,7 @@ import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
 				<thead><tr><th>名称</th><th>状态</th><th>最新耗时</th><th>30日在线</th><th>在线率</th><th>内容分类</th><th>好心人</th></tr></thead>
 				<tbody id="tbody"></tbody>
 			</table>
-			<p class="side-note" style="margin-top:14px">首页只刊出当前最好用的 13 个接口（在线优先、可用率高、速度快）。完整名单见 <a href="/collect/desk/category/">分类</a>。</p>
+			<p class="side-note" style="margin-top:14px">首页只刊出当前最好用的 13 个接口（在线优先、可用率高、速度快）。完整名单见 <a href={url("/collect/desk/category/")}>分类</a>。</p>
 		</main>
 		<aside>
 			<div class="panel">

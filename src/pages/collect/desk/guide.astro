@@ -1,5 +1,6 @@
 ---
 import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
+import { url } from "@/utils/url-utils";
 ---
 <CollectDeskLayout title="对接教程 · 影视采集站信号台" page="guide">
 	<header class="mast" id="hdr"></header>
@@ -11,7 +12,7 @@ import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
 
 		<div class="step"><div class="n">1</div><div>
 			<strong>挑一个状态为「在线」的接口</strong><br />
-			在<a href="/collect/desk/">信号目录</a>里优先选在线率高、30日均速小的接口；受限接口需先联系投稿人获取授权。
+			在<a href={url("/collect/desk/")}>信号目录</a>里优先选在线率高、30日均速小的接口；受限接口需先联系投稿人获取授权。
 		</div></div>
 		<div class="step"><div class="n">2</div><div>
 			<strong>复制接口地址</strong><br />

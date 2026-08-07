@@ -3,6 +3,7 @@ import { siteConfig } from "@/config";
 import { collectPageConfig } from "@/config/collectPageConfig";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import { getCollectApiStats } from "@/utils/collect-catalog";
+import { url } from "@/utils/url-utils";
 
 if (!siteConfig.pages.collect) {
 	return Astro.redirect("/404/");
@@ -21,6 +22,7 @@ const {
 	panels,
 } = collectPageConfig;
 
+const deskHref = deskUrl ? url(deskUrl) : undefined;
 const apiStats = getCollectApiStats();
 const panelCount = panels.length;
 const dateText = updatedAt || apiStats.updated || new Date().toISOString().slice(0, 10);
@@ -89,8 +91,8 @@ const publishedPanels = panels.map((panel) => {
 				</div>
 				<div class="signal-actions">
 					{
-						deskUrl && (
-							<a class="signal-desk-link" href={deskUrl} data-no-swup>
+						deskHref && (
+							<a class="signal-desk-link" href={deskHref} data-no-swup>
 								接口监控台
 								<span aria-hidden="true">↗</span>
 							</a>
@@ -117,7 +119,7 @@ const publishedPanels = panels.map((panel) => {
 			{
 				publishedPanels.map((panel) => {
 					const canEnter = !panel.comingSoon && (panel.href || deskUrl);
-					const enterHref = panel.href || deskUrl;
+					const enterHref = panel.href || deskUrl ? url(panel.href || deskUrl!) : undefined;
 					return (
 						<article
 							class:list={[

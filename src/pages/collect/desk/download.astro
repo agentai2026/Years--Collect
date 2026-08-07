@@ -1,5 +1,6 @@
 ---
 import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
+import { url } from "@/utils/url-utils";
 ---
 <CollectDeskLayout title="一键采集配置下载 · 影视采集站信号台" page="download">
 	<header class="mast" id="hdr"></header>
@@ -72,7 +73,7 @@ import CollectDeskLayout from "@/layouts/CollectDeskLayout.astro";
 
 		<div class="about-box">
 			<h4 style="font-family:var(--serif);font-size:18px;font-weight:900">关于一键采集接口配置</h4>
-			<p>配置文件汇集本站每日巡检的优质接口。详细步骤可参考<a href="/collect/desk/guide/">采集对接教程</a>。</p>
+			<p>配置文件汇集本站每日巡检的优质接口。详细步骤可参考<a href={url("/collect/desk/guide/")}>采集对接教程</a>。</p>
 		</div>
 	</div>
 
