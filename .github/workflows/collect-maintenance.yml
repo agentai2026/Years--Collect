@@ -1,4 +1,4 @@
-name: Collect maintenance
+name: 影视源同步入库
 
 on:
   workflow_dispatch:

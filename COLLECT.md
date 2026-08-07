@@ -33,10 +33,10 @@ pnpm collect:mcp
 node scripts/verify-collect.mjs
 ```
 
-## GitHub Actions
+## GitHub Actions（大白话）
 
-- `collect-maintenance.yml` → 写 `docs/catalog.json` + 同步 public 镜像 + `data/`
-- `collect-health.yml` → 同上（巡检）
-- `pages.yml` → 校验 docs → 同步 public → `pnpm build` → 发布
+- `影视源同步入库` — 每 6 小时把网上的影视接口抓进来分类
+- `影视源在线巡检` — 每 2 小时测一遍接口活不活
+- `发布网站` — 把网页重新打包发到网上
 
 Pages 项目站 base：`/Years--Collect/`（`GITHUB_PAGES=1`）。

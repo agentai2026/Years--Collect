@@ -1,4 +1,4 @@
-name: Deploy Pages
+name: 发布网站
 
 # Build Astro site and publish dist/ to GitHub Pages.
 on:
@@ -15,8 +15,8 @@ on:
   workflow_dispatch: {}
   workflow_run:
     workflows:
-      - "Collect maintenance"
-      - "Health probe"
+      - "影视源同步入库"
+      - "影视源在线巡检"
     types: [completed]
 
 permissions:
