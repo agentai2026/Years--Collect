@@ -31,6 +31,10 @@ jobs:
           node-version: "22"
 
       - name: Collect article digests
+        env:
+          ARTICLE_REFRESH: "0"
+          ARTICLE_PER_SOURCE: "5"
+          ARTICLE_MAX_TOTAL: "15"
         run: node scripts/sync-articles.mjs
 
       - name: Commit and push

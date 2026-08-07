@@ -38,7 +38,7 @@ node scripts/verify-collect.mjs
 
 - `影视源页面----同步入库` — 每 6 小时抓影视接口并分类
 - `影视源页面----在线巡检` — 每 2 小时测接口是否在线
-- `文章页面----采集发布` — 每天采 WinDiscover / CoderNav / 吾爱技术向摘要发到文章页
+- `文章页面----采集发布` — 每天采 WinDiscover / CoderNav / 吾爱技术向，**尽量转载全文**到文章页（采不全时保留原文链接）
 - `全站页面----发布上线` — 把网站重新打包发上网
 
 Pages 项目站 base：`/Years--Collect/`（`GITHUB_PAGES=1`）。
