@@ -1,36 +1,42 @@
-# 采集站信号台（Years--Collect 已并入本仓库）
+# 采集模块速查
 
-## 前台
-- `/collect/` 六宫格入口
-- `/collect/desk/` 监控台（目录 / 分类 / 详情 / 下载 / 教程 / 投稿）
-- 前台读取：`public/collect-assets/catalog.json`（镜像）
+## 分工
 
-## 数据位置（与原 22222 一致）
-- **自动化读写唯一真源：`docs/catalog.json`**
-- 写入后脚本会同步镜像到 `public/collect-assets/catalog.json`（供 Astro 静态站使用）
-- 快照：`data/latest.json`、`data/archives/`
+| 类别 | 目录 | 你改什么 |
+| --- | --- | --- |
+| **页面** | `src/pages/collect/`、`src/layouts/CollectDeskLayout.astro`、`src/config/collectPageConfig.ts` | 六宫格、监控台壳、入口文案 |
+| **前台静态** | `public/collect-assets/`（`desk.js` / `style.css` / catalog 镜像） | 监控台交互与样式 |
+| **自动化** | `scripts/{sync-*,classify,monitor,lib,catalog}.mjs`、`mcp/`、`.github/workflows/collect-*.yml` | 入库、分类、巡检、定时任务 |
+| **数据** | **`docs/catalog.json`**（真源）、`data/`（快照） | 一般由脚本写，不要手改路径 |
 
-## 自动化
-```bash
-pnpm collect:yszzq      # 同步 yszzq → docs/catalog.json
-pnpm collect:ziyuanzu   # 同步 ziyuanzu
-pnpm collect:github     # GitHub 搜索入库（建议 Secrets: GH_SEARCH_TOKEN）
-pnpm collect:classify    # 分类
-pnpm collect:health     # 健康探测 → 写 docs/catalog.json + data/
-pnpm collect:mcp        # MCP 查询服务（stdio，读 docs/catalog.json）
+## 数据流
+
+```
+多源同步 / 巡检脚本
+        ↓
+  docs/catalog.json          ← 唯一真源（与旧仓库相同）
+        ↓ writeData 自动同步
+  public/collect-assets/catalog.json
+        ↓ 浏览器 fetch
+  /collect/desk/ 监控台页面
 ```
 
-脚本目录：`scripts/*.mjs`  
-MCP：`mcp/mcp_server.mjs`（Cursor 可引用 `mcp/mcp.json`）
+## 命令
+
+```bash
+pnpm collect:yszzq
+pnpm collect:ziyuanzu
+pnpm collect:github
+pnpm collect:classify
+pnpm collect:health
+pnpm collect:mcp
+node scripts/verify-collect.mjs
+```
 
 ## GitHub Actions
-- `Collect maintenance` — 每 6 小时同步/分类，提交 `docs/catalog.json`（及 public 镜像）+ `data/`
-- `Health probe` — 每 2 小时巡检，同上
-- `Deploy Pages` — 校验 `docs/catalog.json` → 同步 public → `pnpm build` 发布 `dist/`
 
-覆盖原 Years--Collect 仓库后：
-1. `pnpm install && pnpm dev` 本地预览
-2. `node scripts/verify-collect.mjs` 自检对接
-3. 打开 GitHub Actions / Pages 权限
-4. 可选 Secrets：`GH_SEARCH_TOKEN`（GitHub 全站搜源）
-5. 项目站 Pages 会带 `GITHUB_PAGES=1`，base 为 `/Years--Collect/`
+- `collect-maintenance.yml` → 写 `docs/catalog.json` + 同步 public 镜像 + `data/`
+- `collect-health.yml` → 同上（巡检）
+- `pages.yml` → 校验 docs → 同步 public → `pnpm build` → 发布
+
+Pages 项目站 base：`/Years--Collect/`（`GITHUB_PAGES=1`）。
