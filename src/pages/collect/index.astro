@@ -35,6 +35,7 @@ const fastestText =
 
 const publishedPanels = panels.map((panel) => {
 	const sources = panel.sources.filter((source) => !source.pending);
+	// 自动化 catalog 只喂给影视源卡片；其它分类筹备中，不读接口数据
 	if (panel.id !== "movie" || panel.comingSoon) {
 		return { ...panel, sources };
 	}
@@ -118,8 +119,12 @@ const publishedPanels = panels.map((panel) => {
 		<div class="signal-grid" role="list">
 			{
 				publishedPanels.map((panel) => {
-					const canEnter = !panel.comingSoon && (panel.href || deskUrl);
-					const enterHref = panel.href || deskUrl ? url(panel.href || deskUrl!) : undefined;
+					// 仅影视源 (id=movie) 可进自动化监控台；其它卡片即便忘了 comingSoon 也不跳转
+					const isMovieLive = panel.id === "movie" && !panel.comingSoon;
+					const canEnter = isMovieLive && !!(panel.href || deskUrl);
+					const enterHref = canEnter
+						? url(panel.href || deskUrl!)
+						: undefined;
 					return (
 						<article
 							class:list={[

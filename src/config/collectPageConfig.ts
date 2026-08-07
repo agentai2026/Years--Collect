@@ -74,7 +74,8 @@ export function countPendingSources(
 }
 
 /**
- * 自动采集六宫格：目前仅影视源已接入监控台，其余分类筹备中
+ * 自动采集六宫格：目前仅影视源 (id=movie) 已接入监控台与自动化 catalog
+ * 其它分类必须 comingSoon: true，不要挂 deskUrl / 不要读 catalog 统计
  */
 export const collectPageConfig: CollectPageConfig = {
 	title: "影视采集站信号台",
@@ -84,6 +85,7 @@ export const collectPageConfig: CollectPageConfig = {
 	updatedAt: "2026-08-07",
 	updateNote: "每日 06:00 更新",
 	githubUrl: "https://github.com/agentai2026/Years--Collect",
+	/** 仅影视源卡片进入；其它面板禁止复用此地址当入口 */
 	deskUrl: "/collect/desk/",
 	fastestLabel: "影视源",
 	extraPendingCount: 0,
