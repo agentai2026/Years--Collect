@@ -1,0 +1,39 @@
+name: 文章页面----采集发布
+
+# 从 WinDiscover / CoderNav / 吾爱技术向 RSS 生成摘要文章并提交。
+on:
+  schedule:
+    # 每天 08:00 上海时间（UTC 00:00）
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: article-writers
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ARTICLE_PER_SOURCE: "5"
+      ARTICLE_MAX_TOTAL: "15"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Collect article digests
+        run: node scripts/sync-articles.mjs
+
+      - name: Commit and push
+        run: |
+          DAY=$(TZ=Asia/Shanghai date +%F)
+          bash scripts/git-push-articles.sh "content: article digests ${DAY}" src/content/posts data/articles-seen.json

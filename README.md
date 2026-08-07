@@ -88,6 +88,7 @@
 | --- | --- | --- |
 | [影视源页面----同步入库](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-maintenance.yml) | 抓影视接口、分类进目录 | 每 6 小时 |
 | [影视源页面----在线巡检](https://github.com/agentai2026/Years--Collect/actions/workflows/collect-health.yml) | 测接口还在不在、快不快 | 每 2 小时 |
+| [文章页面----采集发布](https://github.com/agentai2026/Years--Collect/actions/workflows/article-sync.yml) | 采 WinDiscover / CoderNav / 吾爱技术向摘要发到文章页 | 每天 |
 | [全站页面----发布上线](https://github.com/agentai2026/Years--Collect/actions/workflows/pages.yml) | 把站点打包发到网上 | 有改动 / 上面跑完后 |
 
 （旁边若还有「页面构建部署」，那是 GitHub 自己的发布步骤，不用管。）
@@ -105,6 +106,7 @@ pnpm collect:ziyuanzu
 pnpm collect:github
 pnpm collect:classify
 pnpm collect:health
+pnpm collect:articles    # 文章摘要 → src/content/posts/
 pnpm collect:mcp
 
 node scripts/verify-collect.mjs

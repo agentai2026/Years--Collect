@@ -18,7 +18,8 @@
 		"collect:github": "node scripts/sync-github.mjs",
 		"collect:classify": "node scripts/classify.mjs",
 		"collect:health": "node scripts/monitor.mjs",
-		"collect:mcp": "node mcp/mcp_server.mjs"
+		"collect:mcp": "node mcp/mcp_server.mjs",
+		"collect:articles": "node scripts/sync-articles.mjs"
 	},
   "dependencies": {
     "@astrojs/check": "^0.9.9",
