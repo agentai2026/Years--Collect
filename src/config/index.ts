@@ -47,6 +47,7 @@ export { expressiveCodeConfig } from "./expressiveCodeConfig"; // 代码高亮�
 export { fontConfig, fontsList } from "./fontConfig"; // 字体配置
 export { footerConfig } from "./footerConfig"; // 页脚配置
 export { homePageConfig } from "./homePageConfig"; // 主页个人展示配置
+export { pageBannerConfig, getPageBannerCopy } from "./pageBannerConfig"; // 各页横幅文案
 export { licenseConfig } from "./licenseConfig"; // 许可证配置
 // 组件配置
 export { mermaidConfig } from "./mermaidConfig"; // Mermaid 图表配置
