@@ -76,6 +76,41 @@
       "source": "codernav",
       "at": "2026-08-07T04:25:53.634Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edge-mv2-deprecation-ublock-origin.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d14d8dba98.md",
+      "title": "Microsoft Edge 启动 MV2 扩展淘汰计划，uBlock Origin 将受影响",
+      "source": "windiscover",
+      "at": "2026-08-08T02:09:11.807Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-onedrive-photos-enterprise-silent-install.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-34a635d5c7.md",
+      "title": "微软未经通知向企业 PC 推送 OneDrive Photos 应用引发管理员不满",
+      "source": "windiscover",
+      "at": "2026-08-08T02:09:11.808Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-copilot-new-icon-leak.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-11dd180d6a.md",
+      "title": "微软疑似意外泄露新版 Copilot 图标设计",
+      "source": "windiscover",
+      "at": "2026-08-08T02:09:11.808Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/entra-id-sms-voice-authentication-retirement-passkeys.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-entra-66fbdde211.md",
+      "title": "微软邮件通知 Entra ID 客户：SMS 与语音认证将于 2027 年 2 月退役",
+      "source": "windiscover",
+      "at": "2026-08-08T02:09:11.808Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windscribe-degdid-windows-11-gdid-tracker.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-windsc-bc4f824525.md",
+      "title": "Windscribe 发布开源工具 deGDID 可禁用 Windows 11 的隐藏设备追踪标识符",
+      "source": "windiscover",
+      "at": "2026-08-08T02:09:11.808Z",
+      "mode": "full"
     }
   }
 }
