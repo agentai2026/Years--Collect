@@ -13,7 +13,7 @@
    "site": "https://github.com/fangkuia/XPTV/blob/fa82ceb50d5c1d8f197d970a3d9002179f8687b5/all.json",
    "source": "github",
    "http": 200,
-   "total": 68457,
+   "total": 68462,
    "tags": [
     "电影",
     "连续剧",
@@ -110,7 +110,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-3",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 119751,
+   "total": 119752,
    "tags": [
     "受限内容",
     "电影",
@@ -221,7 +221,7 @@
    "site": "https://www.ziyuanzu.com/source/guangsuziyuanzhan-4",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 110079,
+   "total": 110092,
    "tags": [
     "电影",
     "电视剧",
@@ -311,7 +311,7 @@
    "site": "https://www.ziyuanzu.com/source/tianyingshiziyuanzhan-5",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 68914,
+   "total": 68917,
    "tags": [
     "受限内容",
     "电影",
@@ -422,7 +422,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-6",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109114,
+   "total": 109127,
    "tags": [
     "电视剧",
     "电影",
@@ -516,7 +516,7 @@
    "site": "https://www.ziyuanzu.com/source/xinjiziyuanzhan-9",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 56041,
+   "total": 56144,
    "tags": [
     "受限内容",
     "视频一区",
@@ -595,15 +595,15 @@
   },
   {
    "id": "zy-wuziyuanzhan-11",
-   "name": "api.wujinapi",
+   "name": "无尽资源站",
    "cms": "maccms10",
-   "contributor": "@guxiangbin",
+   "contributor": "@ziyuanzu",
    "api": "https://api.wujinapi.me/api.php/provide/vod/",
    "domain": "api.wujinapi.me",
-   "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/短剧.txt",
-   "source": "github",
-   "http": 0,
-   "total": 117695,
+   "site": "https://www.ziyuanzu.com/source/wuziyuanzhan-11",
+   "source": "ziyuanzu.com",
+   "http": 200,
+   "total": 117698,
    "tags": [
     "受限内容",
     "电影",
@@ -812,7 +812,7 @@
    "site": "https://github.com/swhtv/111/blob/4d92780319d1f8cbd3cd49a9a0591315364f0bac/fj.json",
    "source": "github",
    "http": 200,
-   "total": 108345,
+   "total": 108358,
    "tags": [
     "电视剧",
     "电影",
@@ -1130,7 +1130,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-22",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109503,
+   "total": 109516,
    "tags": [
     "电影",
     "连续剧",
@@ -1226,7 +1226,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-27",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 137711,
+   "total": 137726,
    "tags": [
     "电影",
     "连续剧",
@@ -1321,7 +1321,7 @@
    "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-28",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 110015,
+   "total": 110028,
    "tags": [
     "电影",
     "电视剧",
@@ -1412,7 +1412,7 @@
    "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-29",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 110015,
+   "total": 110028,
    "tags": [
     "电影",
     "电视剧",
@@ -1744,7 +1744,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-36",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 86853,
+   "total": 86857,
    "tags": [
     "国产动漫",
     "日韩动漫",
@@ -1922,7 +1922,7 @@
    "site": "https://www.ziyuanzu.com/source/dadiziyuanzhan-71",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 268970,
+   "total": 268972,
    "tags": [
     "受限内容",
     "日韩无码",
@@ -2003,7 +2003,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-39",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 66540,
+   "total": 66544,
    "tags": [
     "电影",
     "连续剧",
@@ -2599,7 +2599,7 @@
    "site": "https://www.ziyuanzu.com/source/wangziyuanzhan-57",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 12403,
+   "total": 12425,
    "tags": [
     "受限内容",
     "热门视频",
@@ -2990,7 +2990,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-62",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 12373,
+   "total": 12390,
    "tags": [
     "受限内容",
     "热门视频",
@@ -3148,7 +3148,7 @@
    "site": "https://www.ziyuanzu.com/source/cangkuziyuan-65",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 63593,
+   "total": 63609,
    "tags": [
     "受限内容",
     "国产区",
@@ -3228,13 +3228,13 @@
   },
   {
    "id": "zy-ziyuanzhan-66",
-   "name": "heiliaozyapi",
+   "name": "黑料资源站",
    "cms": "maccms10",
-   "contributor": "@lubin776",
+   "contributor": "@ziyuanzu",
    "api": "https://heiliaozyapi.com/api.php/provide/vod/",
    "domain": "heiliaozyapi.com",
-   "site": "https://github.com/lubin776/0/blob/c82f1ffc0947a9072385d5213347e3028998fcfe/tvbox/18c",
-   "source": "github",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-66",
+   "source": "ziyuanzu.com",
    "http": 200,
    "total": 97969,
    "tags": [
@@ -3953,7 +3953,7 @@
    "site": "https://www.ziyuanzu.com/source/daziyuanzhan-14",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 121730,
+   "total": 121731,
    "tags": [
     "受限内容",
     "电影",
@@ -4064,7 +4064,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-25",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 109019,
+   "total": 109032,
    "tags": [
     "电视剧",
     "电影",
@@ -4154,7 +4154,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-31",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 110079,
+   "total": 110092,
    "tags": [
     "电视剧",
     "电影",
@@ -4401,13 +4401,13 @@
   },
   {
    "id": "zy-ziyuanzhan-92",
-   "name": "lovedan",
+   "name": "艾旦资源站",
    "cms": "maccms10",
-   "contributor": "@kaxoog",
+   "contributor": "@ziyuanzu",
    "api": "https://lovedan.net/api.php/provide/vod/",
    "domain": "lovedan.net",
-   "site": "https://github.com/kaxoog/woyoTV/blob/90b1f4b2ecd7073cbdd6884dd19e20b05b7530fa/TVBOX.md",
-   "source": "github",
+   "site": "https://www.ziyuanzu.com/source/ziyuanzhan-92",
+   "source": "ziyuanzu.com",
    "http": 403,
    "total": 176742,
    "tags": [
@@ -4762,8 +4762,8 @@
    "domain": "iqiyizyapi.com",
    "site": "https://www.ziyuanzu.com/source/yiziyuanzhan-17",
    "source": "ziyuanzu.com",
-   "http": 0,
-   "total": 65681,
+   "http": 200,
+   "total": 65689,
    "tags": [
     "电影",
     "连续剧",
@@ -5398,7 +5398,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-24",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 139451,
+   "total": 139469,
    "tags": [
     "电影",
     "连续剧",
@@ -5806,7 +5806,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/247.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 80143,
+   "total": 80151,
    "tags": [
     "电影",
     "电视剧",
@@ -5886,7 +5886,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/245.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 69596,
+   "total": 69597,
    "tags": [
     "邵氏电影",
     "电影",
@@ -5986,7 +5986,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/244.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 85302,
+   "total": 85306,
    "tags": [
     "连续剧",
     "短剧",
@@ -6072,7 +6072,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/243.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 124559,
+   "total": 124560,
    "tags": [
     "受限内容",
     "电影",
@@ -6184,7 +6184,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/216.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 139451,
+   "total": 139469,
    "tags": [
     "电影",
     "连续剧",
@@ -6280,7 +6280,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/236.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 121727,
+   "total": 121731,
    "tags": [
     "受限内容",
     "电影",
@@ -6391,7 +6391,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/235.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 121637,
+   "total": 121638,
    "tags": [
     "受限内容",
     "电影",
@@ -6578,7 +6578,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/230.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 109019,
+   "total": 109032,
    "tags": [
     "电视剧",
     "电影",
@@ -6660,15 +6660,15 @@
   },
   {
    "id": "ys-220",
-   "name": "iqiyizyapi",
+   "name": "爱奇艺资源站",
    "cms": "maccms10",
-   "contributor": "@jishitang",
+   "contributor": "@yszzq",
    "api": "https://www.iqiyizyapi.com/api.php/provide/vod/",
    "domain": "www.iqiyizyapi.com",
-   "site": "https://github.com/jishitang/Tool/blob/150299a5c7dafd8536f2cb997b67c866d3ecfd9d/gat2/tvbox.txt",
-   "source": "github",
-   "http": 0,
-   "total": 65681,
+   "site": "https://www.yszzq.com/ziyuan/api/220.html",
+   "source": "yszzq.com",
+   "http": 200,
+   "total": 65689,
    "tags": [
     "电影",
     "连续剧",
@@ -6830,7 +6830,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/207.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 137711,
+   "total": 137726,
    "tags": [
     "电影",
     "连续剧",
@@ -7185,15 +7185,15 @@
   },
   {
    "id": "ys-180",
-   "name": "hhzyapi",
+   "name": "豪华资源网",
    "cms": "maccms10",
-   "contributor": "@libinghui123",
+   "contributor": "@yszzq",
    "api": "https://hhzyapi.com/api.php/provide/vod/",
    "domain": "hhzyapi.com",
-   "site": "https://github.com/libinghui123/tvbox/blob/aa8714ac8740061dcd934a31d60c5ffba50a2577/tvbox/lib/夜魔.txt",
-   "source": "github",
+   "site": "https://www.yszzq.com/ziyuan/api/180.html",
+   "source": "yszzq.com",
    "http": 200,
-   "total": 109114,
+   "total": 109127,
    "tags": [
     "电视剧",
     "电影",
@@ -7287,7 +7287,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/166.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 68413,
+   "total": 68418,
    "tags": [
     "电影",
     "连续剧",
@@ -7422,7 +7422,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/149.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 100683,
+   "total": 100758,
    "tags": [
     "电影",
     "连续剧",
@@ -7536,7 +7536,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/147.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 268970,
+   "total": 268972,
    "tags": [
     "受限内容",
     "日韩无码",
@@ -7708,7 +7708,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/140.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 110083,
+   "total": 110096,
    "tags": [
     "电影",
     "电视剧",
@@ -7802,7 +7802,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/127.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 56225,
+   "total": 56234,
    "tags": [
     "电影",
     "电视剧",
@@ -7876,7 +7876,7 @@
    "site": "https://github.com/heroaku/TVboxo/blob/42edfca812780525e95a1c1c2d97d6ed664e27a4/apit.json",
    "source": "github",
    "http": 200,
-   "total": 109503,
+   "total": 109516,
    "tags": [
     "电影",
     "连续剧",
@@ -8228,7 +8228,7 @@
    "site": "https://github.com/franksun1211/TVBOX/blob/e980b074353fea9ac54fd293980d2cfa6170960a/miaotv.txt",
    "source": "github",
    "http": 200,
-   "total": 56225,
+   "total": 56234,
    "tags": [
     "电影",
     "电视剧",
@@ -8330,7 +8330,7 @@
    "site": "https://github.com/liu673cn/box/blob/c8665453fc3665fa8d3124d6d9d91fcec4029e66/m.json",
    "source": "github",
    "http": 200,
-   "total": 142220,
+   "total": 142223,
    "tags": [
     "受限内容",
     "电影",
@@ -8736,7 +8736,7 @@
    "site": "https://github.com/c120487/00/blob/557e71b0753c5e6702023d683fa7d4fb7ab7bdd7/00sx.txt",
    "source": "github",
    "http": 200,
-   "total": 7372,
+   "total": 7378,
    "tags": [
     "受限内容",
     "教程"
@@ -9041,7 +9041,7 @@
    "contributor": "@xiongjian83",
    "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
    "domain": "json02.heimuer.xyz",
-   "site": "https://github.com/xiongjian83/TvBox/blob/6f0adcc4c956e89c72797bb30340e4654722fb5c/X.json",
+   "site": "https://github.com/xiongjian83/TvBox/blob/c3288cfe12ab0c7e574d2839c2013e7891f2c8a9/X.json",
    "source": "github",
    "http": 0,
    "total": 0,
@@ -9077,7 +9077,7 @@
    "site": "https://github.com/alantang1977/X/blob/4d8933f07e9b93068a4636ba0c6a8251ef4cccfa/vox.json",
    "source": "github",
    "http": 200,
-   "total": 191854,
+   "total": 192048,
    "tags": [
     "电影",
     "剧集",
@@ -9674,7 +9674,7 @@
    "domain": "www.bajiezy.xyz",
    "site": "https://github.com/hd9211/maotv/blob/a80c244bdb2765c0c0aae73b7dcd72ae7faf71e5/maoo2.txt",
    "source": "github",
-   "http": 429,
+   "http": 200,
    "total": 0,
    "tags": [],
    "categories": [],
@@ -10005,7 +10005,7 @@
    "site": "https://github.com/guot55/yg/blob/d0879e44c351c7ede52709ae4194a0c1f692855f/jsm.json",
    "source": "github",
    "http": 200,
-   "total": 43818,
+   "total": 43819,
    "tags": [
     "电影",
     "电视剧",
@@ -10549,7 +10549,7 @@
    "site": "https://github.com/powerchh/mysite/blob/66e1c6746eb2eb4268f8b24faf52c6f46025f0e7/static/tv/tvbox.txt",
    "source": "github",
    "http": 200,
-   "total": 86853,
+   "total": 86857,
    "tags": [
     "国产动漫",
     "日韩动漫",
