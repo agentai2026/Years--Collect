@@ -111,6 +111,20 @@
       "source": "windiscover",
       "at": "2026-08-08T02:09:11.808Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/word-windows-1-1a-ported-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-word-w-187c5b4f28.md",
+      "title": "开发者将1990年的Word for Windows 1.1a原生移植至Windows 11",
+      "source": "windiscover",
+      "at": "2026-08-09T02:20:54.489Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/chrome-edge-ai-model-20gb-storage-requirement.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-chrome-f635f7275f.md",
+      "title": "Chrome 与 Edge 下载设备端 AI 模型需预留 20GB 磁盘空间",
+      "source": "windiscover",
+      "at": "2026-08-09T02:20:54.489Z",
+      "mode": "full"
     }
   }
 }
