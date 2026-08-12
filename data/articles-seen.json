@@ -167,6 +167,41 @@
       "source": "pojie",
       "at": "2026-08-11T02:19:33.291Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-10-kb5120249-august-2026-patch-tuesday.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-ef6d07f47b.md",
+      "title": "微软发布 Windows 10 八月 2026 补丁星期二更新 KB5120249",
+      "source": "windiscover",
+      "at": "2026-08-12T02:34:13.777Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-entra-new-features-it-admins.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-075f391a49.md",
+      "title": "微软近期向 IT 管理员推送多项 Microsoft Entra 新功能",
+      "source": "windiscover",
+      "at": "2026-08-12T02:34:13.778Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/powertoys-preview-0-101-2211-phi-silica.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-powert-c7b33161eb.md",
+      "title": "PowerToys 发布预览版 0.101.2211.0：Advanced Paste 新增 Phi Silica 本地 AI 支持",
+      "source": "windiscover",
+      "at": "2026-08-12T02:34:13.778Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-raises-windows-11-oem-license-price.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-cb3d36b104.md",
+      "title": "微软据称大幅上调 Windows 11 OEM 授权价格，涨幅高于往年",
+      "source": "windiscover",
+      "at": "2026-08-12T02:34:13.778Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-mai-image-2-6-release.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-cb29dd3857.md",
+      "title": "微软发布 MAI-Image-2.6 文生图模型，Arena 排行榜位列第二",
+      "source": "windiscover",
+      "at": "2026-08-12T02:34:13.778Z",
+      "mode": "full"
     }
   }
 }
