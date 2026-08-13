@@ -202,6 +202,62 @@
       "source": "windiscover",
       "at": "2026-08-12T02:34:13.778Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/gears-of-war-e-day-limited-edition-xbox-controller.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-gears-9c98d252a6.md",
+      "title": "微软推出《战争机器：E-Day》限定版 Xbox 手柄",
+      "source": "windiscover",
+      "at": "2026-08-13T02:35:51.932Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/powertoys-phi-silica-local-ai-update.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-powert-64dd27b57e.md",
+      "title": "PowerToys 发布预览版更新 引入 Phi Silica 本地 AI 支持",
+      "source": "windiscover",
+      "at": "2026-08-13T02:35:51.932Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/visual-studio-code-1-133-release.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-visual-0cb7cf964e.md",
+      "title": "Visual Studio Code 1.133 发布：支持免登录使用 Agents 窗口",
+      "source": "windiscover",
+      "at": "2026-08-13T02:35:51.933Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/dotnet-11-preview-7-release.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-dotnet-5929d11657.md",
+      "title": "微软发布 .NET 11 Preview 7，带来 C# 升级与构建性能优化",
+      "source": "windiscover",
+      "at": "2026-08-13T02:35:51.933Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-teams-elgato-stream-deck-plugin-deprecated.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d90ed79cdb.md",
+      "title": "微软未充分通知即终止 Teams 第三方设备插件引用户不满",
+      "source": "windiscover",
+      "at": "2026-08-13T02:35:51.933Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2122575-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2122575-1-1-1d55e77e07.md",
+      "title": "【分享】用 Python + PyQt6 写了一个 PHP 启动器（单文件）",
+      "source": "pojie",
+      "at": "2026-08-13T02:35:51.933Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2122547-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2122547-1-1-4b90326e59.md",
+      "title": "速创文档、文件夹的 小工具 (tauri)",
+      "source": "pojie",
+      "at": "2026-08-13T02:35:51.934Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2122346-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2122346-1-1-5c7e526681.md",
+      "title": "【逆向实战】电商“找小店“接口逆向分析与竞品店铺数据抓取",
+      "source": "pojie",
+      "at": "2026-08-13T02:35:51.934Z",
+      "mode": "full"
     }
   }
 }
