@@ -286,6 +286,69 @@
       "source": "pojie",
       "at": "2026-08-15T01:43:28.007Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-defender-iso-update-august-2026.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-6b9c13a66b.md",
+      "title": "微软发布新版 Microsoft Defender 更新包 更新 ISO 镜像安全组件",
+      "source": "windiscover",
+      "at": "2026-08-16T01:50:56.012Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-defender-update-windows-iso-installations-2.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-5f406b51d2.md",
+      "title": "微软发布 Microsoft Defender 更新，覆盖 Windows ISO 安装镜像",
+      "source": "windiscover",
+      "at": "2026-08-16T01:50:56.012Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-winre-recovery-update-kb5121002.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-445434c8b3.md",
+      "title": "微软推送 Windows 11/10 WinRE 恢复环境更新",
+      "source": "windiscover",
+      "at": "2026-08-16T01:50:56.013Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-safe-os-recovery-updates-kb5121002-kb5120250.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-426b6e33e2.md",
+      "title": "微软发布 Windows 11 恢复环境动态更新 KB5121002 与 KB5120250",
+      "source": "windiscover",
+      "at": "2026-08-16T01:50:56.013Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/ex-microsoft-engineer-outlook-rival-windows-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-ex-mic-702d52580e.md",
+      "title": "前微软工程师利用 Windows 弃用功能开发 Outlook 替代方案",
+      "source": "windiscover",
+      "at": "2026-08-16T01:50:56.013Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123218-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123218-1-1-734735b5c8.md",
+      "title": "C++ 完整逻辑链 & 学习路线",
+      "source": "pojie",
+      "at": "2026-08-16T01:50:56.013Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123163-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123163-1-1-80ef5a310c.md",
+      "title": "【Python】Custom Image API Skill，让Codex支持第三方GPT-IMAGE-2模型调用",
+      "source": "pojie",
+      "at": "2026-08-16T01:50:56.014Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123139-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123139-1-1-695f6c63c7.md",
+      "title": "人类两性博弈模拟",
+      "source": "pojie",
+      "at": "2026-08-16T01:50:56.014Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123097-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123097-1-1-61b0a70279.md",
+      "title": "分享一个刚出炉的文件夹增量备份功能的批处理希望大家能用上。",
+      "source": "pojie",
+      "at": "2026-08-16T01:50:56.014Z",
+      "mode": "full"
     }
   }
 }
