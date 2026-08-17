@@ -349,6 +349,34 @@
       "source": "pojie",
       "at": "2026-08-16T01:50:56.014Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/linux-tsc-mandatory-x86-requirement.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-linux-3830c822bf.md",
+      "title": "Linux 内核将 TSC 设为 x86 处理器硬性要求，与 Windows 策略趋同",
+      "source": "windiscover",
+      "at": "2026-08-17T01:48:27.482Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-startup-apps-optimization.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-cdd23d7f99.md",
+      "title": "微软官方分享 Windows 11 启动应用管理技巧",
+      "source": "windiscover",
+      "at": "2026-08-17T01:48:27.482Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/restore-classic-right-click-menu-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-restor-3331fdab73.md",
+      "title": "如何在 Windows 11 中恢复经典右键菜单",
+      "source": "windiscover",
+      "at": "2026-08-17T01:48:27.482Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-removing-wmic-windows-11-26h2.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-690c4a656e.md",
+      "title": "微软确认将在 Windows 11 26H2 中彻底移除 WMIC 工具",
+      "source": "windiscover",
+      "at": "2026-08-17T01:48:27.483Z",
+      "mode": "full"
     }
   }
 }
