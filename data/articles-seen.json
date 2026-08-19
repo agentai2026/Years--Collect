@@ -412,6 +412,34 @@
       "source": "windiscover",
       "at": "2026-08-18T01:43:31.504Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-cancels-windows-11-drop-tray-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-436b066580.md",
+      "title": "微软正式取消 Windows 11 Drop Tray 文件拖拽分享功能",
+      "source": "windiscover",
+      "at": "2026-08-19T01:45:25.336Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-whiteboard-migration-august-22-deadline.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-bdd8938999.md",
+      "title": "微软警告管理员需在 8 月 22 日前迁移旧版 Whiteboard 数据",
+      "source": "windiscover",
+      "at": "2026-08-19T01:45:25.336Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123457-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123457-1-1-0d8a65381b.md",
+      "title": "采集电脑硬件信息并上报",
+      "source": "pojie",
+      "at": "2026-08-19T01:45:25.336Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123404-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123404-1-1-9c8881a3ae.md",
+      "title": "拯救你的开发体验：这款分布式编译工具让低配机也能秒级热更新",
+      "source": "pojie",
+      "at": "2026-08-19T01:45:25.336Z",
+      "mode": "full"
     }
   }
 }
