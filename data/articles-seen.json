@@ -440,6 +440,27 @@
       "source": "pojie",
       "at": "2026-08-19T01:45:25.336Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-defender-scan-crash-bug.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-3ba7de3193.md",
+      "title": "微软修复 Defender 零日漏洞时意外导致病毒扫描崩溃",
+      "source": "windiscover",
+      "at": "2026-08-20T01:43:52.453Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/github-8-hour-outage-root-cause-analysis.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-github-5ea9421bc2.md",
+      "title": "GitHub 发布 8 小时大规模故障根因分析",
+      "source": "windiscover",
+      "at": "2026-08-20T01:43:52.453Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2123782-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2123782-1-1-1bdb5a7809.md",
+      "title": "批量裁剪图片不同大小空白",
+      "source": "pojie",
+      "at": "2026-08-20T01:43:52.453Z",
+      "mode": "full"
     }
   }
 }
