@@ -475,6 +475,41 @@
       "source": "pojie",
       "at": "2026-08-21T01:49:28.685Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/github-copilot-teams-integration.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-github-af959b2726.md",
+      "title": "GitHub Copilot 集成 Microsoft Teams，支持在聊天中直接编写部署代码",
+      "source": "windiscover",
+      "at": "2026-08-22T01:42:42.072Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/kb5121003-rgb-windows-11-crash-issue.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-kb5121-34f1d3f3fa.md",
+      "title": "微软确认 KB5121003 更新导致 RGB 设备引发 Windows 11 崩溃与重启",
+      "source": "windiscover",
+      "at": "2026-08-22T01:42:42.072Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/new-outlook-classic-theme.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-new-ou-6b6f585272.md",
+      "title": "微软为 New Outlook 推出经典主题 降低 Classic 用户迁移门槛",
+      "source": "windiscover",
+      "at": "2026-08-22T01:42:42.073Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2124206-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2124206-1-1-4763f3aac9.md",
+      "title": "hosts云端同步备份/恢复",
+      "source": "pojie",
+      "at": "2026-08-22T01:42:42.073Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2124193-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2124193-1-1-4bd385bc24.md",
+      "title": "Linux 多服务商 DDNS 同步器",
+      "source": "pojie",
+      "at": "2026-08-22T01:42:42.073Z",
+      "mode": "full"
     }
   }
 }
