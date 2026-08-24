@@ -517,6 +517,41 @@
       "source": "pojie",
       "at": "2026-08-23T01:52:53.429Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-sata-nvme-ssd-gaming-benchmark.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-82c9451fdf.md",
+      "title": "Windows 11 游戏实测：SATA SSD 与 NVMe SSD 性能差距有限",
+      "source": "windiscover",
+      "at": "2026-08-24T01:50:02.537Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-smart-app-control-no-clean-install-required.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-99b65afcf6.md",
+      "title": "微软放宽 Smart App Control 启用限制 无需干净安装即可开启",
+      "source": "windiscover",
+      "at": "2026-08-24T01:50:02.537Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-account-device-management-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-dcbe2deca1.md",
+      "title": "微软提醒 Windows 11 用户善用 Microsoft Account 设备管理功能",
+      "source": "windiscover",
+      "at": "2026-08-24T01:50:02.538Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/robocopy-windows-file-copy-guide.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-roboco-09796056b0.md",
+      "title": "Robocopy：Windows 内置的高性能文件复制工具详解",
+      "source": "windiscover",
+      "at": "2026-08-24T01:50:02.538Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-ai-windows-app-modernization.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-7bd2f484e7.md",
+      "title": "微软借 AI 工具化解 Windows 应用现代化难题",
+      "source": "windiscover",
+      "at": "2026-08-24T01:50:02.538Z",
+      "mode": "full"
     }
   }
 }
