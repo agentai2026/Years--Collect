@@ -552,6 +552,41 @@
       "source": "windiscover",
       "at": "2026-08-24T01:50:02.538Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-nt-4-0-30th-anniversary.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-b7623f5c9d.md",
+      "title": "Windows NT 4.0 发布 30 周年：奠定现代 Windows 的技术基础",
+      "source": "windiscover",
+      "at": "2026-08-25T01:44:55.595Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/libreoffice-criticizes-microsoft-office-ribbon-ux.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-libreo-c868a183f4.md",
+      "title": "LibreOffice 开发者批评 Microsoft Office Ribbon 界面缺乏用户选择权",
+      "source": "windiscover",
+      "at": "2026-08-25T01:44:55.596Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/powerpoint-smartart-accessibility-improvement.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-powerp-1b22a4d80b.md",
+      "title": "微软为 PowerPoint 升级 SmartArt 无障碍功能，屏幕阅读器可自动描述视觉关系",
+      "source": "windiscover",
+      "at": "2026-08-25T01:44:55.596Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-xp-25-anniversary.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-1be30f7c96.md",
+      "title": "Windows XP 发布 25 周年：一代经典操作系统回顾",
+      "source": "windiscover",
+      "at": "2026-08-25T01:44:55.596Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-kb5120708-printing-workaround.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-f04b5e06a7.md",
+      "title": "微软确认 KB5120708 等更新导致打印故障，已发布临时解决方案",
+      "source": "windiscover",
+      "at": "2026-08-25T01:44:55.596Z",
+      "mode": "full"
     }
   }
 }
