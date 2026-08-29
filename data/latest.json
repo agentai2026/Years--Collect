@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29 18:47:25",
+  "timestamp": "2026-08-30 00:12:49",
   "source": "https://github.com/agentai2026/Years--Collect",
   "resources": [
     {
@@ -9,7 +9,7 @@
       "site": "https://github.com/fangkuia/XPTV/blob/fa82ceb50d5c1d8f197d970a3d9002179f8687b5/all.json",
       "description": "github",
       "cms": "maccms10",
-      "total": 69794,
+      "total": 69796,
       "categories": [
         "电影",
         "连续剧",
@@ -67,7 +67,7 @@
       "health": {
         "url": "https://360zy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1765,
+        "response_time_ms": 1746,
         "is_alive": true,
         "error": null
       }
@@ -79,7 +79,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-3",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 120425,
+      "total": 120426,
       "categories": [
         "电影",
         "电视剧",
@@ -145,7 +145,7 @@
       "health": {
         "url": "https://cj.yayazy.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 420,
+        "response_time_ms": 310,
         "is_alive": true,
         "error": null
       }
@@ -157,7 +157,7 @@
       "site": "https://www.ziyuanzu.com/source/guangsuziyuanzhan-4",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 111442,
+      "total": 111477,
       "categories": [
         "电影",
         "电视剧",
@@ -208,7 +208,7 @@
       "health": {
         "url": "https://api.guangsuapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 679,
+        "response_time_ms": 673,
         "is_alive": true,
         "error": null
       }
@@ -220,7 +220,7 @@
       "site": "https://www.ziyuanzu.com/source/tianyingshiziyuanzhan-5",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 69547,
+      "total": 69548,
       "categories": [
         "电影",
         "电视剧",
@@ -286,7 +286,7 @@
       "health": {
         "url": "https://tyyszyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 378,
+        "response_time_ms": 331,
         "is_alive": true,
         "error": null
       }
@@ -298,7 +298,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-6",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 110474,
+      "total": 110512,
       "categories": [
         "电视剧",
         "电影",
@@ -353,7 +353,7 @@
       "health": {
         "url": "https://haohuazy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1004,
+        "response_time_ms": 1106,
         "is_alive": true,
         "error": null
       }
@@ -413,7 +413,7 @@
       "health": {
         "url": "https://jipinvip1.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 580,
+        "response_time_ms": 514,
         "is_alive": true,
         "error": null
       }
@@ -425,7 +425,7 @@
       "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/短剧.txt",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 118988,
+      "total": 119010,
       "categories": [
         "电影",
         "连续剧",
@@ -491,11 +491,11 @@
         "漫剧",
         "儿童儿歌"
       ],
-      "uptime": "87.5%",
+      "uptime": "88.0%",
       "health": {
         "url": "https://api.wujinapi.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 352,
+        "response_time_ms": 339,
         "is_alive": true,
         "error": null
       }
@@ -507,7 +507,7 @@
       "site": "https://github.com/07751000/001github.io/blob/410c03197241f93ce0d0a9c295c4dd587b4d3d54/01.json",
       "description": "github",
       "cms": "maccms10",
-      "total": 157111,
+      "total": 157116,
       "categories": [
         "电影片",
         "动作片",
@@ -563,7 +563,7 @@
       "health": {
         "url": "https://bfzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 608,
+        "response_time_ms": 435,
         "is_alive": true,
         "error": null
       }
@@ -575,7 +575,7 @@
       "site": "https://github.com/swhtv/111/blob/6216896f655033f39a96933adabfd19cba24695c/fj.json",
       "description": "接口被防爬/返回网页，暂无分类元数据",
       "cms": "maccms10",
-      "total": 109708,
+      "total": 109744,
       "categories": [
         "电视剧",
         "电影",
@@ -630,7 +630,7 @@
       "health": {
         "url": "https://jszyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 332,
+        "response_time_ms": 347,
         "is_alive": true,
         "error": null
       }
@@ -642,7 +642,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuan-18",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 122385,
+      "total": 122386,
       "categories": [
         "电影",
         "电视剧",
@@ -708,7 +708,7 @@
       "health": {
         "url": "https://api.niuniuzy.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 377,
+        "response_time_ms": 394,
         "is_alive": true,
         "error": null
       }
@@ -720,7 +720,7 @@
       "site": "https://www.ziyuanzu.com/source/suocaijizhan-21",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 143388,
+      "total": 143391,
       "categories": [
         "电影",
         "电视剧",
@@ -788,7 +788,7 @@
       "health": {
         "url": "https://suonizy.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 352,
+        "response_time_ms": 361,
         "is_alive": true,
         "error": null
       }
@@ -800,7 +800,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-22",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 110864,
+      "total": 110901,
       "categories": [
         "电影",
         "连续剧",
@@ -851,7 +851,7 @@
       "health": {
         "url": "http://hongniuzy2.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 498,
+        "response_time_ms": 499,
         "is_alive": true,
         "error": null
       }
@@ -863,7 +863,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-27",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 141409,
+      "total": 141518,
       "categories": [
         "电影",
         "连续剧",
@@ -915,11 +915,11 @@
         "电影资讯",
         "娱乐新闻"
       ],
-      "uptime": "95.8%",
+      "uptime": "96.0%",
       "health": {
         "url": "https://dbzy.tv/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1216,
+        "response_time_ms": 1015,
         "is_alive": true,
         "error": null
       }
@@ -931,7 +931,7 @@
       "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-28",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 111378,
+      "total": 111414,
       "categories": [
         "电影",
         "电视剧",
@@ -982,7 +982,7 @@
       "health": {
         "url": "https://subocj.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 880,
+        "response_time_ms": 1104,
         "is_alive": true,
         "error": null
       }
@@ -994,7 +994,7 @@
       "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-29",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 111378,
+      "total": 111414,
       "categories": [
         "电影",
         "电视剧",
@@ -1041,11 +1041,11 @@
         "擦边短剧",
         "AI漫剧"
       ],
-      "uptime": "95.8%",
+      "uptime": "96.0%",
       "health": {
         "url": "https://www.suboziyuan.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 808,
+        "response_time_ms": 747,
         "is_alive": true,
         "error": null
       }
@@ -1104,7 +1104,7 @@
       "health": {
         "url": "https://155api.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 891,
+        "response_time_ms": 553,
         "is_alive": true,
         "error": null
       }
@@ -1116,7 +1116,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-34",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 97926,
+      "total": 97929,
       "categories": [
         "电影片",
         "连续剧",
@@ -1154,7 +1154,7 @@
       "health": {
         "url": "https://ffzy5.tv/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 708,
+        "response_time_ms": 1027,
         "is_alive": true,
         "error": null
       }
@@ -1198,7 +1198,7 @@
       "health": {
         "url": "https://jkunzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 343,
+        "response_time_ms": 997,
         "is_alive": true,
         "error": null
       }
@@ -1210,7 +1210,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-36",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 87818,
+      "total": 87820,
       "categories": [
         "国产动漫",
         "日韩动漫",
@@ -1255,11 +1255,11 @@
         "足球",
         "AI漫剧"
       ],
-      "uptime": "87.5%",
+      "uptime": "88.0%",
       "health": {
         "url": "https://www.mdzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 385,
+        "response_time_ms": 729,
         "is_alive": true,
         "error": null
       }
@@ -1307,11 +1307,11 @@
         "Gif动图",
         "福利姬"
       ],
-      "uptime": "91.7%",
+      "uptime": "92.0%",
       "health": {
         "url": "https://lbapi9.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 4354,
+        "response_time_ms": 978,
         "is_alive": true,
         "error": null
       }
@@ -1359,7 +1359,7 @@
       "health": {
         "url": "https://dadiapi.com/api.php",
         "status_code": 200,
-        "response_time_ms": 334,
+        "response_time_ms": 285,
         "is_alive": true,
         "error": null
       }
@@ -1371,7 +1371,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-39",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 66755,
+      "total": 66757,
       "categories": [
         "电影",
         "连续剧",
@@ -1431,7 +1431,7 @@
       "health": {
         "url": "https://ikunzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 545,
+        "response_time_ms": 483,
         "is_alive": true,
         "error": null
       }
@@ -1443,7 +1443,7 @@
       "site": "https://www.ziyuanzu.com/source/daxziyuanzhan-72",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 129427,
+      "total": 129672,
       "categories": [
         "视频一区",
         "视频二区",
@@ -1486,7 +1486,7 @@
       "health": {
         "url": "https://apidanaizi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 447,
+        "response_time_ms": 453,
         "is_alive": true,
         "error": null
       }
@@ -1543,7 +1543,7 @@
       "health": {
         "url": "https://api.xiaojizy.live/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 399,
+        "response_time_ms": 421,
         "is_alive": true,
         "error": null
       }
@@ -1595,7 +1595,7 @@
       "health": {
         "url": "https://m3u8.apiyhzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 436,
+        "response_time_ms": 425,
         "is_alive": true,
         "error": null
       }
@@ -1613,11 +1613,11 @@
         "视频二区",
         "高清AV"
       ],
-      "uptime": "4.2%",
+      "uptime": "4.0%",
       "health": {
         "url": "https://xxavs.com/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 150,
+        "response_time_ms": 54,
         "is_alive": false,
         "error": null
       }
@@ -1661,7 +1661,7 @@
       "health": {
         "url": "https://apiyutu.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 523,
+        "response_time_ms": 1898,
         "is_alive": true,
         "error": null
       }
@@ -1712,7 +1712,7 @@
       "health": {
         "url": "http://fhapi9.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 610,
+        "response_time_ms": 567,
         "is_alive": true,
         "error": null
       }
@@ -1730,7 +1730,7 @@
       "health": {
         "url": "https://bhziyuan.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 611,
+        "response_time_ms": 473,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -1742,7 +1742,7 @@
       "site": "https://www.ziyuanzu.com/source/wangziyuanzhan-57",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 13726,
+      "total": 13837,
       "categories": [
         "热门视频",
         "国产色情",
@@ -1779,11 +1779,11 @@
         "AV解说",
         "伦理三级"
       ],
-      "uptime": "95.8%",
+      "uptime": "96.0%",
       "health": {
         "url": "https://www.xxibaozyw.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 450,
+        "response_time_ms": 349,
         "is_alive": true,
         "error": null
       }
@@ -1827,7 +1827,7 @@
       "health": {
         "url": "https://apilsbzy1.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 276,
+        "response_time_ms": 321,
         "is_alive": true,
         "error": null
       }
@@ -1873,7 +1873,7 @@
       "health": {
         "url": "https://caiji.semaozy.net/inc/api.php",
         "status_code": 200,
-        "response_time_ms": 368,
+        "response_time_ms": 337,
         "is_alive": true,
         "error": null
       }
@@ -1909,11 +1909,11 @@
         "VR资源",
         "JAV高清"
       ],
-      "uptime": "91.7%",
+      "uptime": "92.0%",
       "health": {
         "url": "https://api.vnzyz.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 270,
+        "response_time_ms": 361,
         "is_alive": true,
         "error": null
       }
@@ -1964,7 +1964,7 @@
       "health": {
         "url": "https://apilj.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 861,
+        "response_time_ms": 923,
         "is_alive": true,
         "error": null
       }
@@ -1976,7 +1976,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-62",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 13618,
+      "total": 13662,
       "categories": [
         "热门视频",
         "国产色情",
@@ -2017,7 +2017,7 @@
       "health": {
         "url": "https://www.xiangjiaozyw.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 598,
+        "response_time_ms": 739,
         "is_alive": true,
         "error": null
       }
@@ -2029,7 +2029,7 @@
       "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/baip5.txt",
       "description": "github",
       "cms": "maccms10",
-      "total": 37830,
+      "total": 37835,
       "categories": [
         "麻豆视频",
         "91制片厂",
@@ -2056,7 +2056,7 @@
       "health": {
         "url": "https://91md.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 663,
+        "response_time_ms": 2372,
         "is_alive": true,
         "error": null
       }
@@ -2068,7 +2068,7 @@
       "site": "https://www.ziyuanzu.com/source/cangkuziyuan-65",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 64999,
+      "total": 65034,
       "categories": [
         "国产区",
         "AV区",
@@ -2115,7 +2115,7 @@
       "health": {
         "url": "https://hsckzy888.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1110,
+        "response_time_ms": 1179,
         "is_alive": true,
         "error": null
       }
@@ -2158,7 +2158,7 @@
       "health": {
         "url": "https://heiliaozyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1031,
+        "response_time_ms": 872,
         "is_alive": true,
         "error": null
       }
@@ -2176,7 +2176,7 @@
       "health": {
         "url": "https://api.okzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 130,
+        "response_time_ms": 171,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2194,7 +2194,7 @@
       "health": {
         "url": "https://api.yzzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 112,
+        "response_time_ms": 107,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2212,7 +2212,7 @@
       "health": {
         "url": "https://api.ryzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 355,
+        "response_time_ms": 354,
         "is_alive": true,
         "error": null
       }
@@ -2230,7 +2230,7 @@
       "health": {
         "url": "https://api.kczy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 172,
+        "response_time_ms": 94,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2248,7 +2248,7 @@
       "health": {
         "url": "https://api.xlzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 10029,
+        "response_time_ms": 10018,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2266,7 +2266,7 @@
       "health": {
         "url": "https://api.hnzy2.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 122,
+        "response_time_ms": 100,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2284,7 +2284,7 @@
       "health": {
         "url": "https://api.sdzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 513,
+        "response_time_ms": 385,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2302,7 +2302,7 @@
       "health": {
         "url": "https://api.ckzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 122,
+        "response_time_ms": 76,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -2371,11 +2371,11 @@
         "现代都市",
         "邵氏电影"
       ],
-      "uptime": "4.2%",
+      "uptime": "4.0%",
       "health": {
         "url": "https://api.apibdzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 131,
+        "response_time_ms": 51,
         "is_alive": false,
         "error": null
       }
@@ -2493,7 +2493,7 @@
       "health": {
         "url": "https://api.souavzyw.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 256,
+        "response_time_ms": 319,
         "is_alive": true,
         "error": null
       }
@@ -2540,7 +2540,7 @@
       "health": {
         "url": "https://api.douapi.cc/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 181,
+        "response_time_ms": 216,
         "is_alive": true,
         "error": null
       }
@@ -2552,7 +2552,7 @@
       "site": "https://www.ziyuanzu.com/source/daziyuanzhan-14",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 122386,
+      "total": 122388,
       "categories": [
         "电影",
         "电视剧",
@@ -2618,7 +2618,7 @@
       "health": {
         "url": "http://zuidazy.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 435,
+        "response_time_ms": 294,
         "is_alive": true,
         "error": null
       }
@@ -2630,7 +2630,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-25",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 110382,
+      "total": 110417,
       "categories": [
         "电视剧",
         "电影",
@@ -2681,7 +2681,7 @@
       "health": {
         "url": "https://huyazy.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 732,
+        "response_time_ms": 717,
         "is_alive": true,
         "error": null
       }
@@ -2693,7 +2693,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-31",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 111443,
+      "total": 111477,
       "categories": [
         "电视剧",
         "电影",
@@ -2744,7 +2744,7 @@
       "health": {
         "url": "https://jyzyapi.com/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 626,
+        "response_time_ms": 693,
         "is_alive": true,
         "error": null
       }
@@ -2777,7 +2777,7 @@
       "health": {
         "url": "https://thzy1.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 773,
+        "response_time_ms": 704,
         "is_alive": true,
         "error": null
       }
@@ -2852,7 +2852,7 @@
       "health": {
         "url": "https://slapibf.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 395,
+        "response_time_ms": 245,
         "is_alive": true,
         "error": null
       }
@@ -2941,7 +2941,7 @@
       "health": {
         "url": "https://lovedan.net/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 71,
+        "response_time_ms": 135,
         "is_alive": false,
         "error": null
       }
@@ -2959,7 +2959,7 @@
       "health": {
         "url": "https://www.kxgav.com/api/json.php",
         "status_code": 200,
-        "response_time_ms": 847,
+        "response_time_ms": 495,
         "is_alive": true,
         "error": null
       }
@@ -2977,7 +2977,7 @@
       "health": {
         "url": "https://www.msnii.com/api/json.php",
         "status_code": 200,
-        "response_time_ms": 565,
+        "response_time_ms": 376,
         "is_alive": true,
         "error": null
       }
@@ -2995,7 +2995,7 @@
       "health": {
         "url": "https://www.pgxdy.com/api/json.php",
         "status_code": 200,
-        "response_time_ms": 413,
+        "response_time_ms": 652,
         "is_alive": true,
         "error": null
       }
@@ -3013,7 +3013,7 @@
       "health": {
         "url": "https://www.xrbsp.com/api/json.php",
         "status_code": 200,
-        "response_time_ms": 395,
+        "response_time_ms": 881,
         "is_alive": true,
         "error": null
       }
@@ -3031,7 +3031,7 @@
       "health": {
         "url": "https://www.gdlsp.com/api/json.php",
         "status_code": 200,
-        "response_time_ms": 442,
+        "response_time_ms": 448,
         "is_alive": true,
         "error": null
       }
@@ -3049,7 +3049,7 @@
       "health": {
         "url": "https://api.yjzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 934,
+        "response_time_ms": 2495,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -3061,7 +3061,7 @@
       "site": "https://www.ziyuanzu.com/source/yiziyuanzhan-17",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 66750,
+      "total": 66752,
       "categories": [
         "国产动漫",
         "日韩动漫",
@@ -3107,11 +3107,11 @@
         "足球",
         "AI漫剧"
       ],
-      "uptime": "83.3%",
+      "uptime": "84.0%",
       "health": {
         "url": "https://iqiyizyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1428,
+        "response_time_ms": 1662,
         "is_alive": true,
         "error": null
       }
@@ -3158,7 +3158,7 @@
       "health": {
         "url": "https://api.ddapi.cc/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 231,
+        "response_time_ms": 196,
         "is_alive": true,
         "error": null
       }
@@ -3170,7 +3170,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-53",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 111425,
+      "total": 111535,
       "categories": [
         "视频一区",
         "视频二区",
@@ -3204,7 +3204,7 @@
       "health": {
         "url": "https://fqzy.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 823,
+        "response_time_ms": 672,
         "is_alive": true,
         "error": null
       }
@@ -3241,13 +3241,13 @@
         "三上悠亚",
         "长泽梓"
       ],
-      "uptime": "95.8%",
+      "uptime": "92.0%",
       "health": {
         "url": "https://shayuapi.com/api.php/provide/vod/?ac=videolist",
-        "status_code": 200,
-        "response_time_ms": 9726,
-        "is_alive": true,
-        "error": null
+        "status_code": null,
+        "response_time_ms": 12001,
+        "is_alive": false,
+        "error": "timeout"
       }
     },
     {
@@ -3263,7 +3263,7 @@
       "health": {
         "url": "https://p2100.net/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 130,
+        "response_time_ms": 137,
         "is_alive": false,
         "error": null
       }
@@ -3306,11 +3306,11 @@
         "韩国主播",
         "VR视角"
       ],
-      "uptime": "95.8%",
+      "uptime": "96.0%",
       "health": {
         "url": "https://aosikazy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 355,
+        "response_time_ms": 337,
         "is_alive": true,
         "error": null
       }
@@ -3357,7 +3357,7 @@
       "health": {
         "url": "https://www.jingpinx.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 838,
+        "response_time_ms": 737,
         "is_alive": true,
         "error": null
       }
@@ -3369,7 +3369,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuan-19",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 33888,
+      "total": 33889,
       "categories": [
         "电影",
         "连续剧",
@@ -3429,7 +3429,7 @@
       "health": {
         "url": "https://api.maoyanapi.top/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1147,
+        "response_time_ms": 868,
         "is_alive": true,
         "error": null
       }
@@ -3447,7 +3447,7 @@
       "health": {
         "url": "https://api.ukuzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 137,
+        "response_time_ms": 47,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -3459,7 +3459,7 @@
       "site": "https://www.ziyuanzu.com/source/ziyuanzhan-24",
       "description": "ziyuanzu.com",
       "cms": "maccms10",
-      "total": 143122,
+      "total": 143137,
       "categories": [
         "电影",
         "连续剧",
@@ -3516,7 +3516,7 @@
       "health": {
         "url": "https://mtzy5.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1688,
+        "response_time_ms": 2035,
         "is_alive": true,
         "error": null
       }
@@ -3564,11 +3564,11 @@
         "福利姬",
         "漫画连载"
       ],
-      "uptime": "95.8%",
+      "uptime": "96.0%",
       "health": {
         "url": "https://naixxzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 509,
+        "response_time_ms": 747,
         "is_alive": true,
         "error": null
       }
@@ -3626,7 +3626,7 @@
       "health": {
         "url": "https://json.xingba222.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 305,
+        "response_time_ms": 345,
         "is_alive": true,
         "error": null
       }
@@ -3644,7 +3644,7 @@
       "health": {
         "url": "https://api.tpzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 621,
+        "response_time_ms": 2233,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -3662,7 +3662,7 @@
       "health": {
         "url": "https://api.dyttzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 62,
+        "response_time_ms": 96,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -3680,7 +3680,7 @@
       "health": {
         "url": "https://api.lzizy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 50,
+        "response_time_ms": 108,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -3698,7 +3698,7 @@
       "health": {
         "url": "https://api.jyzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 336,
+        "response_time_ms": 340,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -3710,7 +3710,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/247.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 82293,
+      "total": 82318,
       "categories": [
         "电影",
         "电视剧",
@@ -3749,7 +3749,7 @@
       "health": {
         "url": "https://cdn.dzzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 624,
+        "response_time_ms": 644,
         "is_alive": true,
         "error": null
       }
@@ -3812,7 +3812,7 @@
         "奇幻片",
         "记录片"
       ],
-      "uptime": "62.5%",
+      "uptime": "60.0%",
       "health": {
         "url": "https://98zy.vip/api.php/provide/vod/?ac=videolist",
         "status_code": null,
@@ -3874,11 +3874,11 @@
         "足球",
         "篮球"
       ],
-      "uptime": "87.5%",
+      "uptime": "88.0%",
       "health": {
         "url": "https://caiji.xgzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 672,
+        "response_time_ms": 953,
         "is_alive": true,
         "error": null
       }
@@ -3890,7 +3890,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/243.html",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 125172,
+      "total": 125174,
       "categories": [
         "电影",
         "电视剧",
@@ -3957,7 +3957,7 @@
       "health": {
         "url": "https://api.wsyzy.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 382,
+        "response_time_ms": 413,
         "is_alive": true,
         "error": null
       }
@@ -3969,7 +3969,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/216.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 143122,
+      "total": 143137,
       "categories": [
         "电影",
         "连续剧",
@@ -4026,7 +4026,7 @@
       "health": {
         "url": "https://caiji.maotaizy.cc/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 2573,
+        "response_time_ms": 1844,
         "is_alive": true,
         "error": null
       }
@@ -4038,7 +4038,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/236.html",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 122386,
+      "total": 122388,
       "categories": [
         "电影",
         "电视剧",
@@ -4104,7 +4104,7 @@
       "health": {
         "url": "https://api.zuidapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 318,
+        "response_time_ms": 418,
         "is_alive": true,
         "error": null
       }
@@ -4116,7 +4116,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/235.html",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 122312,
+      "total": 122313,
       "categories": [
         "电影",
         "电视剧",
@@ -4178,11 +4178,11 @@
         "科普学习",
         "漫剧"
       ],
-      "uptime": "91.7%",
+      "uptime": "92.0%",
       "health": {
         "url": "http://api.okzyw.net/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 383,
+        "response_time_ms": 304,
         "is_alive": true,
         "error": null
       }
@@ -4225,7 +4225,7 @@
       "health": {
         "url": "https://www.heiliaozyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 2054,
+        "response_time_ms": 1674,
         "is_alive": true,
         "error": null
       }
@@ -4237,7 +4237,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/230.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 110382,
+      "total": 110417,
       "categories": [
         "电视剧",
         "电影",
@@ -4288,7 +4288,7 @@
       "health": {
         "url": "https://www.huyaapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 325,
+        "response_time_ms": 299,
         "is_alive": true,
         "error": null
       }
@@ -4300,7 +4300,7 @@
       "site": "https://github.com/jishitang/Tool/blob/b01f046de1fca2ce1707c4aa93611e5aec42fe86/gat2/tvbox.txt",
       "description": "synced from yszzq.com",
       "cms": "maccms10",
-      "total": 66750,
+      "total": 66752,
       "categories": [
         "国产动漫",
         "日韩动漫",
@@ -4346,11 +4346,11 @@
         "足球",
         "AI漫剧"
       ],
-      "uptime": "91.7%",
+      "uptime": "92.0%",
       "health": {
         "url": "https://www.iqiyizyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1663,
+        "response_time_ms": 2000,
         "is_alive": true,
         "error": null
       }
@@ -4362,7 +4362,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/218.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 83686,
+      "total": 83689,
       "categories": [
         "电影片",
         "连续剧",
@@ -4397,11 +4397,11 @@
         "短剧",
         "动画片"
       ],
-      "uptime": "87.5%",
+      "uptime": "88.0%",
       "health": {
         "url": "http://caiji.dyttzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1089,
+        "response_time_ms": 511,
         "is_alive": true,
         "error": null
       }
@@ -4413,7 +4413,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/207.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 141409,
+      "total": 141518,
       "categories": [
         "电影",
         "连续剧",
@@ -4465,11 +4465,11 @@
         "电影资讯",
         "娱乐新闻"
       ],
-      "uptime": "95.8%",
+      "uptime": "96.0%",
       "health": {
         "url": "https://caiji.dbzy5.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1892,
+        "response_time_ms": 2664,
         "is_alive": true,
         "error": null
       }
@@ -4481,7 +4481,7 @@
       "site": "https://github.com/shidahuilang/shuyuan-bak/blob/399cba926cbcbc029ff2376d7248b67bbca19f29/UZ.json",
       "description": "github",
       "cms": "maccms10",
-      "total": 84593,
+      "total": 84595,
       "categories": [
         "电影片",
         "连续剧",
@@ -4523,11 +4523,11 @@
         "短剧",
         "动画电影"
       ],
-      "uptime": "83.3%",
+      "uptime": "84.0%",
       "health": {
         "url": "https://cj.rycjapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 2136,
+        "response_time_ms": 2319,
         "is_alive": true,
         "error": null
       }
@@ -4545,7 +4545,7 @@
       "health": {
         "url": "https://jipinzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 1752,
+        "response_time_ms": 2204,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -4563,7 +4563,7 @@
       "health": {
         "url": "https://api.wwzy.tv/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 620,
+        "response_time_ms": 600,
         "is_alive": true,
         "error": null
       }
@@ -4581,7 +4581,7 @@
       "health": {
         "url": "https://www.qilinzyz.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 247,
+        "response_time_ms": 329,
         "is_alive": false,
         "error": null
       }
@@ -4593,7 +4593,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/186.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 97926,
+      "total": 97929,
       "categories": [
         "电影片",
         "连续剧",
@@ -4627,11 +4627,11 @@
         "伦理片",
         "短剧"
       ],
-      "uptime": "83.3%",
+      "uptime": "84.0%",
       "health": {
         "url": "http://api.ffzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 1211,
+        "response_time_ms": 1622,
         "is_alive": true,
         "error": null
       }
@@ -4643,7 +4643,7 @@
       "site": "https://github.com/libinghui123/tvbox/blob/aa8714ac8740061dcd934a31d60c5ffba50a2577/tvbox/lib/夜魔.txt",
       "description": "接口被防爬/返回网页，暂无分类元数据",
       "cms": "maccms10",
-      "total": 110478,
+      "total": 110512,
       "categories": [
         "电视剧",
         "电影",
@@ -4698,7 +4698,7 @@
       "health": {
         "url": "https://hhzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 405,
+        "response_time_ms": 575,
         "is_alive": true,
         "error": null
       }
@@ -4710,7 +4710,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/166.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 69728,
+      "total": 69750,
       "categories": [
         "电影",
         "连续剧",
@@ -4768,7 +4768,7 @@
       "health": {
         "url": "https://360zyzz.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 601,
+        "response_time_ms": 544,
         "is_alive": true,
         "error": null
       }
@@ -4786,7 +4786,7 @@
       "health": {
         "url": "https://99reapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 30,
+        "response_time_ms": 36,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -4863,11 +4863,11 @@
         "AI漫剧",
         "擦边剧"
       ],
-      "uptime": "83.3%",
+      "uptime": "84.0%",
       "health": {
         "url": "https://api.yzzy-api.com/inc/api.php",
         "status_code": 200,
-        "response_time_ms": 705,
+        "response_time_ms": 706,
         "is_alive": true,
         "error": null
       }
@@ -4915,7 +4915,7 @@
       "health": {
         "url": "https://dadiapi.com/api.php/provide/vod/?ac=list",
         "status_code": 200,
-        "response_time_ms": 274,
+        "response_time_ms": 285,
         "is_alive": true,
         "error": null
       }
@@ -4927,7 +4927,7 @@
       "site": "https://github.com/liu673cn/xbb/blob/df208b25a21b9b3de67ebe6c81c550061b6bc3d5/b2.txt",
       "description": "接口被防爬/返回网页，暂无分类元数据",
       "cms": "maccms10",
-      "total": 152205,
+      "total": 152299,
       "categories": [
         "电影片",
         "连续剧",
@@ -4978,7 +4978,7 @@
       "health": {
         "url": "https://cj.lziapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 500,
+        "response_time_ms": 367,
         "is_alive": true,
         "error": null
       }
@@ -4990,7 +4990,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/140.html",
       "description": "synced from yszzq.com",
       "cms": "maccms10",
-      "total": 111449,
+      "total": 111482,
       "categories": [
         "电影",
         "电视剧",
@@ -5045,7 +5045,7 @@
       "health": {
         "url": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 589,
+        "response_time_ms": 235,
         "is_alive": true,
         "error": null
       }
@@ -5057,7 +5057,7 @@
       "site": "https://www.yszzq.com/ziyuan/api/127.html",
       "description": "yszzq.com",
       "cms": "maccms10",
-      "total": 57042,
+      "total": 57055,
       "categories": [
         "电影",
         "电视剧",
@@ -5093,7 +5093,7 @@
       "health": {
         "url": "https://api.ukuapi88.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 432,
+        "response_time_ms": 331,
         "is_alive": true,
         "error": null
       }
@@ -5105,7 +5105,7 @@
       "site": "https://github.com/heroaku/TVboxo/blob/42edfca812780525e95a1c1c2d97d6ed664e27a4/apit.json",
       "description": "synced from yszzq.com",
       "cms": "maccms10",
-      "total": 110867,
+      "total": 110901,
       "categories": [
         "电影",
         "连续剧",
@@ -5156,7 +5156,7 @@
       "health": {
         "url": "https://www.hongniuzy2.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 393,
+        "response_time_ms": 411,
         "is_alive": true,
         "error": null
       }
@@ -5174,7 +5174,7 @@
       "health": {
         "url": "http://zy.itono.cn/inc/api.php",
         "status_code": null,
-        "response_time_ms": 18,
+        "response_time_ms": 73,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5204,7 +5204,7 @@
       "site": "https://github.com/liu673cn/bug/blob/7820ab8e94f060401f791a646df760404276098e/vod/xpg.txt",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 152205,
+      "total": 152299,
       "categories": [
         "电影片",
         "连续剧",
@@ -5255,7 +5255,7 @@
       "health": {
         "url": "http://cj.lziapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 305,
+        "response_time_ms": 108,
         "is_alive": true,
         "error": null
       }
@@ -5269,11 +5269,11 @@
       "cms": "maccms10",
       "total": 0,
       "categories": [],
-      "uptime": "78.3%",
+      "uptime": "75.0%",
       "health": {
         "url": "https://caiji.523zyw.com/inc/api.php",
         "status_code": null,
-        "response_time_ms": 106,
+        "response_time_ms": 61,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5291,7 +5291,7 @@
       "health": {
         "url": "https://gfzycj.hnmj.vip/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 412,
+        "response_time_ms": 313,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5309,7 +5309,7 @@
       "health": {
         "url": "https://malimali3.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 132,
+        "response_time_ms": 110,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5321,7 +5321,7 @@
       "site": "https://github.com/franksun1211/TVBOX/blob/e980b074353fea9ac54fd293980d2cfa6170960a/miaotv.txt",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 57042,
+      "total": 57055,
       "categories": [
         "电影",
         "电视剧",
@@ -5357,7 +5357,7 @@
       "health": {
         "url": "https://api.ukuapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 253,
+        "response_time_ms": 179,
         "is_alive": true,
         "error": null
       }
@@ -5375,7 +5375,7 @@
       "health": {
         "url": "https://haiwaikan.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 128,
+        "response_time_ms": 159,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5387,7 +5387,7 @@
       "site": "https://github.com/liu673cn/box/blob/c8665453fc3665fa8d3124d6d9d91fcec4029e66/m.json",
       "description": "分类含受限内容，默认隐藏",
       "cms": "maccms10",
-      "total": 143388,
+      "total": 143391,
       "categories": [
         "电影",
         "电视剧",
@@ -5455,7 +5455,7 @@
       "health": {
         "url": "https://suoniapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 281,
+        "response_time_ms": 481,
         "is_alive": true,
         "error": null
       }
@@ -5473,7 +5473,7 @@
       "health": {
         "url": "https://kongjieav.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 1718,
+        "response_time_ms": 1404,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5491,7 +5491,7 @@
       "health": {
         "url": "https://api.kudian70.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 46,
+        "response_time_ms": 102,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5509,7 +5509,7 @@
       "health": {
         "url": "https://aicaozy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 113,
+        "response_time_ms": 32,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5521,7 +5521,7 @@
       "site": "https://github.com/Minerchu/dongguaTV/blob/6b898305740dd4b842cb27fe0b9533e68127cb7a/README.md",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 97926,
+      "total": 97929,
       "categories": [
         "电影片",
         "连续剧",
@@ -5555,11 +5555,11 @@
         "伦理片",
         "短剧"
       ],
-      "uptime": "82.6%",
+      "uptime": "83.3%",
       "health": {
         "url": "https://api.ffzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 656,
+        "response_time_ms": 1017,
         "is_alive": true,
         "error": null
       }
@@ -5577,7 +5577,7 @@
       "health": {
         "url": "https://www.ddzyz1.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 115,
+        "response_time_ms": 87,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5595,7 +5595,7 @@
       "health": {
         "url": "https://siwazyw.cc/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 50,
+        "response_time_ms": 112,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5613,7 +5613,7 @@
       "health": {
         "url": "https://api.apilyzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 26,
+        "response_time_ms": 99,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5631,7 +5631,7 @@
       "health": {
         "url": "https://api.sexnguon.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 101,
+        "response_time_ms": 165,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5652,7 +5652,7 @@
       "health": {
         "url": "https://ckzy.me/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 199,
+        "response_time_ms": 250,
         "is_alive": true,
         "error": null
       }
@@ -5670,7 +5670,7 @@
       "health": {
         "url": "https://www.888dav.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 142,
+        "response_time_ms": 102,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5682,7 +5682,7 @@
       "site": "https://github.com/liu673cn/box/blob/c8665453fc3665fa8d3124d6d9d91fcec4029e66/m.json",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 152205,
+      "total": 152299,
       "categories": [
         "电影片",
         "连续剧",
@@ -5733,7 +5733,7 @@
       "health": {
         "url": "https://lzizy1.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 531,
+        "response_time_ms": 436,
         "is_alive": true,
         "error": null
       }
@@ -5751,7 +5751,7 @@
       "health": {
         "url": "https://zy.hls.one/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 35,
+        "response_time_ms": 43,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5840,7 +5840,7 @@
       "health": {
         "url": "https://www.lovedan.net/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 63,
+        "response_time_ms": 79,
         "is_alive": false,
         "error": null
       }
@@ -5858,7 +5858,7 @@
       "health": {
         "url": "https://json02.heimuer.xyz/api.php/provide/vod/?ac=videolist",
         "status_code": 404,
-        "response_time_ms": 183,
+        "response_time_ms": 131,
         "is_alive": false,
         "error": null
       }
@@ -5870,7 +5870,7 @@
       "site": "https://github.com/alantang1977/X/blob/046447ef3d40340ab022cbde8ce77ebf749ee318/vox.json",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 238561,
+      "total": 239099,
       "categories": [
         "电影",
         "剧集",
@@ -5884,7 +5884,7 @@
       "health": {
         "url": "https://cj.jusj.top/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 4033,
+        "response_time_ms": 2363,
         "is_alive": true,
         "error": null
       }
@@ -5896,7 +5896,7 @@
       "site": "https://github.com/bluefriendCN/set/blob/b13b87682417c2c9cbde7e41afcc1b9a2bbcdf6a/ma.json",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 37830,
+      "total": 37835,
       "categories": [
         "麻豆视频",
         "91制片厂",
@@ -5923,7 +5923,7 @@
       "health": {
         "url": "https://md91.cc/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 629,
+        "response_time_ms": 583,
         "is_alive": true,
         "error": null
       }
@@ -5941,7 +5941,7 @@
       "health": {
         "url": "https://img.smdyw.top/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 241,
+        "response_time_ms": 208,
         "is_alive": true,
         "error": null
       }
@@ -5959,7 +5959,7 @@
       "health": {
         "url": "https://api.ykapi.net/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 110,
+        "response_time_ms": 88,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5977,7 +5977,7 @@
       "health": {
         "url": "https://www.siwazyw.tv/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 576,
+        "response_time_ms": 620,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -5995,7 +5995,7 @@
       "health": {
         "url": "https://kkzy.me/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 825,
+        "response_time_ms": 739,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6013,7 +6013,7 @@
       "health": {
         "url": "https://cj.vodimg.top/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 69,
+        "response_time_ms": 71,
         "is_alive": false,
         "error": null
       }
@@ -6031,7 +6031,7 @@
       "health": {
         "url": "https://video.yingworld.vip/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 37,
+        "response_time_ms": 188,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6049,7 +6049,7 @@
       "health": {
         "url": "https://www.caoliuzy.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 62,
+        "response_time_ms": 162,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6061,7 +6061,7 @@
       "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/欧歌.txt",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 152205,
+      "total": 152299,
       "categories": [
         "电影片",
         "连续剧",
@@ -6112,7 +6112,7 @@
       "health": {
         "url": "https://cj.lzcaiji.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 560,
+        "response_time_ms": 400,
         "is_alive": true,
         "error": null
       }
@@ -6130,7 +6130,7 @@
       "health": {
         "url": "https://api.xiuseapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 55,
+        "response_time_ms": 32,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6148,7 +6148,7 @@
       "health": {
         "url": "https://sewozyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 52,
+        "response_time_ms": 38,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6162,11 +6162,11 @@
       "cms": "maccms10",
       "total": 0,
       "categories": [],
-      "uptime": "52.2%",
+      "uptime": "50.0%",
       "health": {
         "url": "https://caiji.nxflv.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 323,
+        "response_time_ms": 549,
         "is_alive": false,
         "error": null
       }
@@ -6184,7 +6184,7 @@
       "health": {
         "url": "https://www.partnersky-horoskop.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 59,
+        "response_time_ms": 91,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6202,7 +6202,7 @@
       "health": {
         "url": "https://zy.yilans.net:8090/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 121,
+        "response_time_ms": 104,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6220,7 +6220,7 @@
       "health": {
         "url": "https://www.bajiezy.xyz/api.php/provide/vod/?ac=videolist",
         "status_code": 429,
-        "response_time_ms": 402,
+        "response_time_ms": 242,
         "is_alive": false,
         "error": null
       }
@@ -6238,7 +6238,7 @@
       "health": {
         "url": "https://leshizyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 112,
+        "response_time_ms": 31,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6256,7 +6256,7 @@
       "health": {
         "url": "https://www.kuaibozy.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 200,
+        "response_time_ms": 270,
         "is_alive": true,
         "error": null
       }
@@ -6270,11 +6270,11 @@
       "cms": "maccms10",
       "total": 0,
       "categories": [],
-      "uptime": "91.3%",
+      "uptime": "91.7%",
       "health": {
         "url": "https://www.77hanju.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 568,
+        "response_time_ms": 889,
         "is_alive": true,
         "error": null
       }
@@ -6292,7 +6292,7 @@
       "health": {
         "url": "https://m3u8.tiankongapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 51,
+        "response_time_ms": 88,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6310,7 +6310,7 @@
       "health": {
         "url": "https://gayapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 209,
+        "response_time_ms": 164,
         "is_alive": true,
         "error": null
       }
@@ -6328,7 +6328,7 @@
       "health": {
         "url": "https://collect.wolongzyw.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 808,
+        "response_time_ms": 485,
         "is_alive": true,
         "error": null
       }
@@ -6346,7 +6346,7 @@
       "health": {
         "url": "https://app.bfzyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": 404,
-        "response_time_ms": 257,
+        "response_time_ms": 236,
         "is_alive": false,
         "error": null
       }
@@ -6364,7 +6364,7 @@
       "health": {
         "url": "https://www.ah121.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 683,
+        "response_time_ms": 704,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6382,7 +6382,7 @@
       "health": {
         "url": "https://json.heimuer.xyz/api.php/provide/vod/?ac=videolist",
         "status_code": 404,
-        "response_time_ms": 167,
+        "response_time_ms": 142,
         "is_alive": false,
         "error": null
       }
@@ -6394,7 +6394,7 @@
       "site": "https://github.com/guot55/yg/blob/d0879e44c351c7ede52709ae4194a0c1f692855f/jsm.json",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 44159,
+      "total": 44160,
       "categories": [
         "电影",
         "电视剧",
@@ -6441,7 +6441,7 @@
       "health": {
         "url": "https://api.zeqaht.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 2553,
+        "response_time_ms": 2643,
         "is_alive": true,
         "error": null
       }
@@ -6459,7 +6459,7 @@
       "health": {
         "url": "https://www.jpysvip.net/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 118,
+        "response_time_ms": 155,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6495,7 +6495,7 @@
       "health": {
         "url": "https://avtop10.com/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 75,
+        "response_time_ms": 65,
         "is_alive": false,
         "error": null
       }
@@ -6513,7 +6513,7 @@
       "health": {
         "url": "https://18.cxr.cool/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 506,
+        "response_time_ms": 222,
         "is_alive": false,
         "error": null
       }
@@ -6531,7 +6531,7 @@
       "health": {
         "url": "https://www.zycaiji.net:7788/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 49,
+        "response_time_ms": 92,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6549,7 +6549,7 @@
       "health": {
         "url": "https://www.200121.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 63,
+        "response_time_ms": 37,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6567,7 +6567,7 @@
       "health": {
         "url": "https://ikaola.tv/api.php/provide/vod/?ac=videolist",
         "status_code": 403,
-        "response_time_ms": 75,
+        "response_time_ms": 61,
         "is_alive": false,
         "error": null
       }
@@ -6585,7 +6585,7 @@
       "health": {
         "url": "https://www.tangrenjie.tv/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 59,
+        "response_time_ms": 166,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6603,7 +6603,7 @@
       "health": {
         "url": "https://api.iku.cool/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 10022,
+        "response_time_ms": 10027,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6621,7 +6621,7 @@
       "health": {
         "url": "https://lehootv.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 1657,
+        "response_time_ms": 1507,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6639,7 +6639,7 @@
       "health": {
         "url": "https://www.wolongzyw.com/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 814,
+        "response_time_ms": 475,
         "is_alive": true,
         "error": null
       }
@@ -6657,7 +6657,7 @@
       "health": {
         "url": "https://caiji.kczyapi.com/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 113,
+        "response_time_ms": 162,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6675,7 +6675,7 @@
       "health": {
         "url": "https://ys.md214.cn/api.php/provide/vod/?ac=videolist",
         "status_code": null,
-        "response_time_ms": 307,
+        "response_time_ms": 575,
         "is_alive": false,
         "error": "fetch failed"
       }
@@ -6693,7 +6693,7 @@
       "health": {
         "url": "http://124.222.116.5/macos/seven/api.php/provide/vod/?ac=videolist",
         "status_code": 404,
-        "response_time_ms": 451,
+        "response_time_ms": 540,
         "is_alive": false,
         "error": null
       }
@@ -6705,7 +6705,7 @@
       "site": "https://github.com/powerchh/mysite/blob/66e1c6746eb2eb4268f8b24faf52c6f46025f0e7/static/tv/tvbox.txt",
       "description": "synced from github",
       "cms": "maccms10",
-      "total": 87818,
+      "total": 87820,
       "categories": [
         "国产动漫",
         "日韩动漫",
@@ -6750,11 +6750,11 @@
         "足球",
         "AI漫剧"
       ],
-      "uptime": "95.7%",
+      "uptime": "95.8%",
       "health": {
         "url": "https://caiji.moduapi.cc/api.php/provide/vod/?ac=videolist",
         "status_code": 200,
-        "response_time_ms": 616,
+        "response_time_ms": 439,
         "is_alive": true,
         "error": null
       }
@@ -6762,8 +6762,8 @@
   ],
   "stats": {
     "total": 167,
-    "alive": 98,
-    "offline": 69,
-    "online_rate": 58.7
+    "alive": 97,
+    "offline": 70,
+    "online_rate": 58.1
   }
 }
