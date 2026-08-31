@@ -797,6 +797,20 @@
       "source": "windiscover",
       "at": "2026-08-30T05:10:49.261Z",
       "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2125503-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2125503-1-1-95bab1db03.md",
+      "title": "一款极简的网址导航源码 免服务器部署在cloudflare上",
+      "source": "pojie",
+      "at": "2026-08-31T05:18:40.395Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2125443-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2125443-1-1-2f23572dcb.md",
+      "title": "实现微信聊天记录导出中密钥的获取",
+      "source": "pojie",
+      "at": "2026-08-31T05:18:40.395Z",
+      "mode": "full"
     }
   }
 }
