@@ -832,6 +832,48 @@
       "source": "pojie",
       "at": "2026-09-02T04:14:03.570Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-teams-web-domain-migration-to-cloud-microsoft.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-fd66316ed2.md",
+      "title": "微软将 Teams 网页版域名迁移至 cloud.microsoft IT 管理员需注意配置变更",
+      "source": "windiscover",
+      "at": "2026-09-03T04:09:34.712Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-server-2025-tighter-driver-signing.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-c012e96c63.md",
+      "title": "微软收紧 Windows 11 和 Server 2025 驱动程序签名要求",
+      "source": "windiscover",
+      "at": "2026-09-03T04:09:34.712Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-enhance-copilot-in-outlook-classic.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-3e2d5fc1ff.md",
+      "title": "微软强化 Outlook Classic 中 Copilot 功能定位",
+      "source": "windiscover",
+      "at": "2026-09-03T04:09:34.713Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/visual-studio-code-1136-agent-merge-preview.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-visual-7bb1322317.md",
+      "title": "Visual Studio Code 1.136新增智能代码合并预览功能",
+      "source": "windiscover",
+      "at": "2026-09-03T04:09:34.713Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/teams-temporary-notification-pause-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-teams-5a3bd14cca.md",
+      "title": "Teams将支持临时暂停通知 自动恢复原有设置",
+      "source": "windiscover",
+      "at": "2026-09-03T04:09:34.713Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2125947-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2125947-1-1-6910e07509.md",
+      "title": "给cppcryptfs增加Xchacha20-poly1305算法",
+      "source": "pojie",
+      "at": "2026-09-03T04:09:34.713Z",
+      "mode": "full"
     }
   }
 }
