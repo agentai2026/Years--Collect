@@ -1049,6 +1049,27 @@
       "source": "pojie",
       "at": "2026-09-10T04:24:14.612Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-sharepoint-copilot-content-authoring.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-3b320f0b5d.md",
+      "title": "微软推动 SharePoint 客户集成 Copilot 进行内容创作",
+      "source": "windiscover",
+      "at": "2026-09-11T04:23:15.765Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/msnightmare-shieldcrash-zero-day-windows-defender-patch-failure.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-msnigh-b37d77ba3b.md",
+      "title": "MSNightmare 披露 ShieldCrash 零日漏洞 针对 Windows Defender 补丁失效问题",
+      "source": "windiscover",
+      "at": "2026-09-11T04:23:15.765Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2127383-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2127383-1-1-12fd1f0b72.md",
+      "title": "Godot 4.8一键编译批处理",
+      "source": "pojie",
+      "at": "2026-09-11T04:23:15.765Z",
+      "mode": "full"
     }
   }
 }
