@@ -1070,6 +1070,48 @@
       "source": "pojie",
       "at": "2026-09-11T04:23:15.765Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-11-administrator-protection-release.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-60edcf839d.md",
+      "title": "微软即将推出 Windows 11 管理员保护功能",
+      "source": "windiscover",
+      "at": "2026-09-12T04:21:43.851Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-patch-update-remote-desktop-failure.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-5886e8d9f6.md",
+      "title": "微软补丁更新引发远程桌面故障 部分企业用户无法连接服务器",
+      "source": "windiscover",
+      "at": "2026-09-12T04:21:43.852Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-cross-device-resume-file-explorer-update.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-0c3ca0628b.md",
+      "title": "Windows 11 改进跨设备恢复功能 新增实用资源管理器特性",
+      "source": "windiscover",
+      "at": "2026-09-12T04:21:43.852Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-update-kb5124008-always-on-vpn-issue.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-80cd69e836.md",
+      "title": "Windows 11 更新 KB5124008 导致 Always On VPN 连接故障",
+      "source": "windiscover",
+      "at": "2026-09-12T04:21:43.852Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-enters-25-year-lease-agreement-cloud-services.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-033390d7d4.md",
+      "title": "微软将企业云服务调整为25年长期租赁协议",
+      "source": "windiscover",
+      "at": "2026-09-12T04:21:43.852Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2127428-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2127428-1-1-a9cf809fff.md",
+      "title": "基于【Python】的【django】框架搭建的【RBAC】为基础的Superbox起手包",
+      "source": "pojie",
+      "at": "2026-09-12T04:21:43.853Z",
+      "mode": "full"
     }
   }
 }
