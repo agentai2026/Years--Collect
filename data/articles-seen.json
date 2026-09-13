@@ -1112,6 +1112,41 @@
       "source": "pojie",
       "at": "2026-09-12T04:21:43.853Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/google-workspace-cross-platform-migration-tool.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-google-bb7c595ebe.md",
+      "title": "Google Workspace 推出跨平台迁移工具 支持从 Microsoft 账户导入数据",
+      "source": "windiscover",
+      "at": "2026-09-13T04:35:35.056Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2127729-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2127729-1-1-b99df6f437.md",
+      "title": "S-Spline 算法 Python+NumPy 实现",
+      "source": "pojie",
+      "at": "2026-09-13T04:35:35.057Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2127699-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2127699-1-1-8f81b1934a.md",
+      "title": "从零实现一个 JSON 解析器",
+      "source": "pojie",
+      "at": "2026-09-13T04:35:35.057Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2127667-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2127667-1-1-36f97b3367.md",
+      "title": "夸克分享链接目录树导出工具V1.0",
+      "source": "pojie",
+      "at": "2026-09-13T04:35:35.057Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2127597-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2127597-1-1-78d7b77421.md",
+      "title": "Python 最简易版 m3u8 跨平台下载实现",
+      "source": "pojie",
+      "at": "2026-09-13T04:35:35.057Z",
+      "mode": "full"
     }
   }
 }
