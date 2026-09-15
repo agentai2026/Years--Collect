@@ -1147,6 +1147,41 @@
       "source": "pojie",
       "at": "2026-09-13T04:35:35.057Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/kb5129195-patch-fails-to-fix-secure-domain-logins-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-kb5129-9876c1965a.md",
+      "title": "KB5129195 补丁未能修复 Windows 11 安全域名登录问题",
+      "source": "windiscover",
+      "at": "2026-09-15T04:42:34.002Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-september-2026-update-excel-copy-paste-issue.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-dc2a7a5b1c.md",
+      "title": "微软确认 2026 年 9 月安全更新破坏 Excel 粘贴功能",
+      "source": "windiscover",
+      "at": "2026-09-15T04:42:34.002Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-government-word-copilot-edit-mode.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-c9e75cf276.md",
+      "title": "微软为政府机构用户开放 Word Copilot 编辑模式",
+      "source": "windiscover",
+      "at": "2026-09-15T04:42:34.003Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-ending-office-2021-support-next-month.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-3280afbad5.md",
+      "title": "微软宣布下月结束对 Office 2021 的支持",
+      "source": "windiscover",
+      "at": "2026-09-15T04:42:34.003Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128012-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128012-1-1-7a8968c28d.md",
+      "title": "利用 openclaw-weixin 做一个通知系统",
+      "source": "pojie",
+      "at": "2026-09-15T04:42:34.003Z",
+      "mode": "full"
     }
   }
 }
