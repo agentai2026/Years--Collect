@@ -1287,6 +1287,76 @@
       "source": "pojie",
       "at": "2026-09-17T04:42:11.113Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-11-search-automatic-folder-indexing.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-7dbdfad871.md",
+      "title": "微软优化 Windows 11 搜索：自动索引常用文件夹，支持手动管理",
+      "source": "windiscover",
+      "at": "2026-09-18T04:27:33.480Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/euro-office-windows-desktop-app-development.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-euro-o-493217d75a.md",
+      "title": "Euro Office 正在开发专属 Windows 桌面应用",
+      "source": "windiscover",
+      "at": "2026-09-18T04:27:33.481Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-auto-sr-expansion-intel-copilot-pcs.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-b010778486.md",
+      "title": "微软Auto SR超分辨率技术扩展支持更多Intel设备",
+      "source": "windiscover",
+      "at": "2026-09-18T04:27:33.481Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-to-strip-app-governance-access-from-admin-role.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-1b287215b9.md",
+      "title": "微软将移除管理员角色的App Governance访问权限",
+      "source": "windiscover",
+      "at": "2026-09-18T04:27:33.481Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/exchange-online-ews-api-sunset-third-party-risk.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-exchan-6009c394d7.md",
+      "title": "Exchange Online 将于 2026 年 4 月停用 EWS API，第三方集成面临中断风险",
+      "source": "windiscover",
+      "at": "2026-09-18T04:27:33.482Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128530-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128530-1-1-e4f5c6ffa2.md",
+      "title": "分享一套 AI 辅助开发的车辆管理系统源码",
+      "source": "pojie",
+      "at": "2026-09-18T04:27:33.482Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128517-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128517-1-1-f6ffa7c34a.md",
+      "title": "开源双拼练习网站：双拼小筑",
+      "source": "pojie",
+      "at": "2026-09-18T04:27:33.482Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128344-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128344-1-1-8bc8af2ac3.md",
+      "title": "【批处理】自启动项管理脚本",
+      "source": "pojie",
+      "at": "2026-09-18T04:27:33.482Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128342-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128342-1-1-e22f7c3448.md",
+      "title": "【批处理】右键二级菜单管理脚本",
+      "source": "pojie",
+      "at": "2026-09-18T04:27:33.483Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128277-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128277-1-1-1c74e68ce4.md",
+      "title": "作业收交统计系统：扫码收作业，自动生成未交名单与报表",
+      "source": "pojie",
+      "at": "2026-09-18T04:27:33.484Z",
+      "mode": "full"
     }
   }
 }
