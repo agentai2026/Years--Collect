@@ -1357,6 +1357,41 @@
       "source": "pojie",
       "at": "2026-09-18T04:27:33.484Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-defender-update-fixes-false-alerts.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d73cbaed9f.md",
+      "title": "Microsoft Defender 更新修复Windows系统误报杀毒关闭问题",
+      "source": "windiscover",
+      "at": "2026-09-19T04:25:01.822Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-excel-copy-paste-fix-kb5002665.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-8743be8960.md",
+      "title": "微软发布Excel复制粘贴失效修复补丁 KB5002665",
+      "source": "windiscover",
+      "at": "2026-09-19T04:25:01.823Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edges-ie-mode-eol-2029.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-6b80ade8b8.md",
+      "title": "微软提醒管理员 IE Mode 将于 2029 年停用",
+      "source": "windiscover",
+      "at": "2026-09-19T04:25:01.823Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128811-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128811-1-1-a9026234f3.md",
+      "title": "LOL 大乱斗换人助手 - 没有手速，全是科技！",
+      "source": "pojie",
+      "at": "2026-09-19T04:25:01.823Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2128722-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2128722-1-1-3464a94dd0.md",
+      "title": "【PS插件】文本素材库",
+      "source": "pojie",
+      "at": "2026-09-19T04:25:01.824Z",
+      "mode": "full"
     }
   }
 }
