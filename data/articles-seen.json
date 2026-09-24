@@ -1511,6 +1511,55 @@
       "source": "pojie",
       "at": "2026-09-23T04:34:07.325Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/surface-pro-11-firmware-update.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-surfac-3eb18e416e.md",
+      "title": "微软为Surface Pro 11推送固件更新 优化触控与续航表现",
+      "source": "windiscover",
+      "at": "2026-09-24T04:31:38.555Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-intune-deployment-plans-compliance-update.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-fcf1369693.md",
+      "title": "微软为 Microsoft Intune 新增部署计划工具 优化企业设备管理效率",
+      "source": "windiscover",
+      "at": "2026-09-24T04:31:38.556Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-kb5124010-game-crash-issue.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-e2a26db615.md",
+      "title": "Windows 11 KB5124010更新引发多款游戏崩溃问题",
+      "source": "windiscover",
+      "at": "2026-09-24T04:31:38.556Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-clipchamp-ai-video-upscaling-4k-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-5e7961022f.md",
+      "title": "Microsoft Clipchamp 新增 AI 驱动 4K 视频超分辨率功能",
+      "source": "windiscover",
+      "at": "2026-09-24T04:31:38.556Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2129665-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2129665-1-1-efe9afbec3.md",
+      "title": "大某星球电影ts片段数据解析",
+      "source": "pojie",
+      "at": "2026-09-24T04:31:38.556Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2129526-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2129526-1-1-b7bd9a288e.md",
+      "title": "给Claude开发了一套监工，彻底不用你再盯着",
+      "source": "pojie",
+      "at": "2026-09-24T04:31:38.557Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2129510-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2129510-1-1-2dcdb7106b.md",
+      "title": "突破蓝奏云100M上传限制与无缝下载合并附纯原生PHP Web API源码+算法分析+演示",
+      "source": "pojie",
+      "at": "2026-09-24T04:31:38.557Z",
+      "mode": "full"
     }
   }
 }
