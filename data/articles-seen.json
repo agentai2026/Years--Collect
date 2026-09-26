@@ -1595,6 +1595,34 @@
       "source": "pojie",
       "at": "2026-09-25T04:42:54.185Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-warns-disabling-8dot3-windows-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-4b0bc434b3.md",
+      "title": "微软警告禁用 Windows 遗留 8.3 文件命名功能可能导致应用故障",
+      "source": "windiscover",
+      "at": "2026-09-26T04:45:23.293Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-server-deprecating-wds-features.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-e52b3bdcf4.md",
+      "title": "微软宣布下一代Windows Server将弃用WDS主要功能",
+      "source": "windiscover",
+      "at": "2026-09-26T04:45:23.293Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-foundry-native-voice-agents.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-2d0bea24ac.md",
+      "title": "Microsoft Foundry 获原生语音代理功能对标谷歌 Gemini Live",
+      "source": "windiscover",
+      "at": "2026-09-26T04:45:23.293Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2129885-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2129885-1-1-028fc67028.md",
+      "title": "黑骑士网关",
+      "source": "pojie",
+      "at": "2026-09-26T04:45:23.293Z",
+      "mode": "full"
     }
   }
 }
