@@ -1658,6 +1658,41 @@
       "source": "pojie",
       "at": "2026-09-27T05:07:53.892Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-mandatory-feature-pc-freeze-issue.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-6f5327a617.md",
+      "title": "Windows 强制默认功能在联网时导致 PC 频繁冻结",
+      "source": "windiscover",
+      "at": "2026-09-28T05:10:06.085Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-teams-premium-strips-event-features-to-enterprise-tier.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-a47b0c34c9.md",
+      "title": "微软将Teams事件功能从新版Premium分离至企业版",
+      "source": "windiscover",
+      "at": "2026-09-28T05:10:06.086Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-deletes-inactive-teams-planner-plans.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-fbf4f5cb0f.md",
+      "title": "微软推出 Teams Planner 自动删除策略 闲置 180 天将永久移除",
+      "source": "windiscover",
+      "at": "2026-09-28T05:10:06.086Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130100-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130100-1-1-04cfa14f83.md",
+      "title": "Trae 每日自动签到脚本，顺手把 9074 的根因挖出来了",
+      "source": "pojie",
+      "at": "2026-09-28T05:10:06.086Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2129999-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2129999-1-1-9749310125.md",
+      "title": "dy app强制绕过抓包限制拦截接口明文",
+      "source": "pojie",
+      "at": "2026-09-28T05:10:06.087Z",
+      "mode": "full"
     }
   }
 }
