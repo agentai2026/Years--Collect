@@ -1707,6 +1707,27 @@
       "source": "windiscover",
       "at": "2026-09-29T05:33:04.728Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/visual-studio-september-update-byom-changes.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-visual-9317976f69.md",
+      "title": "Visual Studio 九月更新引发BYOM架构重大变革",
+      "source": "windiscover",
+      "at": "2026-09-30T05:21:14.389Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/xbox-disc-to-digital-program-rollout.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-xbox-d-aa0c9ca2e1.md",
+      "title": "Xbox 实体光盘转数字许可功能全面开放",
+      "source": "windiscover",
+      "at": "2026-09-30T05:21:14.390Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-wsl-containers-generally-available-windows-developers.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-7d90cfa90e.md",
+      "title": "微软WSL Containers功能正式面向Windows开发者开放",
+      "source": "windiscover",
+      "at": "2026-09-30T05:21:14.390Z",
+      "mode": "full"
     }
   }
 }
