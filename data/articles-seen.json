@@ -1728,6 +1728,41 @@
       "source": "windiscover",
       "at": "2026-09-30T05:21:14.390Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/xbox-ceo-denies-sale-rumors-massive-restructuring.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-xbox-c-afca83cbfb.md",
+      "title": "Xbox CEO 否认公司被出售传闻 Xbox 正在进行大规模重组",
+      "source": "windiscover",
+      "at": "2026-10-01T05:36:00.537Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/zimbra-zero-day-vulnerability-exposes-mail-servers-microsoft-warning.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-zimbra-f25a85ed01.md",
+      "title": "Zimbra零日漏洞导致邮箱服务器受攻击 微软紧急发出安全预警",
+      "source": "windiscover",
+      "at": "2026-10-01T05:36:00.538Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-11-26h2-security-recommendations-it-admins.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-b6169056a9.md",
+      "title": "微软分享Windows 11 26H2 IT管理安全建议",
+      "source": "windiscover",
+      "at": "2026-10-01T05:36:00.538Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/how-to-bypass-windows-11-26h2-gradual-rollout.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-how-to-cbc4054dff.md",
+      "title": "如何跳过 Windows 11 26H2 渐进式更新推送",
+      "source": "windiscover",
+      "at": "2026-10-01T05:36:00.538Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130534-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130534-1-1-2cf3e750e8.md",
+      "title": "SigilHook：用 AngelScript 做 x86/x64 函数 Hook 的注入式运行时",
+      "source": "pojie",
+      "at": "2026-10-01T05:36:00.538Z",
+      "mode": "full"
     }
   }
 }
