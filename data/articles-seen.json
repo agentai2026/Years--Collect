@@ -1798,6 +1798,62 @@
       "source": "windiscover",
       "at": "2026-10-02T05:23:11.008Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-multiple-apps-camera-access.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-be6d820150.md",
+      "title": "Windows 11新增讓多個應用同時使用攝像頭的功能",
+      "source": "windiscover",
+      "at": "2026-10-03T05:05:52.399Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-teams-parallel-chat-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-e9d61a03fe.md",
+      "title": "Microsoft Teams 将推并行会话功能 支持会议中独立沟通",
+      "source": "windiscover",
+      "at": "2026-10-03T05:05:52.399Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-hidden-shortcut-shift-click-scrollbar.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-65e7808a15.md",
+      "title": "资深微软工程师发现Windows隐藏快捷键 Shift+点击滚动条",
+      "source": "windiscover",
+      "at": "2026-10-03T05:05:52.400Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130769-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130769-1-1-5607cd7de2.md",
+      "title": "【吾爱首发】cfst-file文件流转",
+      "source": "pojie",
+      "at": "2026-10-03T05:05:52.400Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130678-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130678-1-1-05a54c37b3.md",
+      "title": "利用sdenv一键生成瑞数Cookie请求数据",
+      "source": "pojie",
+      "at": "2026-10-03T05:05:52.400Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130653-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130653-1-1-1d57b8f1fa.md",
+      "title": "《血战上海滩》九项属性修改器 源代码分享",
+      "source": "pojie",
+      "at": "2026-10-03T05:05:52.400Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130615-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130615-1-1-096b5a8fc6.md",
+      "title": "html中式圆桌餐位排布系统",
+      "source": "pojie",
+      "at": "2026-10-03T05:05:52.401Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130602-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130602-1-1-dc93054c53.md",
+      "title": "Qoder 每日自动签到脚本，把 token 从客户端本地解出来了",
+      "source": "pojie",
+      "at": "2026-10-03T05:05:52.401Z",
+      "mode": "full"
     }
   }
 }
