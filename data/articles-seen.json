@@ -1917,6 +1917,34 @@
       "source": "pojie",
       "at": "2026-10-04T05:39:33.469Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-26h2-group-policy-templates.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-25109aae09.md",
+      "title": "微软发布Windows 11 26H2 企业组策略模板 协助管理员部署新特性",
+      "source": "windiscover",
+      "at": "2026-10-05T05:22:38.836Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/enable-sysmon-monitor-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-enable-9375ad884a.md",
+      "title": "Windows 11 内置 Sysmon 活动监控器启用指南",
+      "source": "windiscover",
+      "at": "2026-10-05T05:22:38.836Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130935-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130935-1-1-cec26d30e5.md",
+      "title": "[cmd]从压缩文件生成可以让wiztree读取的csv文件列表",
+      "source": "pojie",
+      "at": "2026-10-05T05:22:38.837Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2130923-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2130923-1-1-f7ff543ffd.md",
+      "title": "xhs网页搜索接口",
+      "source": "pojie",
+      "at": "2026-10-05T05:22:38.837Z",
+      "mode": "full"
     }
   }
 }
