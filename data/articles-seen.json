@@ -1945,6 +1945,48 @@
       "source": "pojie",
       "at": "2026-10-05T05:22:38.837Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-outlook-classic-bug-fix-plan.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-b93c446668.md",
+      "title": "微软详解 Classic Outlook Bug 修复方案",
+      "source": "windiscover",
+      "at": "2026-10-06T06:05:55.091Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-authenticator-remove-native-backups-2027.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-3726b17a93.md",
+      "title": "Microsoft Authenticator 2027 年起将移除原生备份功能 改用 Google One",
+      "source": "windiscover",
+      "at": "2026-10-06T06:05:55.091Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-five-years-anniversary-2.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-0e4a16cddb.md",
+      "title": "Windows 11 今日迎来第二个五周年纪念日",
+      "source": "windiscover",
+      "at": "2026-10-06T06:05:55.091Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131070-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131070-1-1-ccb305cbc5.md",
+      "title": "【油猴脚本】B站动态筛选助手",
+      "source": "pojie",
+      "at": "2026-10-06T06:05:55.091Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131046-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131046-1-1-dd51caa1b5.md",
+      "title": "xhs app 利用Unidbg调用libxyass计算shield实现搜索接口",
+      "source": "pojie",
+      "at": "2026-10-06T06:05:55.091Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131016-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131016-1-1-a3fe0a4fe9.md",
+      "title": "ks app rpc调用加密算法实现搜索",
+      "source": "pojie",
+      "at": "2026-10-06T06:05:55.092Z",
+      "mode": "full"
     }
   }
 }
