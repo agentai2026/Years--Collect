@@ -1987,6 +1987,27 @@
       "source": "pojie",
       "at": "2026-10-06T06:05:55.092Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/dutch-tax-authority-abandon-microsoft-365-open-source.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-dutch-01b011c77d.md",
+      "title": "荷兰税务当局拟弃用 Microsoft 365 转向本地部署与开源方案",
+      "source": "windiscover",
+      "at": "2026-10-07T05:41:19.988Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-download-page-remove-english-international-language-pack.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-23f80551da.md",
+      "title": "Windows 11 下载页面移除 English International 语言包选项",
+      "source": "windiscover",
+      "at": "2026-10-07T05:41:19.988Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-outlook-block-msix-attachments.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d697522d13.md",
+      "title": "微软将在新 Windows Outlook 及网页版中屏蔽更多邮件附件",
+      "source": "windiscover",
+      "at": "2026-10-07T05:41:19.988Z",
+      "mode": "full"
     }
   }
 }
