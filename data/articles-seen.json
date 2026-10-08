@@ -2008,6 +2008,76 @@
       "source": "windiscover",
       "at": "2026-10-07T05:41:19.988Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/surface-rtx-spark-dev-box-launch.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-surfac-5b51fc3a0c.md",
+      "title": "微软推出Surface RTX Spark Dev Box 开发者专用工作站售价6000美元",
+      "source": "windiscover",
+      "at": "2026-10-08T05:49:41.393Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-execution-containers-mxc-general-availability.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-ff96091b39.md",
+      "title": "微软执行容器（MXC）正式启用 提供 AI 代理治理新方案",
+      "source": "windiscover",
+      "at": "2026-10-08T05:49:41.394Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-mai-code-1-1-flash-local-coding-ai-model.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-fdd2537927.md",
+      "title": "Microsoft 推出可本地运行的 MAI-Code-1.1-Flash 编程 AI 模型",
+      "source": "windiscover",
+      "at": "2026-10-08T05:49:41.394Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-surface-laptop-ultra-preorder-available.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-7b905a44ea.md",
+      "title": "微软 Surface Laptop Ultra 开启预购 售价 2599 美元起",
+      "source": "windiscover",
+      "at": "2026-10-08T05:49:41.394Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/xbox-game-pass-adds-battlefield-6-seven-day-one-games.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-xbox-g-1609121f44.md",
+      "title": "Xbox Game Pass 新增 BattleField 6 及七款首发游戏",
+      "source": "windiscover",
+      "at": "2026-10-08T05:49:41.395Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131256-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131256-1-1-c9e175d358.md",
+      "title": "【国庆节第三弹】 咕噜小天使 Steam 23项属性内存修改器源码",
+      "source": "pojie",
+      "at": "2026-10-08T05:49:41.395Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131164-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131164-1-1-872ba5a080.md",
+      "title": "蓝牙，传讯 (Win)",
+      "source": "pojie",
+      "at": "2026-10-08T05:49:41.395Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131143-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131143-1-1-5fea26bed9.md",
+      "title": "Bastion 棱堡，对称加密算法库，支持CTR、CBC、XTS、AEAD、HASH、HMAC、HKDF、PBKDF2",
+      "source": "pojie",
+      "at": "2026-10-08T05:49:41.395Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131117-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131117-1-1-5ef4a2ff1e.md",
+      "title": "dy app rpc调用加密函数生成六神实现搜索",
+      "source": "pojie",
+      "at": "2026-10-08T05:49:41.396Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131099-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131099-1-1-361771f54e.md",
+      "title": "【加密算法】神人加密算法",
+      "source": "pojie",
+      "at": "2026-10-08T05:49:41.396Z",
+      "mode": "full"
     }
   }
 }
