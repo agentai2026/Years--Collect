@@ -2078,6 +2078,41 @@
       "source": "pojie",
       "at": "2026-10-08T05:49:41.396Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-warns-it-admins-update-windows-pcs-lose-access-to-windows-update-services.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-dead18e0d2.md",
+      "title": "微软警告 IT 管理员需更新 Windows PC，否则将失去 Windows Update 服务访问权限",
+      "source": "windiscover",
+      "at": "2026-10-09T05:54:31.346Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-xbox-ip-extension-division.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-79bfb19696.md",
+      "title": "微软成立Xbox IP扩展部门 拓展游戏IP至影视与主题公园业务",
+      "source": "windiscover",
+      "at": "2026-10-09T05:54:31.347Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-ml-api-major-updates.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-5c7a881d84.md",
+      "title": "微软详解 Windows ML API重大更新 支持TensorFlow与PyTorch模型直接调用",
+      "source": "windiscover",
+      "at": "2026-10-09T05:54:31.347Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-365-targeted-release-channel-retirement.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-ed1f972593.md",
+      "title": "微软停用Microsoft 365应用Targeted Release发布通道",
+      "source": "windiscover",
+      "at": "2026-10-09T05:54:31.347Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/ublock-origin-windows-11-free-app.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-ublock-16799a9e9b.md",
+      "title": "免费工具应用将uBlock Origin核心功能引入Windows 11",
+      "source": "windiscover",
+      "at": "2026-10-09T05:54:31.347Z",
+      "mode": "full"
     }
   }
 }
