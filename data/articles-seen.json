@@ -2113,6 +2113,27 @@
       "source": "windiscover",
       "at": "2026-10-09T05:54:31.347Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-blocks-regedit-bypass-windows-11-26h2.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-8edafdf414.md",
+      "title": "微软在 Windows 11 26H2 中禁用注册表绕过技巧",
+      "source": "windiscover",
+      "at": "2026-10-10T05:36:36.153Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-m365-onedrive-storage-cut-to-2tb-2.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-16199ad172.md",
+      "title": "微软削减M365 OneDrive存储空间引发用户反弹",
+      "source": "windiscover",
+      "at": "2026-10-10T05:36:36.154Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131599-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131599-1-1-0766ebb6e6.md",
+      "title": "AI Sider-多平台 AI 对比工作台",
+      "source": "pojie",
+      "at": "2026-10-10T05:36:36.154Z",
+      "mode": "full"
     }
   }
 }
