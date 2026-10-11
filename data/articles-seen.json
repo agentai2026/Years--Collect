@@ -2134,6 +2134,55 @@
       "source": "pojie",
       "at": "2026-10-10T05:36:36.154Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-remove-copilot-themes-from-outlook.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-1c994e5cfd.md",
+      "title": "微软宣布将逐步停用Outlook中的Copilot主题功能",
+      "source": "windiscover",
+      "at": "2026-10-11T05:33:12.502Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-26h2-rufus-installation-low-ram-usage.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-40f66fe57a.md",
+      "title": "Windows 11 26H2 配合 Rufus 安装技巧 内存占用降至 2.5GB",
+      "source": "windiscover",
+      "at": "2026-10-11T05:33:12.503Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-365-copilot-audio-overview-security-labels.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-15e6e251a0.md",
+      "title": "Microsoft 365 Copilot 音频概览新增安全标签自动应用",
+      "source": "windiscover",
+      "at": "2026-10-11T05:33:12.503Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/how-to-find-hidden-startup-apps-and-processes-in-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-how-to-7aa0f655b6.md",
+      "title": "如何查找 Windows 11 中的隐藏启动应用和进程",
+      "source": "windiscover",
+      "at": "2026-10-11T05:33:12.503Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-restores-outlook-send-availability-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d050319d01.md",
+      "title": "微软恢复 Outlook 移动端 Send Availability 功能",
+      "source": "windiscover",
+      "at": "2026-10-11T05:33:12.503Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131917-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131917-1-1-075e6a4cb1.md",
+      "title": "不需要服务器，用金山文档给 Trae 每日自动签到（多账号）",
+      "source": "pojie",
+      "at": "2026-10-11T05:33:12.503Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131820-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131820-1-1-2e0d694123.md",
+      "title": "爱听音乐播放器可下载 - 桌面版（含完整源码）",
+      "source": "pojie",
+      "at": "2026-10-11T05:33:12.503Z",
+      "mode": "full"
     }
   }
 }
