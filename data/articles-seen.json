@@ -2183,6 +2183,41 @@
       "source": "pojie",
       "at": "2026-10-11T05:33:12.503Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-copilot-notebooks-major-upgrades.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-a2a9f52bb0.md",
+      "title": "微软大幅升级Copilot Notebooks 引入AI驱动笔记与Microsoft 365集成",
+      "source": "windiscover",
+      "at": "2026-10-12T05:43:38.032Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edge-user-data-feature-not-for-spying.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-7c3d7c8e2e.md",
+      "title": "微软确认Edge新特性将收集用户数据 强调非监控用途",
+      "source": "windiscover",
+      "at": "2026-10-12T05:43:38.032Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-brings-full-word-excel-and-powerpoint-experience-to-new-copilot-app.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-dbee6257d6.md",
+      "title": "微软将完整 Word、Excel 及 PowerPoint 体验带入新 Copilot 应用",
+      "source": "windiscover",
+      "at": "2026-10-12T05:43:38.032Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2132001-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2132001-1-1-34a9b7758a.md",
+      "title": "音频频谱图批量生成工具 v0.4（FFmpeg批量验证音频无损的真假）",
+      "source": "pojie",
+      "at": "2026-10-12T05:43:38.032Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2131975-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2131975-1-1-e9a9d1c262.md",
+      "title": "不需要服务器，用金山文档给 Qoder 每日自动签到（多账号）",
+      "source": "pojie",
+      "at": "2026-10-12T05:43:38.033Z",
+      "mode": "full"
     }
   }
 }
