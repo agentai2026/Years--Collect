@@ -2246,6 +2246,48 @@
       "source": "windiscover",
       "at": "2026-10-13T06:38:39.596Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-hardens-windows-11-ref-removable-media-risks.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-8a2d0ceea4.md",
+      "title": "微软加固 Windows 11 可移动存储中的 reFS 支持 限制远程加载风险",
+      "source": "windiscover",
+      "at": "2026-10-14T04:40:23.052Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/how-to-create-remap-keyboard-shortcuts-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-how-to-4386a71734.md",
+      "title": "Windows 11 完整指南：如何创建与重映射键盘快捷键",
+      "source": "windiscover",
+      "at": "2026-10-14T04:40:23.052Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-kb5127648-patch-audio-black-screen-fix.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-5b5269bdd5.md",
+      "title": "Windows 11 KB5127648补丁修复AC-3音频与黑屏问题",
+      "source": "windiscover",
+      "at": "2026-10-14T04:40:23.052Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-24h2-home-pro-support-ends.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-62daecaa42.md",
+      "title": "Windows 11 24H2 Home 与 Pro 版停止支持，升级建议公布",
+      "source": "windiscover",
+      "at": "2026-10-14T04:40:23.053Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/winui-gallery-30-launch-developer-samples.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-winui-49226ddd1d.md",
+      "title": "WinUI Gallery 3.0正式发布 新增大量Windows开发示例",
+      "source": "windiscover",
+      "at": "2026-10-14T04:40:23.053Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2132259-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2132259-1-1-85a6a1d987.md",
+      "title": "公众号数据看板：一个零成本的本地方案",
+      "source": "pojie",
+      "at": "2026-10-14T04:40:23.053Z",
+      "mode": "full"
     }
   }
 }
