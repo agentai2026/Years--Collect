@@ -2288,6 +2288,55 @@
       "source": "pojie",
       "at": "2026-10-14T04:40:23.053Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-ends-extended-support-exchange-server-skype-products.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-a9d69db040.md",
+      "title": "微软终止部分遗留 Exchange Server 与 Skype 产品扩展支持",
+      "source": "windiscover",
+      "at": "2026-10-15T04:22:59.220Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-defender-now-supports-linux-desktops.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-40efb338c7.md",
+      "title": "微软 Defender 正式支持 Linux 桌面系统",
+      "source": "windiscover",
+      "at": "2026-10-15T04:22:59.221Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-xbox-nano-controller-unveiled-49-99.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-1ec47ecfc1.md",
+      "title": "微软推出Xbox Nano控制器 史上最轻小设计售价$49.99",
+      "source": "windiscover",
+      "at": "2026-10-15T04:22:59.221Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-terminates-publisher-support-libreoffice-offers-alternative.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-a742ca5c27.md",
+      "title": "微软终止Publisher支持 LibreOffice提供替代方案",
+      "source": "windiscover",
+      "at": "2026-10-15T04:22:59.221Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/0patch-protects-legacy-windows-server-from-dns-rce-vulnerability-2.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-0patch-fff572ffe6.md",
+      "title": "0patch 为旧版 Windows Server 提供 DNS 远程代码执行漏洞紧急补丁",
+      "source": "windiscover",
+      "at": "2026-10-15T04:22:59.221Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2132478-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2132478-1-1-d902fbb055.md",
+      "title": "仅根据BMI反推身高和体重？还真能做到！只需要简单的数论知识~",
+      "source": "pojie",
+      "at": "2026-10-15T04:22:59.221Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2132441-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2132441-1-1-766de5563c.md",
+      "title": "钉钉考勤一键审批",
+      "source": "pojie",
+      "at": "2026-10-15T04:22:59.221Z",
+      "mode": "full"
     }
   }
 }
