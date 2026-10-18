@@ -2414,6 +2414,48 @@
       "source": "windiscover",
       "at": "2026-10-17T04:08:33.954Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edge-watermark-protection-enterprise.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-2402b7e726.md",
+      "title": "微软为 Microsoft Edge 企业版推水印保护功能",
+      "source": "windiscover",
+      "at": "2026-10-18T04:16:11.949Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/kb5127648-smart-app-control-failure.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-kb5127-8e8df7c04d.md",
+      "title": "Windows 11 KB5127648更新导致智能应用控制功能失效",
+      "source": "windiscover",
+      "at": "2026-10-18T04:16:11.949Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/starling-openoffice-free-office-alternative-release.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-starli-65de26554a.md",
+      "title": "AI 生成的 Starling OpenOffice 开源办公软件发布 支持三大文档格式",
+      "source": "windiscover",
+      "at": "2026-10-18T04:16:11.949Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/uk-regulator-challenges-microsoft-windows-office-defender-bundling.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-uk-reg-1af318ef37.md",
+      "title": "英国监管机构质疑微软将 Windows、Office 与 Defender 深度绑定",
+      "source": "windiscover",
+      "at": "2026-10-18T04:16:11.949Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2133014-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2133014-1-1-3eb767eacf.md",
+      "title": "用aardio制作一个IM软件 (源码)",
+      "source": "pojie",
+      "at": "2026-10-18T04:16:11.949Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2132988-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2132988-1-1-ed2c0c6ed4.md",
+      "title": "任天堂红白机模拟器 网页版",
+      "source": "pojie",
+      "at": "2026-10-18T04:16:11.950Z",
+      "mode": "full"
     }
   }
 }
