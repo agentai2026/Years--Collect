@@ -226,7 +226,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1797
+     "ms": 2090
     }
    ]
   },
@@ -467,7 +467,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 356
+     "ms": 205
     }
    ]
   },
@@ -481,7 +481,7 @@
    "site": "https://www.ziyuanzu.com/source/guangsuziyuanzhan-4",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 115793,
+   "total": 115801,
    "tags": [
     "电影",
     "电视剧",
@@ -687,7 +687,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 625
+     "ms": 378
     }
    ]
   },
@@ -928,7 +928,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 263
+     "ms": 234
     }
    ]
   },
@@ -942,7 +942,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-6",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 114886,
+   "total": 114894,
    "tags": [
     "电视剧",
     "电影",
@@ -1152,7 +1152,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1010
+     "ms": 921
     }
    ]
   },
@@ -1369,7 +1369,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 461
+     "ms": 435
     }
    ]
   },
@@ -1383,7 +1383,7 @@
    "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/短剧.txt",
    "source": "github",
    "http": 200,
-   "total": 122837,
+   "total": 122853,
    "tags": [
     "受限内容",
     "电影",
@@ -1614,7 +1614,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 231
+     "ms": 301
     }
    ]
   },
@@ -1628,7 +1628,7 @@
    "site": "https://github.com/07751000/001github.io/blob/410c03197241f93ce0d0a9c295c4dd587b4d3d54/01.json",
    "source": "github",
    "http": 200,
-   "total": 165459,
+   "total": 165463,
    "tags": [
     "连续剧",
     "电影解说",
@@ -1838,7 +1838,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 452
+     "ms": 738
     }
    ]
   },
@@ -1852,7 +1852,7 @@
    "site": "https://github.com/swhtv/111/blob/6216896f655033f39a96933adabfd19cba24695c/fj.json",
    "source": "github",
    "http": 200,
-   "total": 114127,
+   "total": 114135,
    "tags": [
     "电视剧",
     "电影",
@@ -2062,7 +2062,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 467
+     "ms": 537
     }
    ]
   },
@@ -2303,7 +2303,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 181
+     "ms": 179
     }
    ]
   },
@@ -2317,7 +2317,7 @@
    "site": "https://www.ziyuanzu.com/source/suocaijizhan-21",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 146944,
+   "total": 146959,
    "tags": [
     "受限内容",
     "电影",
@@ -2546,7 +2546,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 288
+     "ms": 209
     }
    ]
   },
@@ -2560,7 +2560,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-22",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 115201,
+   "total": 115209,
    "tags": [
     "电影",
     "连续剧",
@@ -2772,7 +2772,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 414
+     "ms": 340
     }
    ]
   },
@@ -2786,7 +2786,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-27",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 147917,
+   "total": 147920,
    "tags": [
     "电影",
     "连续剧",
@@ -2997,7 +2997,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 661
+     "ms": 1153
     }
    ]
   },
@@ -3011,7 +3011,7 @@
    "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-28",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 115717,
+   "total": 115725,
    "tags": [
     "电影",
     "电视剧",
@@ -3218,7 +3218,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1080
+     "ms": 925
     }
    ]
   },
@@ -3232,7 +3232,7 @@
    "site": "https://www.ziyuanzu.com/source/suboziyuanzhan-29",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 115717,
+   "total": 115725,
    "tags": [
     "电影",
     "电视剧",
@@ -3439,7 +3439,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 932
+     "ms": 824
     }
    ]
   },
@@ -3661,7 +3661,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 955
+     "ms": 795
     }
    ]
   },
@@ -3675,7 +3675,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-34",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 98626,
+   "total": 98630,
    "tags": [
     "连续剧"
    ],
@@ -3863,7 +3863,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1522
+     "ms": 1876
     }
    ]
   },
@@ -3877,7 +3877,7 @@
    "site": "https://www.ziyuanzu.com/source/jkunziyuanzhan-68",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 133433,
+   "total": 133489,
    "tags": [
     "受限内容",
     "中文字幕",
@@ -4070,7 +4070,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 368
+     "ms": 325
     }
    ]
   },
@@ -4084,7 +4084,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-36",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 90453,
+   "total": 90472,
    "tags": [
     "国产动漫",
     "日韩动漫",
@@ -4293,7 +4293,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 400
+     "ms": 705
     }
    ]
   },
@@ -4508,7 +4508,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 615
+     "ms": 538
     }
    ]
   },
@@ -4719,7 +4719,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 291
+     "ms": 136
     }
    ]
   },
@@ -4949,7 +4949,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 217
+     "ms": 335
     }
    ]
   },
@@ -5160,7 +5160,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 492
+     "ms": 469
     }
    ]
   },
@@ -5375,7 +5375,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 529
+     "ms": 518
     }
    ]
   },
@@ -5590,7 +5590,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 233
+     "ms": 318
     }
    ]
   },
@@ -5973,7 +5973,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 523
+     "ms": 148
     }
    ]
   },
@@ -6187,7 +6187,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 606
+     "ms": 508
     }
    ]
   },
@@ -6355,7 +6355,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 754
+     "ms": 807
     }
    ]
   },
@@ -6778,7 +6778,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 219
+     "ms": 167
     }
    ]
   },
@@ -6987,7 +6987,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 275
+     "ms": 178
     }
    ]
   },
@@ -7182,7 +7182,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 230
+     "ms": 116
     }
    ]
   },
@@ -7396,7 +7396,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 329
+     "ms": 576
     }
    ]
   },
@@ -7814,7 +7814,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 443
+     "ms": 577
     }
    ]
   },
@@ -8032,7 +8032,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1229
+     "ms": 238
     }
    ]
   },
@@ -8238,7 +8238,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 868
+     "ms": 765
     }
    ]
   },
@@ -8742,7 +8742,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 356
+     "ms": 164
     }
    ]
   },
@@ -10099,7 +10099,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 200
+     "ms": 174
     }
    ]
   },
@@ -10309,7 +10309,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 695
+     "ms": 323
     }
    ]
   },
@@ -10550,7 +10550,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 194
+     "ms": 148
     }
    ]
   },
@@ -10564,7 +10564,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-25",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 114739,
+   "total": 114747,
    "tags": [
     "电视剧",
     "电影",
@@ -10770,7 +10770,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 726
+     "ms": 567
     }
    ]
   },
@@ -10784,7 +10784,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-31",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 115804,
+   "total": 115812,
    "tags": [
     "电视剧",
     "电影",
@@ -10990,7 +10990,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 607
+     "ms": 511
     }
    ]
   },
@@ -11177,7 +11177,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 950
+     "ms": 985
     }
    ]
   },
@@ -11415,7 +11415,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 305
+     "ms": 280
     }
    ]
   },
@@ -11681,7 +11681,7 @@
    "site": "https://www.ziyuanzu.com/source/baiziyuanzhan-94",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 24154,
+   "total": 24157,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -11835,7 +11835,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 387
+     "ms": 247
     }
    ]
   },
@@ -11849,7 +11849,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-95",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 25447,
+   "total": 25450,
    "tags": [
     "受限内容"
    ],
@@ -12005,7 +12005,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 402
+     "ms": 226
     }
    ]
   },
@@ -12019,7 +12019,7 @@
    "site": "https://www.ziyuanzu.com/source/avziyuanzhan-97",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 24320,
+   "total": 24323,
    "tags": [
     "受限内容"
    ],
@@ -12175,7 +12175,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 344
+     "ms": 200
     }
    ]
   },
@@ -12189,7 +12189,7 @@
    "site": "https://www.ziyuanzu.com/source/xshuijiziyuanzhan-98",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 24160,
+   "total": 24163,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -12343,7 +12343,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 389
+     "ms": 626
     }
    ]
   },
@@ -12357,7 +12357,7 @@
    "site": "https://www.ziyuanzu.com/source/xziyuanzhan-99",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 24482,
+   "total": 24485,
    "tags": [],
    "categories": [],
    "restricted": false,
@@ -12511,7 +12511,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 384
+     "ms": 697
     }
    ]
   },
@@ -12898,7 +12898,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1816
+     "ms": 1894
     }
    ]
   },
@@ -13108,7 +13108,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 645
+     "ms": 283
     }
    ]
   },
@@ -13309,7 +13309,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 811
+     "ms": 1009
     }
    ]
   },
@@ -13322,7 +13322,7 @@
    "domain": "shayuapi.com",
    "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/baip6.txt",
    "source": "github",
-   "http": 0,
+   "http": 200,
    "total": 286796,
    "tags": [
     "受限内容",
@@ -13512,8 +13512,8 @@
     },
     {
      "date": "2026-10-19",
-     "ok": false,
-     "ms": null
+     "ok": true,
+     "ms": 1794
     }
    ]
   },
@@ -13695,7 +13695,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-73",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 217645,
+   "total": 217738,
    "tags": [
     "受限内容",
     "视频一区",
@@ -13884,7 +13884,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1388
+     "ms": 939
     }
    ]
   },
@@ -14087,7 +14087,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 961
+     "ms": 928
     }
    ]
   },
@@ -14316,7 +14316,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1245
+     "ms": 829
     }
    ]
   },
@@ -14498,7 +14498,7 @@
    "site": "https://www.ziyuanzu.com/source/ziyuanzhan-24",
    "source": "ziyuanzu.com",
    "http": 200,
-   "total": 150654,
+   "total": 150661,
    "tags": [
     "电影",
     "连续剧",
@@ -14710,7 +14710,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1530
+     "ms": 2206
     }
    ]
   },
@@ -14724,7 +14724,7 @@
    "site": "https://github.com/dlgt7/TVbox-interface/blob/97fe47b35445f485ee6f323e46f3a78eecec2464/jj.json",
    "source": "github",
    "http": 200,
-   "total": 181025,
+   "total": 181121,
    "tags": [
     "受限内容",
     "精品国产",
@@ -14919,7 +14919,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 713
+     "ms": 653
     }
    ]
   },
@@ -15130,7 +15130,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 677
+     "ms": 575
     }
    ]
   },
@@ -16012,7 +16012,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 343
+     "ms": 114
     }
    ]
   },
@@ -16458,7 +16458,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 702
+     "ms": 495
     }
    ]
   },
@@ -16700,7 +16700,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 313
+     "ms": 191
     }
    ]
   },
@@ -16714,7 +16714,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/216.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 150654,
+   "total": 150661,
    "tags": [
     "电影",
     "连续剧",
@@ -16926,7 +16926,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1462
+     "ms": 3360
     }
    ]
   },
@@ -17167,7 +17167,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 308
+     "ms": 187
     }
    ]
   },
@@ -17408,7 +17408,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 245
+     "ms": 177
     }
    ]
   },
@@ -17614,7 +17614,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1135
+     "ms": 769
     }
    ]
   },
@@ -17628,7 +17628,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/230.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 114739,
+   "total": 114747,
    "tags": [
     "电视剧",
     "电影",
@@ -17834,7 +17834,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 450
+     "ms": 295
     }
    ]
   },
@@ -18053,7 +18053,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1556
+     "ms": 1320
     }
    ]
   },
@@ -18067,7 +18067,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/218.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 84594,
+   "total": 84596,
    "tags": [
     "连续剧"
    ],
@@ -18256,7 +18256,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 804
+     "ms": 688
     }
    ]
   },
@@ -18270,7 +18270,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/207.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 147917,
+   "total": 147920,
    "tags": [
     "电影",
     "连续剧",
@@ -18481,7 +18481,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 793
+     "ms": 851
     }
    ]
   },
@@ -18495,7 +18495,7 @@
    "site": "https://github.com/shidahuilang/shuyuan-bak/blob/399cba926cbcbc029ff2376d7248b67bbca19f29/UZ.json",
    "source": "github",
    "http": 200,
-   "total": 88023,
+   "total": 88024,
    "tags": [
     "连续剧",
     "电影解说",
@@ -18693,7 +18693,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 2012
+     "ms": 1719
     }
    ]
   },
@@ -19029,7 +19029,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 693
+     "ms": 691
     }
    ]
   },
@@ -19211,7 +19211,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/186.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 98626,
+   "total": 98630,
    "tags": [
     "连续剧"
    ],
@@ -19399,7 +19399,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 1173
+     "ms": 743
     }
    ]
   },
@@ -19413,7 +19413,7 @@
    "site": "https://github.com/libinghui123/tvbox/blob/aa8714ac8740061dcd934a31d60c5ffba50a2577/tvbox/lib/夜魔.txt",
    "source": "github",
    "http": 200,
-   "total": 114886,
+   "total": 114894,
    "tags": [
     "电视剧",
     "电影",
@@ -19623,7 +19623,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 360
+     "ms": 335
     }
    ]
   },
@@ -19850,7 +19850,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 509
+     "ms": 407
     }
    ]
   },
@@ -20262,7 +20262,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 606
+     "ms": 561
     }
    ]
   },
@@ -20473,7 +20473,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 283
+     "ms": 124
     }
    ]
   },
@@ -20487,7 +20487,7 @@
    "site": "https://github.com/liu673cn/xbb/blob/df208b25a21b9b3de67ebe6c81c550061b6bc3d5/b2.txt",
    "source": "github",
    "http": 200,
-   "total": 159792,
+   "total": 159793,
    "tags": [
     "连续剧",
     "电影解说",
@@ -20694,7 +20694,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 577
+     "ms": 323
     }
    ]
   },
@@ -20708,7 +20708,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/140.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 115824,
+   "total": 115832,
    "tags": [
     "电影",
     "电视剧",
@@ -20918,7 +20918,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 259
+     "ms": 312
     }
    ]
   },
@@ -20932,7 +20932,7 @@
    "site": "https://www.yszzq.com/ziyuan/api/127.html",
    "source": "yszzq.com",
    "http": 200,
-   "total": 59377,
+   "total": 59396,
    "tags": [
     "电影",
     "电视剧",
@@ -21122,7 +21122,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 379
+     "ms": 120
     }
    ]
   },
@@ -21136,7 +21136,7 @@
    "site": "https://github.com/heroaku/TVboxo/blob/42edfca812780525e95a1c1c2d97d6ed664e27a4/apit.json",
    "source": "github",
    "http": 200,
-   "total": 115201,
+   "total": 115209,
    "tags": [
     "电影",
     "连续剧",
@@ -21348,7 +21348,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 357
+     "ms": 304
     }
    ]
   },
@@ -21698,7 +21698,7 @@
    "site": "https://github.com/liu673cn/bug/blob/7820ab8e94f060401f791a646df760404276098e/vod/xpg.txt",
    "source": "github",
    "http": 200,
-   "total": 159792,
+   "total": 159793,
    "tags": [
     "连续剧",
     "电影解说",
@@ -21905,7 +21905,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 311
+     "ms": 71
     }
    ]
   },
@@ -22423,7 +22423,7 @@
    "site": "https://github.com/franksun1211/TVBOX/blob/e980b074353fea9ac54fd293980d2cfa6170960a/miaotv.txt",
    "source": "github",
    "http": 200,
-   "total": 59377,
+   "total": 59396,
    "tags": [
     "电影",
     "电视剧",
@@ -22613,7 +22613,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 466
+     "ms": 172
     }
    ]
   },
@@ -22795,7 +22795,7 @@
    "site": "https://github.com/liu673cn/box/blob/c8665453fc3665fa8d3124d6d9d91fcec4029e66/m.json",
    "source": "github",
    "http": 200,
-   "total": 146944,
+   "total": 146959,
    "tags": [
     "受限内容",
     "电影",
@@ -23024,7 +23024,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 280
+     "ms": 306
     }
    ]
   },
@@ -23542,7 +23542,7 @@
    "site": "https://github.com/Minerchu/dongguaTV/blob/6b898305740dd4b842cb27fe0b9533e68127cb7a/README.md",
    "source": "github",
    "http": 200,
-   "total": 98626,
+   "total": 98630,
    "tags": [
     "连续剧"
    ],
@@ -23730,7 +23730,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 499
+     "ms": 919
     }
    ]
   },
@@ -24576,7 +24576,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 511
+     "ms": 209
     }
    ]
   },
@@ -24758,7 +24758,7 @@
    "site": "https://github.com/liu673cn/box/blob/c8665453fc3665fa8d3124d6d9d91fcec4029e66/m.json",
    "source": "github",
    "http": 200,
-   "total": 159792,
+   "total": 159793,
    "tags": [
     "连续剧",
     "电影解说",
@@ -24965,7 +24965,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 546
+     "ms": 362
     }
    ]
   },
@@ -25553,7 +25553,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 731
+     "ms": 737
     }
    ]
   },
@@ -25939,7 +25939,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 2132
+     "ms": 361
     }
    ]
   },
@@ -26107,7 +26107,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 291
+     "ms": 216
     }
    ]
   },
@@ -27129,7 +27129,7 @@
    "site": "https://github.com/guxiangbin/tvbox2/blob/af0060bd52a2c4c20cd43d743ed7ec7f2f36d4aa/欧歌.txt",
    "source": "github",
    "http": 200,
-   "total": 159792,
+   "total": 159793,
    "tags": [
     "连续剧",
     "电影解说",
@@ -27336,7 +27336,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 455
+     "ms": 371
     }
    ]
   },
@@ -29016,7 +29016,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 614
+     "ms": 799
     }
    ]
   },
@@ -29352,7 +29352,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 592
+     "ms": 888
     }
    ]
   },
@@ -29856,7 +29856,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 153
+     "ms": 333
     }
    ]
   },
@@ -30073,7 +30073,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 2220
+     "ms": 3912
     }
    ]
   },
@@ -30409,7 +30409,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 173
+     "ms": 344
     }
    ]
   },
@@ -31921,7 +31921,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 602
+     "ms": 891
     }
    ]
   },
@@ -32439,7 +32439,7 @@
    "site": "https://github.com/powerchh/mysite/blob/66e1c6746eb2eb4268f8b24faf52c6f46025f0e7/static/tv/tvbox.txt",
    "source": "github",
    "http": 200,
-   "total": 90453,
+   "total": 90472,
    "tags": [
     "国产动漫",
     "日韩动漫",
@@ -32648,7 +32648,7 @@
     {
      "date": "2026-10-19",
      "ok": true,
-     "ms": 238
+     "ms": 498
     }
    ]
   }
