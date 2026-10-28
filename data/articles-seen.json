@@ -2757,6 +2757,62 @@
       "source": "pojie",
       "at": "2026-10-27T04:47:58.324Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-mai-image-27-preview-beats-openai-gpt-image-25-flare.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-712aef7e46.md",
+      "title": "微软 MAI-Image-2.7 Preview AI 图像编辑模型超越 OpenAI GPT Image 2.5 Flare",
+      "source": "windiscover",
+      "at": "2026-10-28T05:22:22.402Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edge-sidebar-copilot-migration-error.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-4e262c8816.md",
+      "title": "Microsoft Edge Sidebar 中 Copilot 遭遇迁移错误，部分用户无法使用",
+      "source": "windiscover",
+      "at": "2026-10-28T05:22:22.402Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-clat-feature-general-availability-ipv4-compatibility.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-5a041605b3.md",
+      "title": "微软Windows CLAT功能正式发布 解决IPv4应用在纯IPv6网络中的兼容问题",
+      "source": "windiscover",
+      "at": "2026-10-28T05:22:22.402Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-excel-october-2026-new-copilot-skills.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-4a1f249c1d.md",
+      "title": "微软 Excel 十月更新新增 Copilot AI 数据技能与交互式画布",
+      "source": "windiscover",
+      "at": "2026-10-28T05:22:22.403Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/powertoys-01023001-crash-fix-release.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-powert-05ecb38b7d.md",
+      "title": "微软发布 PowerToys 0.102.3001 更新，修复 File Locksmith 与 Quick Accent 崩溃问题",
+      "source": "windiscover",
+      "at": "2026-10-28T05:22:22.403Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2134508-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2134508-1-1-34f2ee3583.md",
+      "title": "安卓局域网互传",
+      "source": "pojie",
+      "at": "2026-10-28T05:22:22.404Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2134505-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2134505-1-1-1febaf9616.md",
+      "title": "页读— 本地电子书 / 漫画阅读器（Android）",
+      "source": "pojie",
+      "at": "2026-10-28T05:22:22.404Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2134467-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2134467-1-1-b4ac6d6c0d.md",
+      "title": "用 PHP 8.3 手搓一个定时任务调度面板：麒麟 ql 开源了",
+      "source": "pojie",
+      "at": "2026-10-28T05:22:22.404Z",
+      "mode": "full"
     }
   }
 }
