@@ -2813,6 +2813,48 @@
       "source": "pojie",
       "at": "2026-10-28T05:22:22.404Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-q1-record-revenue-azure-33-billion.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-79812af3a8.md",
+      "title": "微软 Q1 营收创纪录 Azure 单季达 $332 亿",
+      "source": "windiscover",
+      "at": "2026-10-29T05:32:11.967Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-version-26h1-preview-update-kb5127653.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-992ef84d93.md",
+      "title": "微软为 Windows 11 版本 26H1 推送可选预览更新 KB5127653",
+      "source": "windiscover",
+      "at": "2026-10-29T05:32:11.967Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-authenticator-android-passkey-update-january-2027.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-f664c670a2.md",
+      "title": "微软 Authenticator Android 版将于 2027 年 1 月强化 Passkey 支持",
+      "source": "windiscover",
+      "at": "2026-10-29T05:32:11.967Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-remove-sharepoint-server-mobile-support.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-a54ef93530.md",
+      "title": "微软下月起禁用 SharePoint Server 移动端访问支持",
+      "source": "windiscover",
+      "at": "2026-10-29T05:32:11.967Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2134721-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2134721-1-1-b1db4c1e40.md",
+      "title": "我做了个《凡人修仙传》同人修仙模拟器：随机出生，活完一生",
+      "source": "pojie",
+      "at": "2026-10-29T05:32:11.968Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2134613-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2134613-1-1-2527aa565b.md",
+      "title": "PHP 800行代码内外网传输工具",
+      "source": "pojie",
+      "at": "2026-10-29T05:32:11.968Z",
+      "mode": "full"
     }
   }
 }
