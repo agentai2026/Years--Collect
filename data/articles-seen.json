@@ -3079,6 +3079,55 @@
       "source": "pojie",
       "at": "2026-11-09T05:58:11.614Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-settings-backup-restore-improvements.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-49001b1606.md",
+      "title": "微软详解Windows 设置备份与恢复功能显著升级",
+      "source": "windiscover",
+      "at": "2026-11-10T07:01:40.895Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-server-technology-adoption-program-tap.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-fdc6ebd284.md",
+      "title": "微软推出 Windows Server 技术采用计划 TAP 优化企业反馈机制",
+      "source": "windiscover",
+      "at": "2026-11-10T07:01:40.896Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-hello-pin-bypass-authentication.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-c3316cce1a.md",
+      "title": "微软修复 Windows Hello 登录痛点 允许跳过生物识别验证",
+      "source": "windiscover",
+      "at": "2026-11-10T07:01:40.896Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-clarifies-windows-11-regedit-rumor-sample.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-7ca7aaefdf.md",
+      "title": "微软澄清 Windows 11 注册表编辑器重新设计传闻仅为内部样本",
+      "source": "windiscover",
+      "at": "2026-11-10T07:01:40.896Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-entra-id-lifecycle-policies-and-passwordless-authentication.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-a6e204b0e5.md",
+      "title": "微软 Entra ID 新增生命周期策略与无密码认证功能",
+      "source": "windiscover",
+      "at": "2026-11-10T07:01:40.896Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2136573-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2136573-1-1-038f8a02eb.md",
+      "title": "《帝国时代 IV》.rlc 炼狱模式存档的加密算法与文件结构",
+      "source": "pojie",
+      "at": "2026-11-10T07:01:40.896Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2136489-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2136489-1-1-af5b34333c.md",
+      "title": "基于文学作品的Python 维护工具 - V2 CMD命令源码",
+      "source": "pojie",
+      "at": "2026-11-10T07:01:40.897Z",
+      "mode": "full"
     }
   }
 }
