@@ -3128,6 +3128,48 @@
       "source": "pojie",
       "at": "2026-11-10T07:01:40.897Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-kb5132061-install-fails-0x800f0993-error.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-bfbf082678.md",
+      "title": "Windows 11 KB5132061 更新安装报错 0x800f0993",
+      "source": "windiscover",
+      "at": "2026-11-11T05:54:12.079Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-november-2026-patch-tuesday-updates.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-82b9049453.md",
+      "title": "Windows 11 发布 2026 年 11 月补丁周二更新 涵盖四个版本及安全修复",
+      "source": "windiscover",
+      "at": "2026-11-11T05:54:12.079Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/amd-6th-gen-epyc-cpus-launch-for-ai-and-enterprise-workloads.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-amd-6t-0535b9c48d.md",
+      "title": "AMD 6th Gen EPYC 处理器发布 面向AI与企业算力",
+      "source": "windiscover",
+      "at": "2026-11-11T05:54:12.080Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-10-patch-tuesday-kb5131096-update.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-a978b95449.md",
+      "title": "微软发布 Windows 10 2H22 与 21H2 补丁星期二更新 KB5131096",
+      "source": "windiscover",
+      "at": "2026-11-11T05:54:12.080Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-trump-chinese-ai-data-center-components.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-1ece451176.md",
+      "title": "微软敦促特朗普政府维持中国AI数据中心组件进口",
+      "source": "windiscover",
+      "at": "2026-11-11T05:54:12.080Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2136688-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2136688-1-1-5968fd5d82.md",
+      "title": "【含AIGC】NAT 后面的两台设备怎么直连：UDP 打洞原理与 Go 实现，附 P2P 工具",
+      "source": "pojie",
+      "at": "2026-11-11T05:54:12.080Z",
+      "mode": "full"
     }
   }
 }
