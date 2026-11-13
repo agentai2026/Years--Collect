@@ -3226,6 +3226,48 @@
       "source": "pojie",
       "at": "2026-11-12T06:57:57.964Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-regrets-outlook-exchange-sharepoint-outage.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-cd8d2a5681.md",
+      "title": "微软公开致歉 Outlook Exchange SharePoint 服务中断问题仍未解决",
+      "source": "windiscover",
+      "at": "2026-11-13T06:22:26.190Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-patches-windows-server-fix-chrome-edge-compatibility.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-47190bbbad.md",
+      "title": "微软修复Windows Server 补丁 解决Chrome与Edge浏览器兼容问题",
+      "source": "windiscover",
+      "at": "2026-11-13T06:22:26.191Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/patch-tuesday-windhawk-broken-fix.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-patch-3d706326e2.md",
+      "title": "Windows 更新破坏 Windhawk 定制化功能 开发者已提供临时修复方案",
+      "source": "windiscover",
+      "at": "2026-11-13T06:22:26.191Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-adds-21-xbox-games-to-pc-with-achievements.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-f8ec4488e3.md",
+      "title": "微软向PC新增21款经典Xbox游戏 同步启用成就系统",
+      "source": "windiscover",
+      "at": "2026-11-13T06:22:26.191Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-outlook-email-delivery-bug.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-9f45bcd72e.md",
+      "title": "微软承认Outlook存在严重邮件发送故障，影响时长近三天",
+      "source": "windiscover",
+      "at": "2026-11-13T06:22:26.191Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2137296-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2137296-1-1-11e645ae6f.md",
+      "title": "火车票发票重命名",
+      "source": "pojie",
+      "at": "2026-11-13T06:22:26.191Z",
+      "mode": "full"
     }
   }
 }
