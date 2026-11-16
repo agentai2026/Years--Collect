@@ -3359,6 +3359,41 @@
       "source": "pojie",
       "at": "2026-11-15T06:08:13.003Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/winpopbit-windows-11-older-cpu-support.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-winpop-3948ed9df5.md",
+      "title": "WinPOPBit 新版工具或将使 Windows 11 支持更多老旧 AMD 与 Intel 处理器",
+      "source": "windiscover",
+      "at": "2026-11-16T06:07:30.738Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-exchange-online-powershell-script-warning.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-9ea615952e.md",
+      "title": "微软警告 Exchange Online 管理员检查 PowerShell 脚本 以防属性弃用引发故障",
+      "source": "windiscover",
+      "at": "2026-11-16T06:07:30.739Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-startup-delay-mechanism-registry-disable.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-d3cbd7b52b.md",
+      "title": "微软Windows 11隐藏启动延迟机制可反致系统变慢，用户可通过注册表禁用该功能",
+      "source": "windiscover",
+      "at": "2026-11-16T06:07:30.739Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2137782-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2137782-1-1-334b910b80.md",
+      "title": "esp32自动认证校园网固件",
+      "source": "pojie",
+      "at": "2026-11-16T06:07:30.739Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2137707-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2137707-1-1-613f024e61.md",
+      "title": "新人作死の直接对52动手，油猴脚本-弹窗显示回复内容",
+      "source": "pojie",
+      "at": "2026-11-16T06:07:30.739Z",
+      "mode": "full"
     }
   }
 }
