@@ -3457,6 +3457,55 @@
       "source": "pojie",
       "at": "2026-11-17T07:42:31.463Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-salesforce-copilotforce-partnership.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d967ee242a.md",
+      "title": "微软与 Salesforce 达成 Copilotforce 合作 整合 AI 与企业数据",
+      "source": "windiscover",
+      "at": "2026-11-18T07:06:28.530Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-powershell-7-default-windows.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-f757766eef.md",
+      "title": "微软确认 PowerShell 7 将成为 Windows 默认命令行工具",
+      "source": "windiscover",
+      "at": "2026-11-18T07:06:28.530Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/copilot-edit-local-files-windows-11-troubleshooting.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-copilo-6017e082c2.md",
+      "title": "Copilot 将支持编辑本地文件和诊断 Windows 11 问题",
+      "source": "windiscover",
+      "at": "2026-11-18T07:06:28.531Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/edge-for-business-new-copilot-ai-features.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-edge-f-c659dc7569.md",
+      "title": "微软 Edge for Business 新增多项 Copilot AI 助手功能",
+      "source": "windiscover",
+      "at": "2026-11-18T07:06:28.531Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-perception-security-model-general-availability.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-4c02d331b2.md",
+      "title": "微软 Perception 网络安全模型正式推向通用市场",
+      "source": "windiscover",
+      "at": "2026-11-18T07:06:28.531Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2138375-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2138375-1-1-b698091ebc.md",
+      "title": "跨两跳远程会话的剪贴板打通",
+      "source": "pojie",
+      "at": "2026-11-18T07:06:28.531Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2138234-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2138234-1-1-0baad9e2e0.md",
+      "title": "Full GC优化",
+      "source": "pojie",
+      "at": "2026-11-18T07:06:28.531Z",
+      "mode": "full"
     }
   }
 }
