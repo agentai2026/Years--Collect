@@ -3506,6 +3506,48 @@
       "source": "pojie",
       "at": "2026-11-18T07:06:28.531Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-to-do-retirement-2027-planner-migration.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-dc3f8e390d.md",
+      "title": "微软宣布2027年关停Microsoft To Do 个人用户暂无替代方案",
+      "source": "windiscover",
+      "at": "2026-11-19T07:06:41.230Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-old-bug-leads-to-pos-terminal-card-data-theft.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-9ef041f339.md",
+      "title": "Windows旧漏洞致超百万信用卡数据从POS终端泄露",
+      "source": "windiscover",
+      "at": "2026-11-19T07:06:41.231Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/impossible-os-native-windows-app-support-non-linux.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-imposs-c322dbd50b.md",
+      "title": "独立团队开发’Impossible OS’:原生支持 Windows 应用的非 Linux 系统",
+      "source": "windiscover",
+      "at": "2026-11-19T07:06:41.231Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-powertoys-performance-monitor-redesign.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-0c8c04f579.md",
+      "title": "微软正在重构 PowerToys 性能监控功能 增强硬件数据可视化",
+      "source": "windiscover",
+      "at": "2026-11-19T07:06:41.231Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-baseline-protection-block-non-compliant-pcs.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-f72d370203.md",
+      "title": "Windows 11 新增基线保护 允许应用阻止不合规设备",
+      "source": "windiscover",
+      "at": "2026-11-19T07:06:41.231Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2138600-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2138600-1-1-602af6cc6e.md",
+      "title": "开源cinterp：一个小型(约100KB)、跨平台、C 代码编译成字节码、支持FFI的解释器",
+      "source": "pojie",
+      "at": "2026-11-19T07:06:41.231Z",
+      "mode": "full"
     }
   }
 }
