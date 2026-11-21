@@ -3590,6 +3590,48 @@
       "source": "pojie",
       "at": "2026-11-20T06:57:44.132Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-to-do-shutdown-2027-migration-tools.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-ccee2a8cc5.md",
+      "title": "微软确认 Microsoft To Do 2027 年关闭 第三方工具提供数据迁移选项",
+      "source": "windiscover",
+      "at": "2026-11-21T06:52:55.195Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edge-lockdown-mode-browser-security.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-797dadf8f5.md",
+      "title": "微软Edge推出Lockdown Mode强化浏览器安全防护",
+      "source": "windiscover",
+      "at": "2026-11-21T06:52:55.196Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-copilot-enterprise-browser-default.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-cf0f29baf3.md",
+      "title": "微软将 Microsoft Copilot 企业版侧边浏览设为默认功能",
+      "source": "windiscover",
+      "at": "2026-11-21T06:52:55.196Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-usb4-multi-pc-rdma-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-6ed0d989bb.md",
+      "title": "Windows USB4 新功能可连接多台 PC 提升 AI 计算性能",
+      "source": "windiscover",
+      "at": "2026-11-21T06:52:55.196Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/fastunlock-zero-day-bypasses-bitlocker-windows-11.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-fastun-d37b883a01.md",
+      "title": "研究者披露FastUnlock零日漏洞 可绕过Windows 11的BitLocker保护",
+      "source": "windiscover",
+      "at": "2026-11-21T06:52:55.196Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2138714-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2138714-1-1-9722beb0ae.md",
+      "title": "使用ESP32-C3让小爱同学远程唤醒我的台式机",
+      "source": "pojie",
+      "at": "2026-11-21T06:52:55.196Z",
+      "mode": "full"
     }
   }
 }
