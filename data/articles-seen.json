@@ -3632,6 +3632,48 @@
       "source": "pojie",
       "at": "2026-11-21T06:52:55.196Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-outlook-global-outage-final-report-2026.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-10cce0b794.md",
+      "title": "微软承认Outlook全球中断期间部分邮件丢失",
+      "source": "windiscover",
+      "at": "2026-11-22T06:27:33.130Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-entra-data-breach-july-bug.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-3ab0e9af20.md",
+      "title": "微软确认七月漏洞导致 Entra 数据泄露",
+      "source": "windiscover",
+      "at": "2026-11-22T06:27:33.131Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-shut-down-sleep-hibernate-guide.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-daa0d3a094.md",
+      "title": "Windows 11 关机、睡眠与休眠模式功能对比解析",
+      "source": "windiscover",
+      "at": "2026-11-22T06:27:33.131Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-change-default-browser-challenges.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-1804f26205.md",
+      "title": "Windows 11更换非Edge默认浏览器遭遇障碍",
+      "source": "windiscover",
+      "at": "2026-11-22T06:27:33.131Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-preview-updates-pause-december-2026.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-5f7662cfc3.md",
+      "title": "微软宣布 2026 年 12 月暂停 Windows 11 预览更新",
+      "source": "windiscover",
+      "at": "2026-11-22T06:27:33.131Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2138991-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2138991-1-1-eebe003211.md",
+      "title": "C/C++ 特征码 Sunday、SSE2、AVX 搜索",
+      "source": "pojie",
+      "at": "2026-11-22T06:27:33.131Z",
+      "mode": "full"
     }
   }
 }
