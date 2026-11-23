@@ -3674,6 +3674,48 @@
       "source": "pojie",
       "at": "2026-11-22T06:27:33.131Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-11-kb5135609-kb5133853-setup-recovery-updates.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-02b6d9386c.md",
+      "title": "微软为 Windows 11 推送 KB5135609 与 KB5133853 安全更新",
+      "source": "windiscover",
+      "at": "2026-11-23T07:18:06.297Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-11-oobe-update-kb5135000.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-bd94d520bb.md",
+      "title": "微软发布 Windows 11 OOBE 更新 KB5135000 优化首次设置体验",
+      "source": "windiscover",
+      "at": "2026-11-23T07:18:06.297Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/libernt-windows-11-performance-benchmarks-teased.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-libern-a096712f33.md",
+      "title": "LiberNT 首个 Windows 11 性能基准对比数据即将公布",
+      "source": "windiscover",
+      "at": "2026-11-23T07:18:06.297Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-11-new-search-experience-vivetool.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-edae9ce0f1.md",
+      "title": "如何使用 ViVeTool 在 Windows 11 中启用新搜索体验",
+      "source": "windiscover",
+      "at": "2026-11-23T07:18:06.298Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2139114-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2139114-1-1-114ac15c57.md",
+      "title": "视频管理工具",
+      "source": "pojie",
+      "at": "2026-11-23T07:18:06.298Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2139076-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2139076-1-1-840407c0db.md",
+      "title": "【油猴脚本】知乎秒变 DeepSeek？一个摸鱼伪装脚本",
+      "source": "pojie",
+      "at": "2026-11-23T07:18:06.298Z",
+      "mode": "full"
     }
   }
 }
