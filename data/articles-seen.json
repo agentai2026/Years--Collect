@@ -3814,6 +3814,55 @@
       "source": "windiscover",
       "at": "2026-11-25T08:12:46.762Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-server-oob-hotpatch-kb5138318-fix.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-398a1a8696.md",
+      "title": "微软发布Windows Server OOB热补丁 修复KB5131077导致的网络错误",
+      "source": "windiscover",
+      "at": "2026-11-26T07:59:40.744Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-telnet-client-deprecated.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-6d778fc9a3.md",
+      "title": "微软确认弃用 Windows Telnet Client 功能",
+      "source": "windiscover",
+      "at": "2026-11-26T07:59:40.744Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-winget-interactive-package-selection-feature.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-05046251f3.md",
+      "title": "微软推出WinGet交互式包选择功能简化应用安装流程",
+      "source": "windiscover",
+      "at": "2026-11-26T07:59:40.745Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-refuses-remove-trojan-app-from-store.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-990514bbe1.md",
+      "title": "微软拒绝从应用商店移除传播木马的应用 引发安全争议",
+      "source": "windiscover",
+      "at": "2026-11-26T07:59:40.745Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-update-intel-driver-wring0-vulnerability.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-f3e21db7da.md",
+      "title": "Windows Update 持续分发含 WinRing0 漏洞的英特尔驱动程序",
+      "source": "windiscover",
+      "at": "2026-11-26T07:59:40.745Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2139706-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2139706-1-1-419b1ca316.md",
+      "title": "批量出图流水线：Puppeteer 渲染本地模板 + Pillow 合成多尺寸图",
+      "source": "pojie",
+      "at": "2026-11-26T07:59:40.745Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2139667-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2139667-1-1-4a7b7a264a.md",
+      "title": "[开源示例] 多模态模型调用极简模板（OpenAI SDK / Claude Code / 异步视频轮询）",
+      "source": "pojie",
+      "at": "2026-11-26T07:59:40.746Z",
+      "mode": "full"
     }
   }
 }
