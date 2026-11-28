@@ -3905,6 +3905,48 @@
       "source": "pojie",
       "at": "2026-11-27T08:02:20.279Z",
       "mode": "full"
+    },
+    "https://windiscover.com/posts/windows-server-2028-feature-deprecation.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-window-f4cab1049a.md",
+      "title": "微软公布 Windows Server 2028 四项功能将进入废弃阶段",
+      "source": "windiscover",
+      "at": "2026-11-28T07:31:07.527Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/office-copilot-compliance-risk-allegation.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-office-891d1812e3.md",
+      "title": "IT 管理员指控 Office Copilot 新功能存在企业合规风险",
+      "source": "windiscover",
+      "at": "2026-11-28T07:31:07.527Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-windows-server-2028-remove-features-list.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-d1f1c6a20d.md",
+      "title": "微软确认 Windows Server 2028 将移除多项传统功能",
+      "source": "windiscover",
+      "at": "2026-11-28T07:31:07.527Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/developers-report-github-outage-again-with-504-timeout-errors.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-develo-d62f6f44f6.md",
+      "title": "开发者再报GitHub服务中断 504错误频发",
+      "source": "windiscover",
+      "at": "2026-11-28T07:31:07.527Z",
+      "mode": "full"
+    },
+    "https://windiscover.com/posts/microsoft-edge-copilot-features-cancelled.html": {
+      "file": "digest-windiscover-windiscover-windiscover-com-posts-micros-740dfd9f9d.md",
+      "title": "微软取消Edge浏览器多项Copilot功能开发",
+      "source": "windiscover",
+      "at": "2026-11-28T07:31:07.527Z",
+      "mode": "full"
+    },
+    "https://www.52pojie.cn/thread-2140092-1-1.html": {
+      "file": "digest-pojie-pojie-www-52pojie-cn-thread-2140092-1-1-48ae52d212.md",
+      "title": "Windows 增加一键清理右键菜单",
+      "source": "pojie",
+      "at": "2026-11-28T07:31:07.527Z",
+      "mode": "full"
     }
   }
 }
